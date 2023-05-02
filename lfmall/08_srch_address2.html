@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>주소찾기 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap">
+	<div class="ly_basic addr_srch_area">
+		<div class="top_area type2">
+			<h1 class="tit">주소찾기</h1>
+			<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+		</div>
+		<div class="ly_cnt">
+			<form>
+			<fieldset>
+				<legend><span>지번, 도로명 주소찾기</span></legend>
+				<div class="form_wrap">
+					<div class="inp_wrap">
+						<div class="cellbx rdo_mgb">
+							<span class="cell">
+								<span class="inp_rdo">
+									<input type="radio" name="srch_addr" id="old_addr_srch">
+									<label for="old_addr_srch">지번검색</label>
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_rdo">
+									<input type="radio" name="srch_addr" id="new_addr_srch" checked>
+									<label for="new_addr_srch">도로명검색</label>
+								</span>
+							</span>
+						</div>
+						<div class="cellbx">
+							<span class="cell">
+								<span class="inp_selt2">
+									<select title="시/도 선택하기">
+									<option>시/도</option>
+									</select>
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_selt2">
+									<select title="시/군/구 선택하기">
+									<option>시/군/구</option>
+									</select>
+								</span>
+							</span>
+						</div>
+						<div class="cellbx">
+							<span class="cell">
+								<span class="inp_selt2">
+									<select title="도로명 선택하기">
+									<option>도로명</option>
+									</select>
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_txt del">
+									<input type="search" title="나머지주소 입력하기">
+									<button type="button" class="btn_inp_cls"><span class="sp">삭제하기</span></button>
+								</span>
+							</span>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_m btn_bg_gr">검색</button>
+						</div>
+					</div> 
+				</div>
+			</fieldset>
+			</form>
+			<div class="msg_wrap">
+				<ul class="txt">
+				<li>도로명주소(새주소) : 도로명을 입력하세요. <br>예) 중앙로, 불정로432번길</li>
+				</ul>
+				<p class="txt_addt">지역명에 번지수/건물번호/건물명을 붙여서 검색하면 보다 빠르게 결과를 확인할 수 있습니다.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

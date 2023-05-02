@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>검색 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap">
+	<!-- [D] 헤더 배경 opacity 100%일 경우 클래스명 fix 추가-->
+	<div id="header" class="fix" role="banner">
+		<strong class="logo"><a href="#" class="sp" title="메인으로 이동">LFmall</a></strong>
+		<div id="gnb" role="navigation">
+			<ul>
+			<li><a href="#">홈</a></li>
+			<li><a href="#">패션</a></li>
+			<li><a href="#">잡화</a></li>
+			<li><a href="#">스포츠</a></li>
+			<li><a href="#">뷰티</a></li>
+			<li><a href="#">명품</a></li>
+			<li><a href="#" class="highlighting">아울렛</a></li><!-- [D] 강조되는 메뉴에 클래스명 highlighting 추가 -->
+			<li class="on"><a href="#" class="ico"><span class="ico_raum sp">RAUM EDITION</span></a></li><!-- [D] 선택된 메뉴에 클래스명 on 추가 -->
+			<li><a href="#" class="ico"><span class="ico_around sp">around the corner</span></a></li>
+			<li><a href="#">스타일</a></li>
+			</ul>
+			<!-- [D] GNB에서 선택된 메뉴명 넣어주세요 -->
+			<h1 class="blind">홈</h1>
+		</div>
+
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<!-- LNB -->
+
+		<!-- //LNB -->
+		<div class="search_area" role="search">
+			<!-- [D] 버튼 클릭시 .search_artbx display:block 적용 및 팝업 내 input창에 포커싱 적용 -->
+			<button type="button" title="검색 팝업창으로 이동" class="btn_srch_pop">
+				<span class="blind">추천검색</span>봄 꽃 축제, 스타일 지침서
+			</button>
+			<a href="#" class="btn_srch"><span class="sp">추천검색 페이지로 이동</span></a>
+			<!-- [D]검색 팝업 -->
+			<div class="search_artbx" style="display:block">
+				<div class="srch_top">
+					<button type="button" class="btn_close"><span class="sp">검색창 닫기</span></button>
+					<div class="inp_srch_wrap">
+						<div class="inp_srch"><input type="search" placeholder="검색어를 입력하세요."></div>
+						<div class="btn_wrap">
+							<button type="button" class="btn_srch_inp"><span class="sp">검색어 검색하기</span></button>
+							<!-- [D]인풋창에 검색어 입력 할 경우 display:none -->
+							<button type="button" class="btn_srch_bcd" style="display:block"><span class="sp">바코드로 검색하기</span></button>
+							<!-- [D]인풋창에 검색어 입력 할 경우 display:block -->
+							<button type="button" class="btn_inp_del" style="display:none"><span class="sp">검색어 지우기</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="srch_cont single">
+					<div class="lstbx">
+						<strong class="tit">인기 검색어</strong>
+						<ul class="srch_lst">
+						<li><a href="#"><span>1.</span>박보검 블루종</a></li>
+						<li><a href="#"><span>2.</span>데님팬츠</a></li>
+						<li><a href="#"><span>3.</span>헤지스 설현백</a></li>
+						<li><a href="#"><span>4.</span>지갑</a></li>
+						<li><a href="#"><span>5.</span>피터젠슨</a></li>
+						</ul>
+						<ul class="srch_lst">
+						<li><a href="#"><span>6.</span>불리</a></li>
+						<li><a href="#"><span>7.</span>프라다</a></li>
+						<li><a href="#"><span>8.</span>닥스</a></li>
+						<li><a href="#"><span>9.</span>장갑</a></li>
+						<li><a href="#"><span>10.</span>요시삼라</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- //검색 팝업 -->
+		</div>
+
+		<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+		<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+	</div>
+
+	<div id="container">
+		<div id="content" role="main">
+			<div class="main_visual">
+				<ul class="visual">
+				<li><a href="#"><img src="img/@thumb/@main_visual.jpg" alt="16 S/S HOT items 16SS LF TREND REPORT"></a></li>
+				</ul>
+				<div class="pagenation">
+					<!-- [D] 활성화된 경우 클래스명 active 추가 -->
+					<a href="#" class="active">첫번째배너 활성화</a>
+					<a href="#">두번째배너</a>
+					<a href="#">세번째배너</a>
+					<a href="#">네번째배너</a>
+					<a href="#">다섯번째배너</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- [D] 하단메뉴 -->
+	<div class="bottom_nav">
+		<a href="#" class="ico_home"><span class="sp">메인 페이지로 이동</span></a>
+		<a href="#" class="ico_menu"><span class="sp">메뉴 열기</span></a>
+		<a href="#" class="ico_brand"><span class="sp">브랜드 페이지로 이동</span></a>
+		<a href="#" class="ico_mypage"><span class="sp">마이 페이지로 이동</span></a>
+	</div>
+	<!-- // 하단메뉴 -->
+</div>
+</body>
+</html>

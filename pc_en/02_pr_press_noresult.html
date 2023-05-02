@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PR Channel : LF</title>
+<link rel="stylesheet" type="text/css" href="css/lf.css" />
+</head>
+<body>
+<!-- skip nav -->
+<ul id="skip">
+<li><a href="#gnb">Go to Navigation</a></li>
+<li><a href="#content">Go to Content</a></li>
+</ul>
+<!-- //skip nav -->
+<div id="wrap">
+	<!-- header -->
+	<?php include 'header_incl.html'; ?>
+	<!-- //header -->
+	
+	<hr>
+	
+	<!-- container -->
+	<div id="container">
+		<!-- 이미지 롤링 영역 -->
+		<div class="sub_spot">
+			<div class="snb_area">
+				<h2 class="sp h2_pr">PR CHANNEL</h2>
+				<!--[D] 1daps 활성화시 li class="selected" 추가 -->
+				<ul class="snb">
+				<li class="daps press selected"><a href="#"><span class="sp">NEWS</span></a></li>
+				<li class="daps adv"><a href="#"><span class="sp">AD</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- //이미지 롤링 영역 -->
+		<!-- content -->
+		<div id="content">
+			<div class="brand_area pr_area">				
+				<!--[D] 바로가기 버튼이 추가될 경우 div class="detail_info detail_info_v2" 추가 -->
+				<div class="detail_info">
+					<h3 class="sp h3_press">NEWS</h3>
+					<p>Find out the latest news of LF and its brands.</p>
+					<div class="detail_inner">						
+						<p class="srch_result"><span class="txt_pt2">'Lafuma'</span> <span class="txt_pt">0</span> result found</p>
+					</div>
+					<div class="detail_inner">						
+						<!-- [D] 선택됬을 경우 srch_selected 추가, 마우스 오버시 srch -->
+						<div class="srch">
+							<div class="inner">
+								<form action="">
+								<fieldset>
+								<legend>Search</legend>									
+									<input type="text" value="Enter search word." class="input_txt">
+									<button class="btn_srch"><span class="sp">Search</span></button>
+								</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="content_area">							
+					<div class="info_soon info_soon_v4">
+						<div class="img_soon"><span class="blind">There is no match for your search. Try again.</span></div>
+						<div class="btn_area"><a href="#" class="btn_back">Go to Last Page</a><a href="#" class="btn_main">Go to Main Page</a></div>
+					</div>		
+				</div>
+			</div>							
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<hr>
+	
+	<!-- footer -->
+	<?php include 'footer_incl.html'; ?>
+	<!-- //footer -->
+</div>
+</body>
+</html>

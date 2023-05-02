@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>기본 인적사항 작성</title>
+<link href="css/rec_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/recruit.js"></script>
+</head>
+
+<body>
+<div class="secRec">
+	<h1 class="hide">기본 인적사항 작성</h1>
+	<div class="steps step01">
+		<ol class="hide">
+			<li>01. 기본인적사항 작성(현재 단계)</li>
+			<li>02. 학력사항 작성</li>
+			<li>03. 외국어 및 자격사항</li>
+			<li>04. 자기소개서 작성</li>
+		</ol>
+	</div>
+	<form method="post" action="">
+		<div class="recApply">
+			<fieldset class="fieldBox">
+				<legend>개인정보</legend>
+				<dl>
+					<dt><img src="image/txt_korName.png" alt="한글성명" /></dt>
+					<dd>홍길동</dd>
+					<dt><img src="image/txt_engName.png" alt="영문성명" /></dt>
+					<dd><input type="text" name="#" class="text" size="47" /></dd>
+					<dt><img src="image/txt_secNumber.png" alt="주민등록번호" /></dt>
+					<dd>000000-0000000</dd>
+					<dt><img src="image/txt_mail.png" alt="e-mail" /></dt>
+					<dd><input type="text" name="#" class="text" size="13" title="이메일 아이디" /> @ <input type="text" name="#" class="text disabled" size="13" title="이메일 도메인" disabled="disabled" />
+						<select class="select" title="이메일 도메인" style="width:97px">
+							<option value="" selected="selected">직접입력</option>
+							<option value="">naver.com</option>
+						</select>
+					</dd>
+					<dt><img src="image/txt_mobile.png" alt="이동전화" /></dt>
+					<dd><input type="text" name="#" class="text" size="13" /> <span class="bar">-</span> <input type="text" name="#" class="text" size="13" /> <span class="bar">-</span> <input type="text" name="#" class="text" size="13" style="width:88px" /></dd>
+					<dt><img src="image/txt_phone.png"  alt="전화번호" /></dt>
+					<dd><input type="text" name="#" class="text" size="13" /> <span class="bar">-</span> <input type="text" name="#" class="text" size="13" /> <span class="bar">-</span> <input type="text" name="#" class="text" size="13" style="width:88px" /></dd>
+					<dt><img src="image/txt_address.png"  alt="현주소" /></dt>
+					<dd>
+						<span class="inblock"><input type="text" name="#" class="text" size="10" /> <span class="bar">-</span> <input type="text" name="#" class="text" size="10" /> <a href="#" class="inButton">우편번호찾기</a><br /></span>
+						<input type="text" name="#" class="text" size="47" /> <input type="text" name="#" class="text" size="30" />
+					</dd>
+				</dl>
+			</fieldset>
+			
+			<fieldset class="fieldPhoto">
+				<legend>사진등록</legend>
+				<div class="photo"></div>
+				<a href="#" class="inButton">사진등록</a>
+			</fieldset>
+
+			<fieldset class="fieldBox">
+				<legend>희망직무</legend>
+				<dl>
+					<dt><img src="image/txt_part.png" alt="희망직무" /></dt>
+					<dd>
+						<table class="tbFormCol" summary="희망직무의 구분, 지원부문, 희망직무 입력표">
+							<caption>희망직무</caption>
+							<colgroup>
+								<col width="12%" />
+								<col />
+								<col />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">구분</th>
+									<th scope="col">지원부문</th>
+									<th scope="col">희망직무</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1지망</td>
+									<td><input type="text" name="#" class="text" size="17" title="1지망 지원부문" /> <a href="#" class="inButton">검색</a></td>
+									<td><input type="text" name="#" class="text" size="63" title="1지망 희망직무" /></td>
+								</tr>
+								<tr>
+									<td>2지망</td>
+									<td><input type="text" name="#" class="text" size="17" title="2지망 지원부문" /> <a href="#" class="inButton">검색</a></td>
+									<td><input type="text" name="#" class="text" size="63" title="2지망 희망직무" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="footnote">* 희망직무는 필히 각 채용공고의 채용구분 별 모집공고에 게재된 채용직무중에서 선택하여 입력하셔야 합니다. <br />
+						&nbsp;&nbsp;단, 모집공고와 관게없이 인재 POOL SYSTEM으로 등록하시는 입사지원자께서는 당사 홈페이지의 채용안내-사업분야 및 직무를<br />
+						&nbsp;&nbsp;참고하시어 입력 하시면 됩니다.</p>
+					</dd>
+				</dl>
+			</fieldset>
+
+			<fieldset class="fieldBox">
+				<legend>병역정보</legend>
+				<dl>
+					<dt><img src="image/txt_military.png" alt="병역사항" /></dt>
+					<dd>
+						<input type="radio" name="mchk" id="mchk1" class="radio" checked="checked" /><label for="mchk1" class="label">군필</label>
+						<input type="radio" name="mchk" id="mchk2" class="radio" /><label for="mchk2" class="label">면제</label>
+						<input type="radio" name="mchk" id="mchk3" class="radio" /><label for="mchk3" class="label">복무중</label>
+						<table class="tbFormRow" summary="병역정보의 군별, 계급, 기간 입력표" style="margin-top:5px">
+							<caption>병역정보</caption>
+							<colgroup>
+								<col width="15%" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">군별</th>
+									<td>
+										<select title="군별" class="select" style="width:100px">
+											<option value="" selected="selected">선택</option>
+										</select>
+									</td>
+									<th scope="row">계급</th>
+									<td>
+										<select title="계급" class="select" style="width:100px">
+											<option value="" selected="selected">선택</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">기간</th>
+									<td colspan="3">
+										<select title="복무시작년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="복무시작년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+										<span class="bar">~</span>
+										<select title="복무종료년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="복무종료월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">면제사유</th>
+									<td colspan="3"><input type="text" class="text" title="면제사유" style="width:99.8%" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+					<dt><img src="image/txt_patriots.png" alt="국가보훈대상" /></dt>
+					<dd>
+						<input type="radio" name="pchk" id="pchk1" class="radio" checked="checked" /><label for="pchk1" class="label">대상</label>
+						<input type="radio" name="pchk" id="pchk2" class="radio" /><label for="pchk2" class="label">비대상</label>
+					</dd>
+				</dl>
+			</fieldset>
+
+			<fieldset class="fieldBox">
+				<legend>가족사항</legend>
+				<dl>
+					<dt><img src="image/txt_family.png" alt="가족사항" /></dt>
+					<dd>
+						<table class="tbFormCol" summary="가족사항의 관계, 성명, 직업, 근무처, 직위, 거주지(시/도), 동거여부 입력표">
+							<caption>가족사항</caption>
+							<thead>
+								<tr>
+									<th scope="col">관계</th>
+									<th scope="col">성명</th>
+									<th scope="col">직업</th>
+									<th scope="col">근무처</th>
+									<th scope="col">직위</th>
+									<th scope="col">거주지</th>
+									<th scope="col">동거여부</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<select title="관계" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">자(언니/누나)</option>
+										</select>
+									</td>
+									<td><input type="text" name="#" class="text" size="10" title="성명" /></td>
+									<td><input type="text" name="#" class="text" size="12" title="직업" /></td>
+									<td><input type="text" name="#" class="text" size="14" title="근무처" /></td>
+									<td><input type="text" name="#" class="text" size="10" title="직위" /></td>
+									<td>
+										<select title="거주지" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">경남</option>
+										</select>
+									</td>
+									<td>
+										<select title="동거여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">Y</option>
+											<option value="">N</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<select title="관계" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">자(언니/누나)</option>
+										</select>
+									</td>
+									<td><input type="text" name="#" class="text" size="10" title="성명" /></td>
+									<td><input type="text" name="#" class="text" size="12" title="직업" /></td>
+									<td><input type="text" name="#" class="text" size="14" title="근무처" /></td>
+									<td><input type="text" name="#" class="text" size="10" title="직위" /></td>
+									<td>
+										<select title="거주지" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">경남</option>
+										</select>
+									</td>
+									<td>
+										<select title="동거여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">Y</option>
+											<option value="">N</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<select title="관계" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">자(언니/누나)</option>
+										</select>
+									</td>
+									<td><input type="text" name="#" class="text" size="10" title="성명" /></td>
+									<td><input type="text" name="#" class="text" size="12" title="직업" /></td>
+									<td><input type="text" name="#" class="text" size="14" title="근무처" /></td>
+									<td><input type="text" name="#" class="text" size="10" title="직위" /></td>
+									<td>
+										<select title="거주지" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">경남</option>
+										</select>
+									</td>
+									<td>
+										<select title="동거여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">Y</option>
+											<option value="">N</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<select title="관계" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">자(언니/누나)</option>
+										</select>
+									</td>
+									<td><input type="text" name="#" class="text" size="10" title="성명" /></td>
+									<td><input type="text" name="#" class="text" size="12" title="직업" /></td>
+									<td><input type="text" name="#" class="text" size="14" title="근무처" /></td>
+									<td><input type="text" name="#" class="text" size="10" title="직위" /></td>
+									<td>
+										<select title="거주지" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">경남</option>
+										</select>
+									</td>
+									<td>
+										<select title="동거여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">Y</option>
+											<option value="">N</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<select title="관계" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">자(언니/누나)</option>
+										</select>
+									</td>
+									<td><input type="text" name="#" class="text" size="10" title="성명" /></td>
+									<td><input type="text" name="#" class="text" size="12" title="직업" /></td>
+									<td><input type="text" name="#" class="text" size="14" title="근무처" /></td>
+									<td><input type="text" name="#" class="text" size="10" title="직위" /></td>
+									<td>
+										<select title="거주지" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">경남</option>
+										</select>
+									</td>
+									<td>
+										<select title="동거여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">Y</option>
+											<option value="">N</option>
+										</select>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="footnote">* 가족은 부모/배우자. 자녀/형제자매 순서대로 입력하시며 됩니다.<br />
+						&nbsp;&nbsp;직업, 근무처, 직위에 해당사항이 없는 경우 ‘-’으로 입력하시면 됩니다.</p>
+					</dd>
+				</dl>
+			</fieldset>
+
+			<div class="btns">
+				<div class="fLeft"><a href="#" class="button">미리보기/인쇄</a> <a href="#" class="button">현 단계 저장</a></div>
+				<div class="fRight"><a href="#" class="button point">다음 단계</a></div>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>

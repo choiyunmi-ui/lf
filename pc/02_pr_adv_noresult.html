@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>PR Channel : LF</title>
+<link rel="stylesheet" type="text/css" href="css/lf.css" />
+</head>
+<body>
+<!-- skip nav -->
+<ul id="skip">
+<li><a href="#gnb">주메뉴 바로가기</a></li>
+<li><a href="#content">본문 바로가기</a></li>
+</ul>
+<!-- //skip nav -->
+<div id="wrap">
+	<!-- header -->
+	<?php include 'header_incl.html'; ?>
+	<!-- //header -->
+	
+	<hr>
+	
+	<!-- container -->
+	<div id="container">
+		<!-- 이미지 롤링 영역 -->
+		<div class="sub_spot">
+			<div class="snb_area">
+				<h2 class="sp h2_pr">PR CHANNEL</h2>
+				<!--[D] 1daps 활성화시 li class="selected" 추가 -->
+				<ul class="snb">
+				<li class="daps press"><a href="#"><span class="sp">뉴스</span></a></li>
+				<li class="daps social"><a href="#"><span class="sp">소셜</span></a></li>
+				<li class="daps adv selected"><a href="#"><span class="sp">광고</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- //이미지 롤링 영역 -->
+		<!-- content -->
+		<div id="content">			
+			<div class="brand_area pr_area">				
+				<!--[D] 바로가기 버튼이 추가될 경우 div class="detail_info detail_info_v2" 추가 -->
+				<div class="detail_info">
+					<h3 class="sp h3_adv">광고</h3>
+					<p>LF에서 진행한 광고들을<br>감상하실 수 있습니다.</p>
+					<div class="detail_inner">						
+						<div class="lst_rd">
+							<input type="radio" id="ip1" name="iprd" checked><label for="ip1">전체</label>
+							<input type="radio" id="ip2" name="iprd"><label for="ip2">영상</label>
+							<input type="radio" id="ip3" name="iprd"><label for="ip3">프린트</label>									
+						</div>
+						<!-- [D] 선택됬을 경우 srch_selected 추가, 마우스 오버시 srch -->
+						<div class="srch">
+							<div class="inner">
+								<form action="">
+								<fieldset>
+								<legend>검색</legend>									
+									<input type="text" value="검색어를 입력하세요" class="input_txt">
+									<button class="btn_srch"><span class="sp">검색</span></button>
+								</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!--
+					<div class="detail_inner">
+						<p class="srch_result">전체 게시물 수</span> <span class="txt_pt">1,948 건</span></p>						
+					</div>
+					-->
+				</div>
+				
+				<div class="content_area">
+					<div class="info_soon info_soon_v4">
+						<div class="img_soon"><span class="blind">찾으시는 검색어에 대한 검색결과가 없습니다.</span></div>
+						<div class="btn_area"><a href="#" class="btn_back">이전페이지 보기</a><a href="#" class="btn_main">메인페이지 보기</a></div>
+					</div>		
+				</div>
+			</div>				
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<hr>
+	
+	<!-- footer -->
+	<?php include 'footer_incl.html'; ?>
+	<!-- //footer -->
+</div>
+</body>
+</html>

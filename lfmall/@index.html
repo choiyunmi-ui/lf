@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>LFmall 2.0 Mobile :: 마크업 산출물</title> 
+<!--[if lt IE 9]>
+<script type="text/javascript">
+document.createElement("section");
+document.createElement("nav");
+document.createElement("article");
+document.createElement("aside");
+document.createElement("hgroup");
+document.createElement("header");
+document.createElement("footer");
+</script>
+<![endif]-->
+<style>
+@charset "utf-8";
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,input,textarea,select,button,table{font-size:12px;font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica;line-height:1.25em}
+body.s,.s input,.s textarea,.s select,.s button,.s table{font-family:Helvetica}
+body{position:relative;background-color:#f4f4f4;color:#000;-webkit-text-size-adjust:none}
+img,fieldset{border:0}
+ul,ol{list-style:none}
+em,address,i{font-style:normal}
+a{color:#000;text-decoration:none}
+table{border-collapse:collapse}
+hr{display:none !important}
+.u_hc{visibility:hidden;overflow:hidden;position:absolute;left:-999em;width:0;height:0;font-size:0;line-height:0}
+.u_vc,.u_skip{position:absolute;*left:-9999em;z-index:-1;font-size:4px;line-height:1px;color:transparent}
+#ct{clear:both;width:100%;background-color:#fff}
+#ct:after{display:block;clear:both;height:1px;margin-top:-1px;content:''}
+body{padding:0 14px;background-color:#fff;word-wrap:break-word;word-break:break-all}
+header{padding:1em 0;border-bottom:3px solid #222}
+.hd_h1{font-size:1.2em}
+.hd_svc{display:block;position:absolute;top:0;right:4px;width:3em;padding:.8em 24px .7em .6em;background:url(http://static.naver.com/www/m/cm/im/bu_lk.gif) no-repeat 100% 50%;font-size:.86em;line-height:1.1em;color:#666}
+.hd_wr{white-space:nowrap}
+.sec_h{clear:both;padding:2em .1em .4em;border-bottom:1px solid #000;font-size:1.2em}
+.sec_h2{clear:both;padding:1em .1em .4em;border-bottom:1px dotted #888;font-size:1em}
+.sec_h2::before{display:inline-block;margin-right:.25em;border:2px solid transparent;border-left-color:#000;vertical-align:3px;content:''}
+.status{display:inline-block;margin-left:7px;font-size:.75em;font-weight:bold;color:#ff00d8;vertical-align:top;text-decoration:underline}
+ul{font-size:13px}
+li{border-bottom:1px solid #dfdfdf}
+li a,.tit{display:block;padding:.7em 31px .6em .1em;background:url(http://static.naver.com/www/m/cm/im/bu_lk.gif) no-repeat 100% 50%;_zoom:1}
+.tit:before{padding-right:6px;font-weight:bold;color:red;content:'|'}
+.lidv{margin-top:1px;border-top:1px solid #dfdfdf}
+li span{margin-left:.4em;font-size:.86em;color:#909090}
+li strong{font-weight:bold}
+li em{color:#c60000}
+li i{font-weight:bold;color:#3399cc}
+li i:before,li b:before{display:inline-block;content:'('}
+li i:after,li b:after{display:inline-block;content:')'}
+li b{font-weight:normal;font-size:.9em;color:#999900}
+li ul li{padding-left:15px;border-top:1px solid #dfdfdf;border-bottom:0}
+footer{clear:both;margin:2.5em 0 4em;padding:6px 2px 2px;background:#f4f4f4;font-size:.86em;line-height:1.6em;color:#333;text-align:center}
+dt,dd{display:inline;color:#333}
+dt:after{display:inline;content:': '}
+dd:last-of-type{display:block;color:#aaa}
+.ft_a{display:inline-block;padding:2px 2px 5px;color:#16d;letter-spacing:-1px;text-decoration:underline}
+.gu_table{width:100%;border-collapse:collapse}
+.gu_table caption{padding:.7em 0 .6em .1em;text-align:left}
+.gu_table th,.gu_table td{height:2em;padding:.1em .6em;border:1px solid #ddd;text-align:center}
+.gu_table thead th{width:5em;background:#f1f1f1}
+.gu_table thead th.gu_mc{width:auto}
+.gu_table tbody th{color:#000}
+.gu_table tbody td{color:#06e}
+.gu_table tbody td.gu_mc{text-align:left}
+.gu_ept{color:#ccc}
+.top_menu{margin-top:10px;background:#eee;padding:1em}
+.top_menu a{background:none;text-decoration:underline;padding:0.8em}
+.top_menu a:first-child{padding-left:.1em}
+.top{right:14px;position:absolute;color:red;font-size:11px;font-weight:bold}
+</style>
+</head> 
+<body>
+<header role="banner">
+	<h1 class="hd_h1">LFmall 2.0 Mobile :: 마크업 산출물</h1> 
+	<ul class="top_menu">
+	<li><a href="#common">COMMON</a></li>
+	<li><a href="#search">검색</a></li>
+	<li><a href="#sub1">패션/잡화/스포츠/뷰티/명품</a></li>
+	<li><a href="#sub2">아울렛/스타일/라움에디션/라운드더코너</a></li>
+	<li><a href="#sub3">세일&이벤트/베스트/기획전</a></li>
+	<li><a href="#prdt_detail">상품상세</a></li>
+	<li><a href="#login_join">로그인/회원가입</a></li>
+	<li><a href="#shopping">쇼핑백/위시리스트</a></li>
+	<li><a href="#orderlist">주문서</a></li>
+	<li><a href="#mypage">마이페이지</a></li>
+	</ul>
+</header>
+<hr>
+<div id="ct">
+	<section role="main">
+		<h2 id="common" class="sec_h">COMMON</h2>
+		<ul>
+		<li>
+			<strong class="tit">공통UIO</strong>
+			<ul>
+			<li><a href="00_header.html">header <span>/ 00_header.html</span></a></li>
+			<li><a href="00_footer.html">footer <span>/ 00_footer.html</span></a></li>
+			<li><a href="00_uio.html">UIO <span>/ 00_uio.html</span></a></li>
+			<li><a href="00_popup_layout.html">팝업 공통 <span>/ 00_popup_layout.html</span></a></li>
+			<li><a href="00_popup.html">팝업 <span>/ 00_popup.html</span></a></li>
+			<li><a href="00_popup2.html">팝업2 <span>/ 00_popup2.html</span></a></li>
+			<li><a href="00_sort_open.html">sort : 팝업 <span>/ 00_sort_open.html</span></a></li>
+			<li><a href="00_filter.html">filter <span>/ 00_filter.html</span></a></li>
+			<li><a href="00_filter_open.html">filter : 카테고리 오픈 <span>/ 00_filter_open.html</span></a></li>
+			<li><a href="00_filter_open2.html">filter : 카테고리 오픈2 <span>/ 00_filter_open2.html</span></a></li>
+			<li><a href="00_filter_srch_none.html">filter : 검색결과 없음 <span>/ 00_filter_srch_none.html</span></a></li>
+			<li><a href="00_category_srch_none.html">filter : 카테고리 검색결과 없음 <span>/ 00_category_srch_none.html</span></a></li>
+			<li><a href="00_option_srch_none.html">filter : 옵션 검색결과 없음 <span>/ 00_option_srch_none.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">카드템플릿</strong>
+			<ul>
+			<li><a href="00_template_type1.html">카드템플릿 : 타이틀, 텍스트 <span>/ 00_template_type1.html</span></a></li>
+			<li><a href="00_template_type2.html">카드템플릿 : 이미지 <span>/ 00_template_type2.html</span></a></li>
+			<li><a href="00_template_type3.html">카드템플릿 : 이미지+텍스트(브랜드,가격) <span>/ 00_template_type3.html</span></a></li>
+			<li><a href="00_template_type4.html">카드템플릿 : 이미지(가로형) <span>/ 00_template_type4.html</span></a></li>
+			<li><a href="00_template_type5.html">카드템플릿 : 상품  <span>/ 00_template_type5.html</span></a></li>
+			<li><a href="00_template_type6.html">카드템플릿 : 아울렛/정상  <span>/ 00_template_type6.html</span></a></li>
+			<li><a href="00_template_type7.html">카드템플릿 : 이미지+텍스트(배너)  <span>/ 00_template_type7.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">메인</strong>
+			<ul>
+			<li><a href="00_main.html">메인 <span>/ 00_main.html</span></a></li>
+			<li><a href="00_main_open.html">메인 : 시크릿 팝업 <span>/ 00_main_open.html</span></a></li>
+			<li><a href="00_lnb.html">LNB <span>/ 00_lnb.html</span></a></li>
+			<li><a href="00_lnb_open.html">LNB : 카테고리 오픈 <span>/ 00_lnb_open.html</span></a></li>
+			</ul>
+		</li>
+		</ul>
+
+		<h2 id="search" class="sec_h">검색</h2>
+		<ul>
+		<li>
+			<strong class="tit">검색</strong>
+			<ul>
+			<li><a href="01_search.html">검색<span>/ 01_search.html</span></a></li>
+			<li><a href="01_search2.html">검색 : 최근+인기 검색어<span>/ 01_search2.html</span></a></li>
+			<li><a href="01_search3.html">검색 : 자동완성 <span>/ 01_search3.html</span></a></li>
+			<li><a href="01_search4.html">검색 : 검색결과 <span>/ 01_search4.html</span></a></li>
+			<li><a href="01_search_none.html">검색 : 검색결과없음 <span>/ 01_search_none.html</span></a></li>
+			<li><a href="01_search_barcode.html">검색 : 바코드 <span>/ 01_search_barcode.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">브랜드 검색</strong>
+			<ul>
+			<li><a href="01_brand_search.html">브랜드 검색 : LFmall<span>/ 01_search.html</span></a></li>
+			<li><a href="01_brand_search_open.html">브랜드 검색 : 검색창 오픈<span>/ 01_search_open.html</span></a></li>
+			<li><a href="01_brand_search2.html">브랜드 검색 : 아울렛<span>/ 01_search2.html</span></a></li>
+			<li><a href="01_brand_search3.html">브랜드 검색 : 명픔 <span>/ 01_search3.html</span></a></li>
+			<li><a href="01_brand_search4.html">브랜드 검색 : 초성검색(영문) <span>/ 01_search4.html</span></a></li>
+			<li><a href="01_brand_search5.html">브랜드 검색 : 초성검색(국문) <span>/ 01_search5.html</span></a></li>
+			</ul>
+		</li>
+		</ul>
+		<ul>
+		
+		</ul>
+
+		<!-- <h2 id="sub1" class="sec_h">패션/잡화/스포츠/뷰티/명품</h2>
+		<ul>
+		<li><a href="02_.html"> <span>/ 02_.html</span></a></li>
+		</ul>
+ -->
+		<h2 id="sub2" class="sec_h">아울렛/스타일/라움에디션/어라운드더코너</h2>
+		<ul>
+		<li>
+			<strong class="tit">아울렛</strong>
+			<ul>
+			<li><a href="03_outlet.html">아울렛 <span>/ 03_outlet.html</span></a></li>
+			<li><a href="03_outlet_price.html">아울렛 : 가격대 <span>/ 03_outlet_price.html</span></a></li>
+			<li><a href="03_outlet_sale.html">아울렛 : 할인율 <span>/ 03_outlet_sale.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">스타일</strong>
+			<ul>
+			<li><a href="03_style_list.html">리스트 <span>/ 03_style_list.html</span></a></li>
+			<li><a href="03_style_list2.html">리스트 : 필터 검색 적용 <span>/ 03_style_list2.html</span></a></li>
+			<li><a href="03_style_filter.html">필터 <span>/ 03_style_filter.html</span></a></li>
+			<li><a href="03_style_detail.html">상세 <span>/ 03_style_detail.html</span></a></li>
+			<li><a href="03_style_detail_open.html">상세 : 레이어 오픈 <span>/ 03_style_detail_open.html</span></a></li>
+			<li><a href="03_style_srch_none.html">검색결과 없음 <span>/ 03_style_srch_none.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">라움에디션</strong>
+			<ul>
+			<li><a href="03_raum.html">라움에디션 <span>/ 03_raum.html</span></a></li>
+			<li><a href="03_raum_pop.html">브랜드 팝업 <span>/ 03_raum_pop.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">어라운드더코너</strong>
+			<ul>
+			<li><a href="03_around_corner.html">어라운드더코너 <span>/ 03_around_corner.html</span></a></li>
+			<li><a href="03_around_corner_pop.html">브랜드 팝업 <span>/ 03_around_corner_pop.html</span></a></li>
+			</ul>
+		</li>
+		</ul>
+
+		<h2 id="sub3" class="sec_h">세일&이벤트/베스트/기획전</h2>
+		<ul>
+		<li>
+			<strong class="tit">세일&amp;이벤트</strong>
+			<ul>
+			<li><a href="04_sale_event.html">세일&amp;이벤트 <span>/ 04_sale_event.html</span></a></li>
+			<li><a href="04_sale_event_open.html">세일&amp;이벤트 : 레이어 오픈 <span>/ 04_sale_event_open.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">베스트</strong>
+			<ul>
+			<li><a href="04_best_prdt.html">베스트 상품 <span>/ 04_best_prdt.html</span></a></li>
+			<li><a href="04_best_brand.html">베스트 브랜드 <span>/ 04_best_brand.html</span></a></li>
+			</ul>
+		</li>
+		</ul>
+
+		<h2 id="prdt_detail" class="sec_h">상품상세</h2>
+		<ul>
+		<li><a href="05_prdt_detail.html">상품상세 <span>/ 05_prdt_detail.html</span></a></li>
+		<li><a href="05_prdt_detail2.html">상품상세 : 레이어오픈 <span>/ 05_prdt_detail2.html</span></a></li>
+		<li><a href="05_prdt_detail3.html">상품상세 : 레이어오픈2 <span>/ 05_prdt_detail3.html</span></a></li>
+		<li><a href="05_prdt_detail_pop.html">상품상세 : 팝업 <span>/ 05_prdt_detail_pop.html</span></a></li>
+		<li><a href="05_prdt_detail_order.html">주문하기 <span>/ 05_prdt_detail_order.html</span></a></li>
+		<li><a href="05_prdt_detail_order2.html">주문하기 : 입점사 구매 <span>/ 05_prdt_detail_order2.html</span></a></li>
+		<li><a href="05_prdt_detail_order2_open.html">주문하기 : 입점사 구매 : 옵션 펼침 <span>/ 05_prdt_detail_order2_open.html</span></a></li>
+		<li><a href="05_prdt_detail_order_button.html">주문하기 : 모바일웹 구매하기 버튼 <span>/ 05_prdt_detail_order_button.html</span></a></li>
+		<li><a href="05_prdt_detail_order_button2.html">주문하기 : 모바일앱 구매하기 버튼 <span>/ 05_prdt_detail_order_button2.html</span></a></li>
+		<li><a href="05_prdt_review.html">상품평 <span>/ 05_prdt_review.html</span></a></li>
+		</ul>
+
+		<h2 id="login_join" class="sec_h">로그인/회원가입</h2>
+		<ul>
+		<li>
+			<strong class="tit">로그인</strong>
+			<ul>
+			<li><a href="06_login.html">로그인 <span>/ 06_login.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">아이디 찾기</strong>
+			<ul>
+			<li><a href="06_login_id_srch.html">휴대전화로 찾기 <span>/ 06_login_id_srch.html</span></a></li>
+			<li><a href="06_login_id_srch2.html">이메일로 찾기 <span>/ 06_login_id_srch2.html</span></a></li>
+			<li><a href="06_login_id_srch_result.html">검색 결과 <span>/ 06_login_id_srch_result.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">비밀번호 찾기</strong>
+			<ul>
+			<li><a href="06_login_pw_srch.html">휴대전화로 찾기 <span>/ 06_login_pw_srch.html</span></a></li>
+			<li><a href="06_login_pw_srch2.html">이메일로 찾기 <span>/ 06_login_pw_srch2.html</span></a></li>
+			<li><a href="06_login_pw_srch3.html">본인인증 방식 <span>/ 06_login_pw_srch3.html</span></a></li>
+			<li><a href="06_terms_agree.html">개인정보 이용동의 <span>/ 06_terms_agree.html</span></a></li>
+			<li><a href="06_terms_agree2.html">고유식별 정보처리동의 <span>/ 06_terms_agree2.html</span></a></li>
+			<li><a href="06_terms_agree3.html">통신사 이용약관 <span>/ 06_terms_agree3.html</span></a></li>
+			<li><a href="06_terms_agree4.html">서비스 이용약관 <span>/ 06_terms_agree4.html</span></a></li>
+			<li><a href="06_login_mem.html">기존 가입된 회원 <span>/ 06_login_mem.html</span></a></li>
+			<li><a href="06_login_pw_change.html">비밀번호 즉시 변경 <span>/ 06_login_pw_change.html</span></a></li>
+			<li><a href="06_login_pw_change_success.html">비밀번호 즉시 변경 : 완료 <span>/ 06_login_pw_change_success.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">통합회원가입</strong>
+			<ul>
+			<li><a href="06_join.html">약관동의/본인인증 <span>/ 06_join.html</span></a></li>
+			<li><a href="06_join_step2.html">정보입력 <span>/ 06_join_step2.html</span></a></li>
+			<li><a href="06_join_step3.html">회원가입 완료 <span>/ 06_join_step3.html</span></a></li>
+			<li><a href="06_terms_members.html">LF members 통합회원 이용약관 <span>/ 06_terms_members.html</span></a></li>
+			<li><a href="06_terms_lf.html">LFmall 이용약관 <span>/ 06_terms_lf.html</span></a></li>
+			<li><a href="06_terms_members_website.html">LF members 사이트 이용약관 <span>/ 06_terms_members_website.html</span></a></li>
+			<li><a href="06_terms_prv_agree.html">개인정보 수집 및 이용에 관한 동의 <span>/ 06_terms_prv_agree.html</span></a></li>
+			<li><a href="06_terms_prv_agree2.html">개인정보 취급 위탁 안내 <span>/ 06_terms_prv_agree2.html</span></a></li>
+			<li><a href="06_terms_marketing.html">마케팅정보 수신동의 <span>/ 06_terms_marketing.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">팝업</strong>
+			<ul>
+			<li><a href="00_popup2.html">로그인/회원가입완료 팝업 <span>/ 00_popup2.html</span></a></li>
+			</ul>
+		</li>
+		</ul>
+
+		<h2 id="shopping" class="sec_h">쇼핑백/위시리스트</h2>
+		<ul>
+		<li>
+			<strong class="tit">쇼핑백</strong>
+			<ul>
+			<li><a href="07_shoppingbag.html">쇼핑백 : 타회원제고객 (일반,오늘,입점) <span>/ 07_shoppingbag.html</span></a></li>
+			<li><a href="07_shoppingbag2.html">쇼핑백 : 타회원제고객(2개) <span>/ 07_shoppingbag2.html</span></a></li>
+			<li><a href="07_shoppingbag3.html">쇼핑백 : 타회원제고객(3개) <span>/ 07_shoppingbag3.html</span></a></li>
+			<li><a href="07_shoppingbag_basic.html">쇼핑백 : 일반회원고객 (일반) <span>/ 07_shoppingbag_basic.html</span></a></li>
+			<li><a href="07_shoppingbag_basic2.html">쇼핑백 : 일반회원고객 (일반,입점상품 배송비별도) <span>/ 07_shoppingbag_basic2.html</span></a></li>
+			<li><a href="07_shoppingbag_sold_out.html">쇼핑백 : 품절상품 <span>/ 07_shoppingbag_sold_out.html</span></a></li>
+			<li><a href="07_shoppingbag_open.html">쇼핑백 : 더보기 레이어 오픈 <span>/ 07_shoppingbag_open.html</span></a></li>
+			<li><a href="07_shoppingbag_no_prdt.html">쇼핑상품없음 <span>/ 07_shoppingbag_no_prdt.html</span></a></li>
+			<li><a href="07_shoppingbag_option.html">색상사이즈변경팝업 <span>/ 07_shoppingbag_option.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">위시리스트</strong>
+			<ul>
+			<li><a href="07_wishlist.html">상품리스트 <span>/ 07_wishlist.html</span></a></li>
+			<li><a href="07_wishlist_open.html">상품리스트 : 최근저장순 레이어 <span>/ 07_wishlist_open.html</span></a></li>
+			<li><a href="07_wishlist_open2.html">상품리스트 : 카테고리 레이어 <span>/ 07_wishlist_open2.html</span></a></li>
+			<li><a href="07_wishlist_logout.html">로그아웃 <span>/ 07_wishlist_logout.html</span></a></li>
+			<li><a href="07_wishlist_no_prdt.html">상품없음 <span>/ 07_wishlist_no_prdt.html</span></a></li>
+			<li><a href="07_wishlist_option.html">컬러사이즈변경팝업<span>/ 07_wishlist_option.html</span></a></li>
+			<li><a href="07_wishlist_option2.html">컬러사이즈변경팝업(재입고알림) <span>/ 07_wishlist_option2.html</span></a></li>
+			</ul>
+		</li>
+		</ul>
+
+		<h2 id="orderlist" class="sec_h">주문서</h2>
+		<ul>
+		<li><a href="08_order.html">주문서 : 배송지 등록된 경우 <span>/ 08_order.html</span></a></li>
+		<li><a href="08_order2.html">주문서 : 배송지 없을 경우 + 쿠폰 오픈 <span>/ 08_order2.html</span></a></li>
+		<li><a href="08_order3.html">주문서 : 배송지 변경 + 혜택적용 + 카카오페이 + 약관 <span>/ 08_order3.html</span></a></li>
+		<li><a href="08_srch_address.html">지번주소 찾기 <span>/ 08_srch_address.html</span></a></li>
+		<li><a href="08_srch_address_result.html">지번주소 찾기 결과 <span>/ 08_srch_address_result.html</span></a></li>
+		<li><a href="08_srch_address2.html">도로명주소 찾기 <span>/ 08_srch_address2.html</span></a></li>
+		<li><a href="08_srch_address2_result.html">도로명주소 찾기 결과 <span>/ 08_srch_address2_result.html</span></a></li>
+		<li><a href="08_delivery_addr.html">배송지 추가 <span>/ 08_delivery_addr.html</span></a></li>
+		<li><a href="08_order_done.html">주문 완료 <span>/ 08_order_done.html</span></a></li>
+		</ul>
+
+		<h2 id="mypage" class="sec_h">마이페이지</h2>
+		<ul>
+		<li>
+			<strong class="tit">홈</strong>
+			<ul>
+			<li><a href="09_mypage.html">홈 <span>/ 09_mypage.html</span></a></li>
+			<li><a href="09_mypage_login.html">홈 : 비로그인 <span>/ 09_mypage_login.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">비밀번호 변경</strong>
+			<ul>
+			<li><a href="09_chng_pswd.html"> 비밀번호 변경<span>/ 09_chng_pswd.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">회원정보 확인/수정</strong>
+			<ul>
+			<li><a href="09_edit_my_info.html"> 비밀번호 입력<span> / 09_edit_my_info.html</span></a></li>
+			<li><a href="09_edit_my_info2.html"> 회원정보 확인수정<span> / 09_edit_my_info2.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">멤버십</strong>
+			<ul>
+			<li><a href="09_membership_online.html">온라인 멤버십 <span>/ 09_membership_online.html</span></a></li>
+			<li><a href="09_membership_lf.html">LF MEMBERS <span>/ 09_membership_lf.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">쿠폰/적립금/마일리지/e기프트 마일리지</strong>
+			<ul>
+			<li><a href="09_mypage_coupon.html">쿠폰 <span>/ 09_mypage_coupon.html</span></a></li>
+			<li><a href="09_mypage_coupon_none.html">쿠폰 : 내역없음 <span>/ 09_mypage_coupon_none.html</span></a></li>
+			<li><a href="09_mypage_save_money.html">적립금 <span>/ 09_mypage_save_money.html</span></a></li>
+			<li><a href="09_mypage_mileage.html">마일리지 <span>/ 09_mypage_mileage.html</span></a></li>
+			<li><a href="09_mypage_mileage_none.html">마일리지 : 내역없음 <span>/ 09_mypage_mileage_none.html</span></a></li>
+			<li><a href="09_mypage_egift_mileage.html">e기프트 마일리지 <span>/ 09_mypage_egift_mileage.html</span></a></li>
+			<li><a href="09_mypage_egift_mileage_none.html">e기프트 마일리지 : 내역없음 <span>/ 09_mypage_egift_mileage_none.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">주문배송조회</strong>
+			<ul>
+			<li><a href="09_mypage_order_inquiry.html">목록 <span>/ 09_mypage_order_inquiry.html</span></a></li>
+			<li><a href="09_mypage_order_inquiry_none.html">내역없음 <span>/ 09_mypage_order_inquiry_none.html</span></a></li>
+			<li><a href="09_mypage_order_detail.html">주문상세내역 <span>/ 09_mypage_order_detail.html</span></a></li>
+			<li><a href="09_mypage_order_cancel.html">취소신청 <span>/ 09_mypage_order_cancel.html</span></a></li>
+			<li><a href="09_mypage_order_cancel_cmlt.html">취소완료 <span>/ 09_mypage_order_cancel_cmlt.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">상품평</strong>
+			<ul>
+			<li><a href="09_prdt_review_detail.html">상품평 상세 <span>/ 09_prdt_review_detail.html</span></a></li>
+			<li><a href="09_prdt_review_detail2.html">이미지게시보류 <span>/ 09_prdt_review_detail2.html</span></a></li>
+			<li><a href="09_prdt_review_detail3.html">이미지게시보류2 <span>/ 09_prdt_review_detail3.html</span></a></li>
+			<li><a href="09_prdt_review_detail4.html">이미지게시보류3 <span>/ 09_prdt_review_detail4.html</span></a></li>
+			<li><a href="09_prdt_review_write.html">상품평 작성 <span>/ 09_prdt_review_write.html</span></a></li>
+			<li><a href="09_prdt_review_write2.html">상품평 작성 : 자사 <span>/ 09_prdt_review_write2.html</span></a></li>
+			<li><a href="09_prdt_review_write_img.html">상품평 작성 : 이미지 업로드 <span>/ 09_prdt_review_write_img.html</span></a></li>
+			<li><a href="09_prdt_review_write_add.html">상품평 작성 : 추가정보입력 <span>/ 09_prdt_review_write_add.html</span></a></li>
+			<li><a href="09_prdt_review_manage.html"> 상품평 작성/관리 : 작성 가능한 상품평 <span>/ 09_prdt_review_manage.html</span></a></li>
+			<li><a href="09_prdt_review_manage_none.html"> 상품평 작성/관리 : 작성 가능한 상품평 : 내역없음 <span>/ 09_prdt_review_manage_none.html</span></a></li>
+			<li><a href="09_prdt_review_manage2.html"> 상품평 작성/관리 : 내가 작성한 상품평 <span>/ 09_prdt_review_manage2.html</span></a></li>
+			<li><a href="09_prdt_review_manage2_none.html"> 상품평 작성/관리 : 내가 작성한 상품평 : 내역없음 <span>/ 09_prdt_review_manage2_none.html</span></a></li>
+			<li><a href="09_prdt_review_manage_open.html"> 상품평 작성/관리 목록 펼침 <span>/ 09_prdt_review_manage_open.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">취소/반품/교환</strong>
+			<ul>
+			<li><a href="09_mypage_cancel.html">목록 <span>/ 09_mypage_cancel.html</span></a></li>
+			<li><a href="09_order_return.html">반품신청 <span>/ 09_order_return.html</span></a></li>
+			<li><a href="09_order_return_open.html">반품신청 : 레이어 및 이미지 업로드 오픈 <span>/ 09_order_return_open.html</span></a></li>
+			<li><a href="09_order_return2.html">반품신청 : 수거지 주소 변경 / 취소예정금액  <span>/ 09_order_return2.html</span></a></li>
+			<li><a href="09_order_return3.html">반품신청 : 수거지 직접 발송 / 무료반품권 / 취소예정금액2  <span>/ 09_order_return3.html</span></a></li>
+			<li><a href="09_order_return4.html">반품신청 : 입점사제품  <span>/ 09_order_return4.html</span></a></li>
+			<li><a href="09_order_return_succcess.html">반품신청 완료  <span>/ 09_order_return_succcess.html</span></a></li>
+			<li><a href="09_order_exchange.html">교환신청 <span>/ 09_order_exchange.html</span></a></li>
+			<li><a href="09_order_exchange2.html">교환신청 : 휴대폰결제 / 무료교환권 / 레이어닫기 <span>/ 09_order_exchange2.html</span></a></li>
+			<li><a href="09_order_exchange_succcess.html">교환신청 완료 <span>/ 09_order_exchange_succcess.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">재결제</strong>
+			<ul>
+			<li><a href="09_order_recharge.html">재결제 <span>/ 09_order_recharge.html</span></a></li>
+			<li><a href="09_order_recharge_pop.html">재결제 대기<span>/ 09_order_recharge_pop.html</span></a></li>
+			<li><a href="09_order_recharge_pop2.html">재결제 요청 안내<span>/ 09_order_recharge_pop2.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">배송지관리</strong>
+			<ul>
+			<li><a href="09_manage_address.html"> 배송지관리<span> / 09_manage_address.html</span></a></li>
+			<li><a href="09_manage_address_none.html"> 배송지관리 : 내역없음<span> / 09_manage_address_none.html</span></a></li>
+			<li><a href="09_manage_address_edit.html"> 배송지추가<span> / 09_manage_address_edit.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">환불계좌관리</strong>
+			<ul>
+			<li><a href="09_manage_refund_account.html"> 환불계좌관리<span> / 09_manage_refund_account.html</span></a></li>
+			<li><a href="09_manage_refund_account_none.html"> 환불계좌관리 : 내역없음<span> / 09_manage_refund_account_none.html</span></a></li>
+			<li><a href="09_add_refund_account.html"> 환불계좌추가<span> / 09_add_refund_account.html</span></a></li>
+			<li><a href="09_edit_refund_account.html"> 환불계좌수정<span> / 09_edit_refund_account.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">재입고알림신청내역</strong>
+			<ul>
+			<li><a href="09_prdt_restored_alarm.html"> 재입고알림신청내역<span>/ 09_prdt_restored_alarm.html</span></a></li>
+			<li><a href="09_prdt_restored_alarm_none.html"> 재입고알림신청내역 : 내역없음<span>/ 09_prdt_restored_alarm_none.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">주문번호검색</strong>
+			<ul>
+			<li><a href="09_srch_order_num.html"> 주문번호검색<span> / 09_srch_order_num.html</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<strong class="tit">최근본상품리스트</strong>
+			<ul>
+			<li><a href="09_prdt_recent_saw.html"> 리스트<span>/ 09_prdt_recent_saw.html</span></a></li>
+			</ul>
+		</li>
+		</ul>
+	</section>
+</div>
+ <hr>
+<footer role="contentinfo">
+	<dl>
+	<dt>마크업 담당자</dt>
+	<dd>UI개발1팀</dd>
+	</dl>
+</footer>
+</body>
+</html>

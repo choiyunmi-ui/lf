@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>비밀번호 찾기 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="sub join_area">
+	<div class="top_fix">
+		<div class="location">
+			<h1 class="mtt">비밀번호 찾기</h1>
+			<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		</div>
+	</div>
+	<div id="container">
+		<div id="content" role="main">
+			<ul class="rv_tab tmpl_406">
+			<li class="selected"><a href="#">회원정보 인증방식</a></li><!--[D] 선택된 항목 li에 .selected 추가 -->
+			<li><a href="#">본인인증 방식</a></li>
+			</ul>
+			<!-- [D]선택된 탭 이름 넣어주세요 -->
+			<h2 class="blind">회원정보 인증 방식</h2>
+			
+			<p class="top_info">가입 시 입력한 <em>아이디/이름/이메일</em>을 입력하시면 원하는 비밀번호로 변경하실 수 있습니다.</p>
+			<form>
+			<fieldset>
+				<legend><span>비밀번호 찾기 정보입력</span></legend>
+				<div class="form_wrap">
+					<div class="rdo_wrap">
+						<div class="cellbx">
+							<span class="cell">
+								<span class="inp_rdo">
+									<input type="radio" name="srch_ch" id="ph_srch">
+									<label for="ph_srch">휴대전화로 찾기</label>
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_rdo">
+									<input type="radio" name="srch_ch" id="em_srch" checked="">
+									<label for="em_srch">이메일로 찾기</label>
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_id" class="inp_lb">아이디</label>
+						<div class="inpbx userid">
+							<span class="inp_txt">
+								<input type="text" id="user_id">
+							</span>
+							<button type="button" class="btn_m btn_bg_gr">확인</button>
+						</div>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_name" class="inp_lb">이름</label>
+						<span class="inp_txt"><input type="text" id="user_name"></span>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_email" class="inp_lb">이메일</label>
+						<span class="inp_txt"><input type="text" id="user_email"></span>
+						<div class="inpbx userem">
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_txt">
+										<input type="text" value="@" title="도메인 직접 입력하기">
+									</span>
+								</span>
+								<span class="cell">
+									<span class="inp_selt2">
+										<select title="도메인 선택하기">
+										<option>선택</option>
+										</select>
+									</span>
+								</span>
+							</div>
+							<button type="button" class="btn_m btn_bg_gr">인증번호 받기</button>
+						</div>
+					</div>
+					<div class="inp_wrap confirm2">
+						<label for="cf_num" class="inp_lb">인증번호</label>
+						<div class="inpbx btin">
+							<span class="inp_txt"><input type="text" id="cf_num" readonly=""></span>
+							<button type="button" class="btn_m btn_bd_gr">재전송</button>
+						</div>
+						<div class="cf_time">
+							<p><span class="sp"></span>남은시간 : <span>00</span>분 <span>00</span>초</p>
+							<button type="button" class="btn_s">시간연장</button>
+						</div>
+						<ul class="inp_alert type2">
+						<li>3분 이내로 인증번호(6자리)를 입력하셔야 합니다.</li>
+						<li>입력시간 초과시 “재전송”버튼을 눌러 주시기 바랍니다.</li>
+						</ul>
+					</div>
+					<div class="btn_area">
+						<button type="submit" class="btn btn_bg">확인</button>
+					</div>
+				</div>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

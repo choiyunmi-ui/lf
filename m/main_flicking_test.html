@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF</title>
+<link rel="stylesheet" type="text/css" href="css/m_lf.css" />
+<style>
+/* [s] 공통 */
+.swiper-container{margin:0 auto;position:relative;overflow:hidden;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden;/* Fix of Webkit flickering */	z-index:1}
+.swiper-wrapper{position:relative;width:100%;-webkit-transition-property:-webkit-transform, left, top;-webkit-transition-duration:0s;-webkit-transform:translate3d(0px,0,0);-webkit-transition-timing-function:ease;-moz-transition-property:-moz-transform, left, top;-moz-transition-duration:0s;-moz-transform:translate3d(0px,0,0);-moz-transition-timing-function:ease;-o-transition-property:-o-transform, left, top;-o-transition-duration:0s;-o-transform:translate3d(0px,0,0);-o-transition-timing-function:ease;-o-transform:translate(0px,0px);-ms-transition-property:-ms-transform, left, top;-ms-transition-duration:0s;-ms-transform:translate3d(0px,0,0);-ms-transition-timing-function:ease;transition-property:transform, left, top;transition-duration:0s;transform:translate3d(0px,0,0);transition-timing-function:ease}
+.swiper-free-mode > .swiper-wrapper{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-ms-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;margin:0 auto}
+.swiper-slide{float:left}
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal{-ms-touch-action:pan-y}
+.swiper-wp8-vertical{-ms-touch-action:pan-x}
+
+/* 커스터마이징 */
+.m_visual .swiper-container{width:100%;height:528px;text-align:center}
+.m_visual .swiper-slide a{display:block}
+.m_visual .swiper-slide img{height:528px}
+.m_visual .swiper-pagination-switch{display:inline-block;overflow:hidden;width:7px;height:8px;margin-left:5px;background:url(img/sp_com_rtn.png) no-repeat -103px 0;background-size:250px 330px;line-height:999px;vertical-align:top}
+.m_visual .swiper-active-switch{background-position:-95px 0}
+</style>
+</head>
+<body>
+<!-- [D] 메인,브랜드 class="mb", 브랜드 상세 class="b_d" 추가 -->
+<div id="wrap">
+	<!-- [D] 전체 메뉴 레이어 -->
+	<div class="mn_view" style="display:none">
+		<div class="lst_tabarea">
+			<ul class="lst_tab">
+			<li><a href="#"><span class="sp_mn ico_sm">엘에프 쇼핑몰</span></a></li>
+			<li><a href="#"><span class="sp_mn ico_sm2">멤버스 클럽</span></a></li>
+			<li><a href="#"><span class="sp_mn ico_sm3">Facebook</span></a></li>
+			<li><a href="#"><span class="sp_mn ico_sm4">Blog</span></a></li>
+			</ul>
+		</div>
+		<div class="category">
+			<!--[D] selected 클래스 추가 시 하위 메뉴 활성-->
+			<ul class="lst_cate">
+			<li class="selected">
+				<div class="tit"><a href="#" class="txt"><span class="sp_mn tit_home">Home</span><span class="sp_mn ico_arrow">&nbsp;</span></a></div>
+			</li>
+			<li class="selected">
+				<div class="tit"><a href="#" class="txt"><span class="sp_mn tit_brand">Brand</span><span class="sp_mn ico_arrow">&nbsp;</span></a></div>
+				<ul class="lst_inner">
+				<li><a href="#">WOMEN<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">MEN<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">ACCESSORIES<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">SPORTS&amp;OUTDOOR<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">SELLT SHOP <span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				</ul>
+			</li>
+			<li class="selected">
+				<div class="tit"><a href="#" class="txt"><span class="sp_mn tit_pr">PR Channel</span><span class="sp_mn ico_arrow">&nbsp;</span></a></div>
+				<ul class="lst_inner">
+				<li><a href="#">뉴스 &amp; 보도자료<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">소셜<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">광고<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				</ul>
+			</li>
+			<li class="selected">
+				<div class="tit"><a href="#" class="txt"><span class="sp_mn tit_com">Company</span><span class="sp_mn ico_arrow">&nbsp;</span></a></div>
+				<ul class="lst_inner">
+				<li><a href="#">LF 소개<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">CEO 인사말<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">회사연혁<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">CI 소개<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				<li><a href="#">사회공헌<span class="sp_mn ico_arrow">&nbsp;</span></a></li>
+				</ul>
+			</li>
+			</ul>
+		</div>
+		<div class="mn_foot">
+			<div class="mn_search"><a href="#" class="sp_com">검색레이어 열기</a></div>
+			<div class="mn_logo"><a href="#" class="sp_com">LG 패선 홈</a></div>
+			<div class="mn_close"><a href="#" class="sp_mn">전체 메뉴 닫기</a></div>
+		</div>
+	</div>
+	<!-- header -->
+	<div id="header">
+		<div class="header_top header_t2">
+			<h1><a href="#" class="sp_com">LF</a></h1>
+			<div class="btn_category"><a href="#" class="sp_com">전체 메뉴 보기</a></div>
+			<div class="btn_search"><a href="#" class="sp_com">검색레이어 열기</a></div>
+		</div>
+        <div class="pr_lnb">
+            <ul>
+			<li><a href="#">뉴스</a></li>
+			<li><a href="#"><a href="#">소셜</a></li>
+			<li class="on"><a href="#">광고</a></li>
+			</ul>
+        </div>
+	</div>
+	<!-- //header -->
+
+	<hr>
+
+	<!-- container -->
+	<div id="container">
+		<div class="m_visual">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="#"><img src="img/@temp_maintop.jpg"></a></div>
+					<div class="swiper-slide"><a href="#"><img src="img/@temp_maintop.jpg"></a></div>
+					<div class="swiper-slide"><a href="#"><img src="img/@temp_maintop.jpg"></a></div>
+					<div class="swiper-slide"><a href="#"><img src="img/@temp_maintop.jpg"></a></div>
+				</div>
+			</div>
+			<div class="visual_dotarea">
+				<div class="visual_dot"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+	<hr>
+
+	<!-- footer -->
+	<div id="footer">
+	</div>
+	<!-- //footer -->
+</div>
+<script src="http://telltrue33.nayana.com/jquery/plugin/js/jquery-1.9.1.min.js"></script><!-- [D] 제이쿼리 컴포넌트 -->
+<script src="http://telltrue33.nayana.com/jquery/plugin/js/idangerous.swiper-2.1.min.js"></script><!-- [D] 플리킹 플러그인 -->
+<script>
+var mySwiper = new Swiper('.m_visual .swiper-container',{
+	pagination:'.m_visual .visual_dot',
+	loop:true,
+	grabCursor:true,
+	paginationClickable:true
+})
+</script>
+</body>
+</html>

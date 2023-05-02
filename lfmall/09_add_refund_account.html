@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>환불계좌추가 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap">
+	<div class="ly_basic mypage_area">
+		<div class="top_area type2">
+			<h1 class="tit">환불계좌추가</h1>
+			<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+		</div>
+		<div class="ly_cnt">
+			<form>
+			<fieldset>
+				<legend><span>환불계좌 추가 입력</span></legend>
+				<div class="form_wrap">
+					<div class="inp_wrap">
+						<label for="bank_name" class="inp_lb">은행</label>
+						<span class="inp_selt2">
+							<select id="bank_name" title="생년">
+							<option>선택해 주세요</option>
+							</select>
+						</span>
+					</div>
+					<div class="inp_wrap">
+						<label for="acct_num" class="inp_lb">계좌번호</label>
+						<span class="inp_txt"><input type="num" id="acct_num" placeholder="숫자만 입력해 주세요"></span>
+					</div>
+					<div class="inp_wrap">
+						<label for="acct_num" class="inp_lb">예금주</label>
+						<div class="inpbx">
+							<span class="inp_txt readonly"><input type="text" id="acct_num" value="홍길동"readonly></span>
+						</div>
+						<ul class="chk_lst">
+						<li>
+							<span class="inp_chk3">
+								<input type="checkbox" name="agree" id="default_acct">
+								<label for="default_acct">기본환불계좌로 지정</label>
+							</span>
+						</li>
+						</ul>
+					</div>
+				</div>
+				<div class="fm_btn_area btm_pd">
+					<button type="submit" class="btn btn_bg">확인</button>
+				</div>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

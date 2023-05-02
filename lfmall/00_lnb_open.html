@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>메인 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="main">
+	<!-- [D] 헤더 배경 opacity 100%일 경우 클래스명 fix 추가-->
+	<div id="header" role="banner">
+		<strong class="logo"><a href="#" class="sp" title="메인으로 이동">LFmall</a></strong>
+		<div id="gnb" role="navigation">
+			<ul>
+			<li><a href="#">홈</a></li>
+			<li><a href="#">패션</a></li>
+			<li><a href="#">잡화</a></li>
+			<li><a href="#">스포츠</a></li>
+			<li><a href="#">뷰티</a></li>
+			<li><a href="#">명품</a></li>
+			<li><a href="#" class="highlighting">아울렛</a></li><!-- [D] 강조되는 메뉴에 클래스명 highlighting 추가 -->
+			<li class="on"><a href="#" class="ico"><span class="ico_raum sp">RAUM EDITION</span></a></li><!-- [D] 선택된 메뉴에 클래스명 on 추가 -->
+			<li><a href="#" class="ico"><span class="ico_around sp">around the corner</span></a></li>
+			<li><a href="#">스타일</a></li>
+			</ul>
+			<!-- [D] GNB에서 선택된 메뉴명 넣어주세요 -->
+			<h1 class="blind">홈</h1>
+		</div>
+
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<!-- LNB -->
+		<!-- [D] LNB 노출 전 : left:-100%
+		         LNB 전체 노출되었을경우 left:0 -->
+		<div id="lnb" role="navigation" style="left:0">
+			<!-- [D]스크롤시 클래스명 opacity 추가해주세요 -->
+			<div class="top_nav opacity">
+				<!-- 로그인 전 -->
+				<!-- <button type="button" class="btn_login">로그인</button> -->
+				<!-- //로그인 전 -->
+				<!-- 로그인 후 -->
+				<a href="#" title="마이페이지로 이동" class="btn_mypage"><strong>홍길동</strong>님</a>
+				<!-- 로그인 후 -->
+				<div class="nav">
+					<button type="button" class="btn_close"><span class="sp">메뉴 닫기</span></button>
+					<!-- [D]활성화 시 highlighting 추가 -->
+					<a href="#" class="btn_wish highlighting"><span class="sp">위시리스트 페이지로 이동</span></a>
+					<a href="#" class="btn_noti highlighting"><span class="sp">알림리스트 페이지로 이동</span></a>
+				</div>
+			</div>
+			<div class="nav_content">
+				<ul class="depth1">
+				<li><a href="#" class="selt">브랜드</a></li>
+				<li>
+					<!-- [D]버튼 클릭시 클래스명 open 추가 -->
+					<button type="button" class="selt open">카테고리</button>
+					<ul class="depth2" style="display:block">
+					<li>
+						<strong class="depth3_tit">패션</strong>
+						<ul class="depth3">
+						<li><button type="button" class="select">여성의류</button></li><!-- [D]카테고리 선택시 클래스명 select 추가 -->
+						<li><button type="button">남성의류</button></li>
+						<li><button type="button">영캐쥬얼</button></li>
+						<li><button type="button">아동의류</button></li>
+						</ul>
+						<!-- [D]depth2에서 선택된 카테고리 명 넣어주세요 -->
+						<em class="blind">여성의류</em>
+						<!-- [D]카테고리 오픈시 display:block -->
+						<ul class="depth4" style="display:block">
+						<li><a href="#">전체</a></li>
+						<li><a href="#">티셔츠</a></li>
+						<li><a href="#">셔츠</a></li>
+						<li><a href="#">블라우스</a></li>
+						<li><a href="#">니트/가디건</a></li>
+						<li><a href="#">팬츠</a></li>
+						<li><a href="#">스커트</a></li>
+						<li><a href="#">원피스</a></li>
+						<li><a href="#">자켓/베스트</a></li>
+						<li><a href="#">점퍼</a></li>
+						<li><a href="#">코트</a></li>
+						<li><a href="#">정장</a></li>
+						<li><a href="#">언더웨어</a></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">잡화</strong>
+						<ul class="depth3">
+						<li><a href="#">가방</a></li>
+						<li><a href="#">지갑/벨트</a></li>
+						<li><a href="#">슈즈</a></li>
+						<li><a href="#">패션소품</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">스포츠</strong>
+						<ul class="depth3">
+						<li><a href="#">등산/캠핑</a></li>
+						<li><a href="#">골프</a></li>
+						<li><a href="#">스포츠캐쥬얼</a></li>
+						<li><a href="#">스포츠용품</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">뷰티</strong>
+						<ul class="depth3">
+						<li><a href="#">네츄럴뷰티</a></li>
+						<li><a href="#">화장품</a></li>
+						<li><a href="#">바디/헤어케어</a></li>
+						<li><a href="#">향수</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">수입명품</strong>
+						<ul class="depth3">
+						<li><a href="#">가방/지갑</a></li>
+						<li><a href="#">슈즈</a></li>
+						<li><a href="#">의류</a></li>
+						<li><a href="#">패션소품</a></li>
+						</ul>
+					</li>
+					</ul>
+				</li>
+				<li>
+					<button type="button" class="selt"><span class="highlighting">아울렛</span></button>
+					<ul class="depth2" style="display:none">
+					<li>
+						<strong class="depth3_tit">패션</strong>
+						<ul class="depth3">
+						<li><button type="button">여성의류</button></li><!-- [D]카테고리 선택시 클래스명 select 추가 -->
+						<li><button type="button">남성의류</button></li>
+						<li><button type="button">영캐쥬얼</button></li>
+						<li><button type="button">아동의류</button></li>
+						</ul>
+						<!-- [D]depth2에서 선택된 카테고리 명 넣어주세요 -->
+						<em class="blind">여성의류</em>
+						<!-- [D]카테고리 오픈시 display:block -->
+						<ul class="depth4" style="display:none">
+						<li><a href="#">전체</a></li>
+						<li><a href="#">티셔츠</a></li>
+						<li><a href="#">셔츠</a></li>
+						<li><a href="#">블라우스</a></li>
+						<li><a href="#">니트/가디건</a></li>
+						<li><a href="#">팬츠</a></li>
+						<li><a href="#">스커트</a></li>
+						<li><a href="#">원피스</a></li>
+						<li><a href="#">자켓/베스트</a></li>
+						<li><a href="#">점퍼</a></li>
+						<li><a href="#">코트</a></li>
+						<li><a href="#">정장</a></li>
+						<li><a href="#">언더웨어</a></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">잡화</strong>
+						<ul class="depth3">
+						<li><a href="#">가방</a></li>
+						<li><a href="#">지갑/벨트</a></li>
+						<li><a href="#">슈즈</a></li>
+						<li><a href="#">패션소품</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">스포츠</strong>
+						<ul class="depth3">
+						<li><a href="#">등산/캠핑</a></li>
+						<li><a href="#">골프</a></li>
+						<li><a href="#">스포츠캐쥬얼</a></li>
+						<li><a href="#">스포츠용품</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">뷰티</strong>
+						<ul class="depth3">
+						<li><a href="#">네츄럴뷰티</a></li>
+						<li><a href="#">화장품</a></li>
+						<li><a href="#">바디/헤어케어</a></li>
+						<li><a href="#">향수</a></li>
+						</ul>
+					</li>
+					<li>
+						<strong class="depth3_tit">수입명품</strong>
+						<ul class="depth3">
+						<li><a href="#">가방/지갑</a></li>
+						<li><a href="#">슈즈</a></li>
+						<li><a href="#">의류</a></li>
+						<li><a href="#">패션소품</a></li>
+						</ul>
+					</li>
+					</ul>
+				</li>
+				<li><a href="#" class="selt">라움에디션</a></li>
+				<li><a href="#" class="selt">어라운드더코너</a></li>
+				</ul>
+				<div class="etc_menu">
+					<a href="#">세일&amp;이벤트</a>
+					<a href="#">스타일</a>
+					<a href="#">베스트</a>
+				</div>
+				<div class="card_template_wrap">
+					<a href="#" class="card_header">
+						<strong class="mtt">최근 본 상품</strong>
+						<span class="btn_more">상품 더보기</span>
+					</a>
+					<div class="card_template3 tmpl_20">
+						<!-- [D]view 확인용으로 style 적용시켜두었습니다. 개발 적용시엔 적용된 모든 style값 제거해주세요 -->
+						<ul class="template type4" style="width:420px">
+						<li style="width:105px"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></span></a></li>
+						<li style="width:105px"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></span></a></li>
+						<li style="width:105px"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></span></a></li>
+						<li style="width:105px"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bot_nav">
+					<a href="#">고객센터</a>
+					<a href="#">설정</a>
+				</div>
+			</div>
+		</div>
+		<!-- //LNB -->
+
+		<div class="search_area" role="search">
+			<!-- [D] 버튼 클릭시 .search_artbx display:block 적용 및 팝업 내 input창에 포커싱 적용 -->
+			<button type="button" title="검색 팝업창으로 이동" class="btn_srch_pop">
+				<span class="blind">추천검색</span>봄 꽃 축제, 스타일 지침서
+			</button>
+			<a href="#" class="btn_srch"><span class="sp">추천검색 페이지로 이동</span></a>
+			<!-- [D]검색 팝업 -->
+			<div class="search_artbx" style="display:none">
+				추후 검색 추가
+			</div>
+			<!-- //검색 팝업 -->
+		</div>
+
+		<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+		<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+
+		<div class="secret_artbx" style="display:none">
+			<p class="tit"><strong class="name">홍길동</strong> 님을 위한 특별한 혜택</p>
+			<div class="btn_area">
+				<div class="inp_wrap">
+					<span class="inp_chk"><input type="checkbox" id="chk01" checked=""></span>
+					<label for="chk01" class="inp_label">다시보지않기</label>
+				</div>
+				<button type="button" class="btn_cls"><span class="sp">레이어 닫기</span></button>
+			</div>
+			<ul class="lst">
+			<li><a href="#">[ 패션 ] VIP 대상 헤지스 시즌오프 온라인 선오픈</a></li>
+			<li><a href="#">[ 잡화 ] 고객 등급에 맞는 추가 마일리지 지급</a></li>
+			<li><a href="#">[ 스포츠 ] 라푸마 신규 회원 시크릿</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="content" role="main">
+			
+		</div>
+	</div>
+
+	<!-- [D] 하단메뉴 -->
+	<div class="bottom_nav">
+		<a href="#" class="ico_home"><span class="sp">메인 페이지로 이동</span></a>
+		<a href="#" class="ico_menu"><span class="sp">메뉴 열기</span></a>
+		<a href="#" class="ico_brand"><span class="sp">브랜드 페이지로 이동</span></a>
+		<a href="#" class="ico_mypage"><span class="sp">마이 페이지로 이동</span></a>
+	</div>
+	<!-- // 하단메뉴 -->
+</div>
+</body>
+</html>

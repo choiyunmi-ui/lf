@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>위시리스트 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="sub shop_wish_area">
+	<div class="top_fix">
+		<div class="location">
+			<h1 class="mtt">위시리스트</h1>
+			<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+			<div class="sub_menu">
+				<a href="#" class="btn_view"><span class="sp">최근본페이지로 이동</span></a>
+				<a href="#" class="btn_wish highlighting"><span class="sp">위시리스트 페이지로 이동</span></a>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="content" role="main">
+			
+			<div class="list_sort type2 tmpl_407">
+				<ul class="sort_lst type2">
+				<li>
+					<button type="button" class="selt"><span>최근저장순</span></button>
+					<!-- [D] .selt 선택시 display:block -->
+					<div class="selt_ly" style="display:none">
+						<ul class="lst">
+						<li class="select"><button type="button">최근 저장순</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+						<li><button type="button">높은 가격순</button></li>
+						<li><button type="button">낮은 가격순</button></li>
+						<li><button type="button">할인율 높은순</button></li>
+						<li><button type="button">가나다순(브랜드명)</button></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<button type="button" class="selt"><span>카테고리</span></button>
+					<!-- [D] .selt 선택시 display:block -->
+					<div class="selt_ly type2" style="display:none">
+						<ul class="lst">
+						<li class="select"><!-- [D] 선택된 경우 클래스명 select 추가 -->
+							<button type="button">여성의류(<span>3</span>)</button>
+							<div class="depth2">
+								<ul>
+								<li class="select"><button type="button">티셔츠(<span>1</span>)</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+								<li><button type="button">원피스(<span>1</span>)</button></li>
+								</ul>
+							</div>
+						</li>
+						<li><button type="button">남성의류(<span>1</span>)</button></li>
+						<li><button type="button">신발(<span>1</span>)</button></li>
+						<li><button type="button">의류<span>(수입명품)</span></button></li>
+						</ul>
+					</div>
+				</li>
+				</ul>
+			</div>
+			<div class="select_ctrl">
+				<span class="inp_chk3">
+					<input type="checkbox" id="select_all" checked="">
+					<label for="select_all">전체선택 (2/2)</label>
+				</span>
+				<button type="button" class="btn_s">선택상품삭제</button>
+			</div>
+
+			<div class="card_template4">
+			<ul class="template">
+			<li>
+				<span class="inp_chk4"><input type="checkbox" checked=""></span>
+				<div class="in">
+					<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_l14.jpg" alt=""></a>
+					<div class="img_caption basic">
+						<a href="#">
+							<strong class="name"><span class="label">16SS</span><span class="brand">DATE</span></strong>
+							<p class="prdt_tit"><span class="category">Regular</span>화이트 펀칭 셔링 디테일 원피스</p>
+							<dl class="price">
+							<dt class="blind">할인가</dt>
+							<dd><ins>33,599,000</ins></dd>
+							<dt class="blind">가격</dt>
+							<dd><del>33,539,100</del></dd>
+							<dt class="blind">할인율</dt>
+							<dd class="discount">15%</dd>
+							</dl>
+						</a>
+						<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+						<button type="button" class="btn_bag on"><span class="sp">개별 구매</span></button>
+						<!-- [D] 개별 구매 버튼 클릭 시 하단 레이어 팝업 display:block -->
+						<div class="ly_pop_wrap dim" style="display:block">
+							<div class="ly_pop">
+								<div class="ly_tit"><strong class="mtt">옵션 선택</strong></div>
+								<div class="ly_content">				
+									<ul class="option_lst2">
+									<li>
+										<em class="opt_tit">색상</em>
+										<div class="opt_cont">
+											<div class="circ_rdo_group">
+												<div class="inp_wrap">
+													<!-- [D] 해당 색상의 색상코드를 background에 지정 -->
+													<input type="radio" name="acolor" id="acolor01" style="background:#5cc4ef">
+													<!-- [D] 해당 색상명을 label에 지정 -->
+													<label for="acolor01">하늘색</label>
+												</div>
+												<div class="inp_wrap">
+													<input type="radio" name="acolor" id="acolor02" style="background:#fff" checked>
+													<label for="acolor02">흰색</label>
+												</div>
+												<div class="inp_wrap">
+													<input type="radio" name="acolor" id="acolor03" style="background:#7c5297">
+													<label for="acolor03">보라색</label>
+												</div>
+												<div class="inp_wrap">
+													<input type="radio" name="acolor" id="acolor04" style="background:#975258">
+													<label for="acolor04">색상명</label>
+												</div>
+												<div class="inp_wrap">
+													<input type="radio" name="acolor" id="acolor05" style="background:#6c9d4c">
+													<label for="acolor05">색상명</label>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<em class="opt_tit">사이즈</em>
+										<div class="opt_cont">
+											<div class="rect_rdo_group">
+												<div class="inp_wrap">
+													<input type="radio" name="asize" id="asize01" class="inp_rect_rdo" disabled>
+													<label for="asize01">036</label>
+												</div>
+												<div class="inp_wrap">
+													<input type="radio" name="asize" id="asize02" class="inp_rect_rdo">
+													<label for="asize02">037</label>
+												</div>
+												<div class="inp_wrap">
+													<input type="radio" name="asize" id="asize03" class="inp_rect_rdo">
+													<label for="asize03">038</label>
+												</div>
+												<div class="inp_wrap">
+													<input type="radio" name="asize" id="asize04" class="inp_rect_rdo">
+													<label for="asize04">039</label>
+												</div>
+												<div class="inp_wrap">
+													<button type="button" class="btn_s">재입고 알림</button>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<em class="opt_tit">수량</em>
+										<div class="opt_cont">
+											<div class="qnty_bx">
+												<em class="num"><span class="blind">현재수량</span>1</em>
+												<button type="button" class="btn_minus"><span class="sp">수량줄임</span></button>
+												<button type="button" class="btn_plus"><span class="sp">수량추가</span></button>
+											</div>
+										</div>
+									</li>
+									</ul>				
+								</div>
+								<div class="ly_btn_area type2">
+									<button type="button" class="btn btn_bg_wh">쇼핑백담기</button>
+									<button type="button" class="btn">구매하기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn_del"><span class="sp">삭제</span></button>
+				</div>
+			</li>
+			<li>
+				<span class="inp_chk4"><input type="checkbox" checked=""></span>
+				<div class="in">
+					<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_l15.jpg" alt=""></a>
+					<div class="img_caption basic">
+						<a href="#">
+							<strong class="name"><span class="label">16SS</span><span class="brand">DATE</span></strong>
+							<p class="prdt_tit"><span class="category">Slim</span>핑크 시스루 슬림 민소매 원피스</p>
+							<dl class="price">
+							<dt class="blind">할인가</dt>
+							<dd><ins>391,300</ins></dd>
+							<dt class="blind">가격</dt>
+							<dd><del>559,000</del></dd>
+							<dt class="blind">할인율</dt>
+							<dd class="discount">30%</dd>
+							</dl>
+						</a>
+						<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+						<button type="button" class="btn_bag on"><span class="sp">개별 구매</span></button>
+					</div>
+					<button type="button" class="btn_del"><span class="sp">삭제</span></button>
+				</div>
+			</li>
+			<li>
+				<span class="inp_chk4"><input type="checkbox" checked=""></span>
+				<div class="in">
+					<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_l16.jpg" alt=""></a>
+					<div class="img_caption basic">
+						<a href="#">
+							<strong class="name"><span class="label">16SS</span><span class="brand">DATE</span></strong>
+							<p class="prdt_tit">옐로우 사각 쉐입로젤라 네임택 장식 스몰 토트</p>
+							<dl class="price">
+							<dt class="blind">할인가</dt>
+							<dd><ins>3,599,000</ins></dd>
+							<dt class="blind">가격</dt>
+							<dd><del>3,539,100</del></dd>
+							<dt class="blind">할인율</dt>
+							<dd class="discount">15%</dd>
+							</dl>
+						</a>
+						<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+						<button type="button" class="btn_bag on"><span class="sp">개별 구매</span></button>
+					</div>
+					<button type="button" class="btn_del"><span class="sp">삭제</span></button>
+				</div>
+			</li>
+			<li>
+				<span class="inp_chk4"><input type="checkbox" checked=""></span>
+				<div class="soldout"><span class="sp">판매종료</span></div>
+				<div class="in">
+					<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_l17.jpg" alt=""></a>
+					<div class="img_caption basic">
+						<a href="#">
+							<strong class="name"><span class="label">16SS</span><span class="brand">DATE</span></strong>
+							<p class="prdt_tit"><span class="category">2cm</span>베이지 진주 포인트 구두</p>
+							<dl class="price">
+							<dt class="blind">할인가</dt>
+							<dd><ins>3,599,000</ins></dd>
+							<dt class="blind">가격</dt>
+							<dd><del>3,539,100</del></dd>
+							<dt class="blind">할인율</dt>
+							<dd class="discount">15%</dd>
+							</dl>
+						</a>
+						<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+						<button type="button" class="btn_bag"><span class="sp">개별 구매</span></button>
+					</div>
+					<button type="button" class="btn_del"><span class="sp">삭제</span></button>
+				</div>
+			</li>
+			</ul>
+			</div>
+
+			<div class="btm_msg">
+				<p class="inp_alert type4">판매 종료된 상품은 자동으로 삭제됩니다.</p>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

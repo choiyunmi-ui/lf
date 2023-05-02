@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap">
+	<div class="filter_ly">
+		<!-- [D]스크롤시 클래스명 opacity 추가해주세요 -->
+		<div class="top_area">
+			<h1 class="tit">상품조건</h1>
+			<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+		</div>
+		<div class="filter_content">
+			<ul class="depth1">
+			<li>
+				<div class="option">
+					<strong class="selt_tit">목록보기옵션</strong>
+					<div class="view_option">
+						<!-- [D]선택된 버튼에 클래스명 select 추가 -->
+						<button type="button" class="list_type"><span class="sp">리스트형</span></button>
+						<button type="button" class="full_type"><span class="sp">풀형</span></button>
+						<button type="button" class="card_type select"><span class="sp">카드형</span></button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<!-- [D] 버튼 클릭시 클래스명 open 추가 -->
+				<button type="button" class="selt">
+					<strong class="selt_tit">정렬순서</strong>
+					<p class="selt_txt"><span>판매 인기순</span></p>
+				</button>
+				<ul class="depth2" style="display:none">
+				<li><button type="button" class="select">판매 인기순</button></li>
+				<li><button type="button">신상품순</button></li>
+				<li><button type="button">높은 가격순</button></li>
+				<li><button type="button">냦은 가격순</button></li>
+				<li><button type="button">할인율 높은순</button></li>
+				<li><button type="button">고객 추천순</button></li>
+				<li><button type="button">MD추천순</button></li>
+				</ul>
+			</li>
+			<li>
+				<button type="button" class="selt">
+					<strong class="selt_tit">성별</strong>
+					<p class="selt_txt"><span>여성의류</span></p>
+				</button>
+				<ul class="depth2 type2" style="display:none">
+				<li><button type="button" class="select">여성</button></li>
+				<li><button type="button">남성</button></li>
+				<li><button type="button">유니섹스</button></li>
+				<li><button type="button">키즈</button></li>
+				</ul>
+			</li>
+			<li>
+				<button type="button" class="selt">
+					<strong class="selt_tit">브랜드</strong>
+					<p class="selt_txt"><span>닥스</span><span>바네사브루노</span></p>
+				</button>
+				<ul class="depth2 type3" style="display:none">
+				<li><button type="button">까르벵 <span>(7,521)</span></button></li>
+				<li><button type="button">꼬떼 <span>(5,217)</span></button></li>
+				<li><button type="button" class="select">닥스 <span>(35,217)</span></button></li>
+				<li><button type="button">라움 <span>(35,217)</span></button></li>
+				<li><button type="button">라켈 알레그라 <span>(5,217)</span></button></li>
+				<li><button type="button">마스콥 <span>(3,217)</span></button></li>
+				<li><button type="button" class="select">바네사브루노 <span>(23,217)</span></button></li>
+				<li><button type="button">빈스 <span>(3,217)</span></button></li>
+				</ul>
+			</li>
+			<li>
+				<button type="button" class="selt">
+					<strong class="selt_tit">카테고리</strong>
+					<p class="selt_txt"><span>원피스<span class="sp"></span>긴팔 원피스</span><span>점프 수트</span></p>
+				</button>
+				<ul class="depth2 type3">
+				<li>
+					<button type="button" class="select">여성의류</button>
+					<!-- [D]오픈될 경우 display:block -->
+					<div class="depth3" style="display:none">
+						<ul>
+						<li><button type="button">전체</button></li>
+						<li>
+							<!-- [D]카테고리 중복선택일 경우 텍스트 span으로 감싸고 클래스명 highlighting 추가해주세요 -->
+							<button type="button"><span class="highlighting">티셔츠</span></button>
+						</li>
+						<li><button type="button">셔츠/블라우스</button></li>
+						<li><button type="button">니트/가디건</button></li>
+						<!-- [D]44px + depth4의 높이값 = li의 height값 으로 값 계산하여 개발 적용부탁드립니다. -->
+						<li style="height:150px">
+							<button type="button" class="select">원피스</button>
+							<!-- [D]오픈될 경우 display:block -->
+							<div class="depth4" style="display:none">
+								<ul>
+								<li><button type="button" class="select">전체</button></li>
+								<li><button type="button">반팔 원피스</button></li>
+								<li><button type="button">민소매 원피스</button></li>
+								<li><button type="button">점프수트</button></li>
+								</ul>
+							</div>
+						</li>
+						<li><button type="button">팬츠</button></li>
+						<li><button type="button">스커트</button></li>
+						<li><button type="button">자켓/점퍼</button></li>
+						<li><button type="button">코트</button></li>
+						<li><button type="button">가죽/퍼</button></li>
+						<li><button type="button">언더웨어</button></li>
+						</ul>
+					</div>
+				</li>
+				<li><button type="button">남성의류</button></li>
+				<li><button type="button">유니섹스/키즈</button></li>
+				<li><button type="button">패션잡화</button></li>
+				</ul>
+			</li>
+			<li>
+				<button type="button" class="selt">
+					<strong class="selt_tit">가격대</strong>
+					<p class="selt_txt"><span>50만원 이상</span><span>150만원 미만</span></p>
+				</button>
+				<div class="price_slide" style="display:none">
+					<div class="bar_wrap">
+						<!-- [D]각 해당하는 금액에 버튼이 위치할 경우 아래 값 넣어주세요
+						     10만원 : left:0
+							  50만원 : left:33.3% / right:66.6%
+						     100만원 : left:66.6% / right:33.3%
+						     150만원 : right:0 -->
+						<div class="bar" style="left:33.3%;right:33.3%">
+							<button type="button" class="left_hdl"><span class="sp"></span></button>
+							<button type="button" class="right_hdl"><span class="sp"></span></button>
+						</div>
+					</div>
+					<ul class="price">
+					<li class="prc1">10<span class="blind">만원</span></li>
+					<li class="prc2 on">50<span class="blind">만원</span></li><!-- [D]금액 활성화시 클래스명 on 추가 -->
+					<li class="prc3 on">100<span class="blind">만원</span></li>
+					<li class="prc4">150<span class="blind">만원</span></li>
+					</ul>
+				</div>
+			</li>
+			<li class="size">
+				<button type="button" class="selt">
+					<strong class="selt_tit">사이즈</strong>
+					<p class="selt_txt"><span>XXL(110)</span><span>XXXL(115)</span></p>
+				</button>
+				<ul class="depth2 type2" style="display:none">
+				<li><button type="button">XXS<span>(80)</span></button></li>
+				<li><button type="button">XS<span>(85)</span></button></li>
+				<li><button type="button">S<span>(90)</span></button></li>
+				<li><button type="button">M<span>(95)</span></button></li>
+				<li><button type="button">L<span>(100)</span></button></li>
+				<li><button type="button">XL<span>(105)</span></button></li>
+				<li><button type="button" class="select">XXL<span>(110)</span></button></li>
+				<li><button type="button" class="select">XXXL<span>(115)</span></button></li>
+				</ul>
+			</li>
+			<li>
+				<button type="button" class="selt">
+					<strong class="selt_tit">굽높이</strong>
+					<p class="selt_txt"><span>플랫(~3cm)</span></p>
+				</button>
+				<ul class="depth2" style="display:none">
+				<li><button type="button" class="select">플랫<span>(~3cm)</span></button></li>
+				<li><button type="button">미들<span>(3~6cm)</span></button></li>
+				<li><button type="button">하이<span>(6cm~)</span></button></li>
+				</ul>
+			</li>
+			<li>
+				<button type="button" class="selt">
+					<strong class="selt_tit">색상</strong>
+					<p class="selt_txt"><span>크림슨 레드</span></p>
+				</button>
+				<div class="color_list" style="display:none">
+					<ul>
+					<li><span class="cl_BEIGE"><input type="checkbox" title="베이지"></span></li>
+					<li><span class="cl_BLACK"><input type="checkbox" title="블랙"></span></li>
+					<li><span class="cl_BLUE"><input type="checkbox" title="블루"></span></li>
+					<li><span class="cl_BRONZE"><input type="checkbox" title="브론즈"></span></li>
+					<li><span class="cl_BROWN"><input type="checkbox" title="브라운"></span></li>
+					<li><span class="cl_CAMEL"><input type="checkbox" title="카멜"></span></li>
+					<li><span class="cl_CHOCOLATE"><input type="checkbox" title="초코라뗴"></span></li>
+					<li><span class="cl_CREAM"><input type="checkbox" title="크림"></span></li>
+					<li><span class="cl_GREEN"><input type="checkbox" title="그린"></span></li>
+					<li><span class="cl_GREY"><input type="checkbox" title="그레이"></span></li>
+					<li><span class="cl_KHAKI"><input type="checkbox" title="카키"></span></li>
+					<li><span class="cl_LEMON"><input type="checkbox" title="레몬"></span></li>
+					<li><span class="cl_MINT"><input type="checkbox" title="민트"></span></li>
+					<li><span class="cl_MUSTARD"><input type="checkbox" title="머스타드"></span></li>
+					<li><span class="cl_NAVY"><input type="checkbox" title="네이비"></span></li>
+					<li><span class="cl_ORANGE"><input type="checkbox" title="오렌지"></span></li>
+					<li><span class="cl_OYSTER"><input type="checkbox" title="오이스터"></span></li>
+					<li><span class="cl_PEACH"><input type="checkbox" title="피치"></span></li>
+					<li><span class="cl_PINK"><input type="checkbox" title="핑크"></span></li>
+					<li><span class="cl_PURPLE"><input type="checkbox" title="퍼플"></span></li>
+					<li><span class="cl_RED"><input type="checkbox" title="레드"></span></li>
+					<li><span class="cl_VIOLET"><input type="checkbox" title="바이올렛"></span></li>
+					<li><span class="cl_YELLOW"><input type="checkbox" title="옐로우"></span></li>
+					<li><span class="cl_GOLD"><input type="checkbox" title="골드"></span></li>
+					<li><span class="cl_SILVER"><input type="checkbox" title="실버"></span></li>
+					<li><span class="cl_MULTI"><input type="checkbox" title="멀티"></span></li>
+					<li><span class="cl_IVORY"><input type="checkbox" title="아이보리"></span></li>
+					<li><span class="cl_WHITE"><input type="checkbox" title="화이트"></span></li>
+					<li><span class="cl_NO"><input type="checkbox" title="없음"></span></li>
+					</ul>
+				</div>
+			</li>
+			</ul>
+		</div>
+		<div class="ly_btn_area type2">
+			<button type="button" class="btn btn_bg_wh">초기화</button>
+			<button type="button" class="btn">확인</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

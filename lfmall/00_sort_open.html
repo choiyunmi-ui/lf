@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+<style>
+h1{margin:20px 0 10px;font-size:15px}
+#wrap{overflow:visible}
+.mtt{margin:0}
+.location{margin-top:10px}
+.list_sort.type2{margin-top:200px}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<h1>필터</h1>
+	<div class="list_sort">
+		<!-- [D] 각 타입마다 아래 클래스명 넣어주세요
+		         풀형 : 디폴트(클래스 추가 없음)
+					카드형 : card_type 
+					리스트형 : list_type -->
+		<button type="button" class="btn_lst_sort card_type" title="상품 리스트 정렬">
+			<!-- [D] 해당 타입 텍스트 넣어주세요 -->
+			<span class="sp">카드형</span>
+		</button>
+		<ul class="sort_lst">
+		<li class="step1">
+			<button type="button" class="selt">할인율높은순</button>
+			<!-- [D] .selt 선택시 display:block -->
+			<div class="selt_ly" style="display:block">
+				<ul class="lst">
+				<li class="select"><button type="button">판매인기순</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+				<li><button type="button">신상품순</button></li>
+				<li><button type="button">낮은가격순</button></li>
+				<li><button type="button">높은가격순</button></li>
+				<li><button type="button">할인율높은순</button></li>
+				<li><button type="button">고객추천순</button></li>
+				<li><button type="button">MD 추천순</button></li>
+				</ul>
+			</div>
+		</li>
+		<li class="step2"><button type="button" class="selt">브랜드</button></li>
+		<li class="step3"><button type="button" class="selt">카테고리</button></li>
+		</ul>
+		<button type="button" class="btn_filter"><span class="sp">상품조건 팝업 열기</span></button>
+	</div>
+	<div class="list_sort type2 tmpl_407">
+		<ul class="sort_lst type2">
+		<li>
+			<button type="button" class="selt"><span class="highlighting">카테고리 전체</span></button>
+			<!-- [D] .selt 선택시 display:block -->
+			<div class="selt_ly type2" style="display:block">
+				<ul class="lst">
+				<li class="select"><!-- [D] 선택된 경우 클래스명 select 추가 -->
+					<button type="button">여성의류(<span>3</span>)</button>
+					<div class="depth2">
+						<ul>
+						<li class="select"><button type="button">티셔츠(<span>1</span>)</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+						<li><button type="button">원피스(<span>1</span>)</button></li>
+						</ul>
+					</div>
+				</li>
+				<li><button type="button">남성의류(<span>1</span>)</button></li>
+				<li><button type="button">신발(<span>1</span>)</button></li>
+				<li><button type="button">의류<span>(수입명품)</span></button></li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<button type="button" class="selt"><span class="highlighting">온라인 판매인기순</span></button>
+			<!-- [D] .selt 선택시 display:block -->
+			<div class="selt_ly" style="display:none">
+				<ul class="lst">
+				<li class="select"><button type="button">스펜서 블루종</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+				<li><button type="button">후드 블루종</button></li>
+				<li><button type="button">블루종 자켓</button></li>
+				<li><button type="button">블루종 코트</button></li>
+				</ul>
+			</div>
+		</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

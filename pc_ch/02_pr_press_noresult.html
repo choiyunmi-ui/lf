@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>宣传渠道 : LF</title>
+<link rel="stylesheet" type="text/css" href="css/lf.css" />
+</head>
+<body>
+<!-- skip nav -->
+<ul id="skip">
+<li><a href="#gnb">跳转至主菜单</a></li>
+<li><a href="#content">跳转至文本领域</a></li>
+</ul>
+<!-- //skip nav -->
+<div id="wrap">
+	<!-- header -->
+	<?php include 'header_incl.html'; ?>
+	<!-- //header -->
+	
+	<hr>
+	
+	<!-- container -->
+	<div id="container">
+		<!-- 이미지 롤링 영역 -->
+		<div class="sub_spot">
+			<div class="snb_area">
+				<h2 class="sp h2_pr">宣传渠道</h2>
+				<!--[D] 1daps 활성화시 li class="selected" 추가 -->
+				<ul class="snb">
+				<li class="daps press selected"><a href="#"><span class="sp">新闻</span></a></li>
+				<li class="daps adv"><a href="#"><span class="sp">广告</span></a></li>
+				</ul>
+			</div>			
+		</div>
+		<!-- //이미지 롤링 영역 -->
+		<!-- content -->
+		<div id="content">
+			<div class="brand_area pr_area">				
+				<!--[D] 바로가기 버튼이 추가될 경우 div class="detail_info detail_info_v2" 추가 -->
+				<div class="detail_info">
+					<h3 class="sp h3_press">新闻</h3>
+					<p>最快、最准确的传达LF企业和品牌的消息。</p>
+					<div class="detail_inner">						
+						<p class="srch_result"><span class="txt_pt">'lafuma'</span> 全部通知数 <span class="txt_pt">00件</span></p>
+					</div>
+					<div class="detail_inner">						
+						<!-- [D] 선택됬을 경우 srch_selected 추가, 마우스 오버시 srch -->
+						<div class="srch">
+							<div class="inner">
+								<form action="">
+								<fieldset>
+								<legend>搜索</legend>									
+									<input type="text" value="请输入搜索关键词。" class="input_txt">
+									<button class="btn_srch"><span class="sp">搜索</span></button>
+								</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="content_area">							
+					<div class="info_soon info_soon_v4">
+						<div class="img_soon"><span class="blind">未找到符合搜索条件的卖场。请重新搜索。</span></div>
+						<div class="btn_area"><a href="#" class="btn_back">退回上一页</a><a href="#" class="btn_main">返回主页</a></div>
+					</div>		
+				</div>
+			</div>							
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<hr>
+	
+	<!-- footer -->
+	<?php include 'footer_incl.html'; ?>
+	<!-- //footer -->
+</div>
+</body>
+</html>

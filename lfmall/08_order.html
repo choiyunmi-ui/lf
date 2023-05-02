@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>주문서 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="sub order_area">
+	<div class="top_fix">
+		<div class="location">
+			<h1 class="mtt">주문서</h1>
+			<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		</div>
+	</div>
+	<div id="container">
+		<div id="content" role="main">
+			<form>
+			<fieldset>
+				<legend><span>주문서 작성</span></legend>
+				<div class="form_wrap">
+					<div class="prdt_artbx">
+						<div class="in">
+							<span class="img_wrap"><img src="img/@thumb/@thumb_s5.jpg"></span>
+							<div class="img_caption">
+								<h2 class="prdt">
+									<span class="brand">MAESTRO</span>
+									[밀라노 7드랍]<br>네이비/춘추/스트레치/순모/투버튼
+								</h2>
+								<dl class="detail_info">
+								<dt class="blind">색상</dt>
+								<dd class="color" style="background:#332f44">네이비</dd>
+								<dt class="blind">사이즈</dt>
+								<dd>자켓 <span>R77</span></dd>
+								<dd>팬츠 <span>082</span></dd>
+								<dt class="blind">갯수</dt>
+								<dd>1개</dd>
+								<dt class="blind">가격</dt>
+								<dd class="price">360,000</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<div class="step_artbx">
+						<div class="titbx">
+							<h3 class="tit"><span>STEP 1</span>할인/혜택 적용</h3>
+						</div>
+						<div class="cntbx">
+							<p class="alert_tx">상품 기본할인이 적용되어 있습니다.</p>
+							<div class="amount_area selling"><strong class="tit">판매가</strong><p class="tx"><span>30,000</span>원</p></div>
+							<ul class="discnt_lst">
+							<li>
+								<span class="inp_chk3">
+									<input type="checkbox" id="coupon">
+									<label for="coupon">쿠폰</label>
+								</span>
+								<!-- [D] 버튼 클릭시 클래스명 on 추가 -->
+								<button type="button" class="btn_more"><span class="sp">쿠폰 열기</span></button>
+								<!-- [D] 쿠폰 열기 버튼 클릭시 display:block -->
+								<div class="coupon_selt" style="display:none">
+									<div class="inp_wrap">
+										<label for="prdt_coupon" class="inp_lb">[밀라노 7드랍]네이비/춘추/스트레치/순모/투버튼</label>
+										<!-- [D]셀렉트 옵션 선택한 경우 클래스명 selt_none 제거해주세요 -->
+										<span class="inp_selt2 selt_none">
+											<select id="prdt_coupon">
+											<option>상품쿠폰을 선택해주세요</option>
+											<option>LFmall 플래티넘 50% 할인권</option>
+											</select>
+										</span>
+									</div>
+									<div class="inp_wrap">
+										<label for="prdt_coupon2" class="inp_lb">[밀라노 7드랍]네이비/춘추/스트레치/순모/투버튼</label>
+										<!-- [D]셀렉트 옵션 선택한 경우 클래스명 selt_none 제거해주세요 -->
+										<span class="inp_selt2 selt_none">
+											<select id="prdt_coupon2">
+											<option>쇼핑백쿠폰을 선택해주세요</option>
+											<option>LFmall 플래티넘 50% 할인권</option>
+											</select>
+										</span>
+									</div>
+								</div>
+								<dl class="discnt" style="display:none">
+								<dt class="blind">쿠폰적용 할인 금액</dt>
+								<dd>-<span>15,000</span>원</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="inp_chk3">
+									<input type="checkbox" id="mileage">
+									<label for="mileage">마일리지(<span>60,000</span>M)</label>
+								</span>
+								<span class="inp_txt milg"><input type="text" id="user_name"><span>M</span></span>
+								<dl class="discnt" style="display:none">
+								<dt class="blind">마일리지적용 할인 금액</dt>
+								<dd>-<span>0</span>원</dd>
+								</dl>
+							</li>
+							<li>
+								<span class="inp_chk3">
+									<input type="checkbox" id="egift_mileage">
+									<label for="egift_mileage">e기프트 마일리지(<span>60,000</span>M)</label>
+									<span class="etc_tx">2016.04.05까지 사용가능 / 사유 : e머니 6만(20만원이상)</span>
+								</span>
+								<dl class="discnt" style="display:none">
+								<dt class="blind">e기프트 마일리지적용 할인 금액</dt>
+								<dd>-<span>60,000</span>원</dd>
+								</dl>
+								<p class="noti">e기프트마일리지는 최종결제금액의 50%까지 사용가능합니다.<br>(단, SNS 공유를 통한 e기프트마일리지는 주문 1회당 5만M까지 사용가능)</p>
+							</li>
+							</ul>
+							<ul class="amount_area">
+							<li class="all_discnt">
+								<strong class="tit">총 할인금액</strong>
+								<p class="tx"><span>0</span>원</p>
+							</li>
+							<li>
+								<strong class="tit">배송비</strong>
+								<p class="tx"><span>0</span>원</p>
+							</li>
+							</ul>
+							<dl class="all_price">
+							<dt>최종결제금액</dt>
+							<dd>
+								<p class="per">(약 <span>0</span>% 할인)</p>
+								<strong class="price"><span>30,000</span>원</strong>
+							</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="step_artbx">
+						<div class="titbx">
+							<h3 class="tit"><span>STEP 2</span>배송지 정보</h3>
+							<button type="button" class="btn_s">변경하기</button>
+						</div>
+						<div class="cntbx">
+							<!-- 배송지가 없는 경우 -->
+							<div style="display:none">
+								<div class="inp_wrap">
+									<label for="recipient" class="inp_lb">받는분</label>
+									<span class="inp_txt"><input type="text" id="recipient" placeholder="받는 분을 입력해 주세요"></span>
+								</div>
+								<div class="inp_wrap">
+									<label for="user_address" class="inp_lb">주소</label>
+									<div class="inpbx adrs">
+										<button type="button" id="user_address" class="btn_m btn_bg_gr">주소찾기</button>
+										<span class="inp_txt"><input type="text" title="주소 자동 입력" readonly></span>
+									</div>
+									<span class="inp_txt"><input type="text" title="주소 입력" placeholder="주소를 입력해 주세요" readonly></span>
+									<span class="inp_txt"><input type="text" title="상세 주소 입력" placeholder="상세 주소를 입력해 주세요"></span>
+								</div>
+								<div class="inp_wrap">
+									<label for="user_ph2" class="inp_lb">휴대폰번호</label>
+									<div class="cellbx">
+										<span class="cell">
+											<span class="inp_selt2">
+												<select id="user_ph2" title="첫번째 번호">
+												<option>010</option> 
+												<option>011</option> 
+												</select>
+											</span>
+										</span>
+										<span class="cell">
+											<span class="inp_txt"><input type="text" title="가운데 번호"></span>
+										</span>
+										<span class="cell">
+											<span class="inp_txt"><input type="text" title="마지막 번호"></span>
+										</span>
+									</div>
+									<ul class="chk_lst">
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="ordlst" id="ord_default" checked>
+											<label for="ord_default">기본 배송지로 지정</label>
+										</span>
+									</li>
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="ordlst" id="ord_update" checked>
+											<label for="ord_update">회원정보 주소 업데이트</label>
+										</span>
+									</li>
+									</ul>
+								</div>
+								<div class="inp_wrap">
+									<label for="ord_msg" class="inp_lb">배송메세지</label>
+									<span class="inp_selt2">
+										<select id="ord_msg" title="배송메세지 입력방법 선택">
+										<option>직접 입력하기</option>
+										</select>
+									</span>
+									<div class="txtarea_wrap">
+										<span class="inp_txtarea">
+											<textarea maxlength="50" placeholder="50자 이내로 작성하여 주세요." style="height:79px"></textarea>
+										</span>
+										<p class="cnt"><em><span>0</span>자</em> / 50자</p>
+									</div>
+								</div>
+							</div>
+							<!-- 배송지가 있는 경우 -->
+							<div class="dvry_default" style="display:block">
+								<div class="inp_wrap">
+									<strong class="inp_lb">받는분</strong>
+									<p class="txt">홍길동 (010-1234-5678)</p>
+								</div>
+								<div class="inp_wrap">
+									<strong class="inp_lb">배송주소</strong>
+									<p class="txt">서울특별시 강남구 신사동 637번지 삼영빌딩 2층</p>
+								</div>
+								<div class="inp_wrap">
+									<label for="ord_msg_df" class="inp_lb">배송메세지</label>
+									<span class="inp_selt2">
+										<select id="ord_msg_df" title="배송메세지 입력방법 선택">
+										<option>선택해 주세요</option>
+										</select>
+									</span>
+									<!-- [D]직접 입력하기 선택시 노출 -->
+									<div class="txtarea_wrap" style="display:none">
+										<span class="inp_txtarea">
+											<textarea maxlength="50" placeholder="50자 이내로 작성하여 주세요." style="height:79px"></textarea>
+										</span>
+										<p class="cnt"><em><span>0</span>자</em> / 50자</p>
+									</div>
+								</div>
+								<ul class="chk_lst">
+								<li>
+									<span class="inp_chk3">
+										<input type="checkbox" id="lfmall_shopping" checked>
+										<label for="lfmall_shopping">LFmall 쇼핑백 함께 받기</label>
+									</span>
+								</li>
+								</ul>
+							</div>
+							<!-- 배송지 변경하기 -->
+							<div class="dvry_edit" style="display:none">
+								<div class="btn_area">
+									<button type="button" class="btn btn_bg">배송지추가</button>
+								</div>
+								<ul class="dvry_lst">
+								<li>
+									<div class="in">
+										<div class="namebx">
+											<strong class="name">홍길동</strong>
+											<span class="label">기본배송지</span>
+											<span class="label type2">현재배송지</span>
+										</div>
+										<p class="tx">서울 강남구 역삼동 123 1033동 1231호</p>
+										<p class="tx">010-1234-5678</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="in">
+										<div class="namebx">
+											<strong class="name">홍길동</strong>
+											<span class="label type3">최근배송지</span>
+										</div>
+										<p class="tx">서울 강남구 역삼동 123 1033동 1231호</p>
+										<p class="tx">010-1234-5678</p>
+										<span class="btn_s">선택</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="in">
+										<div class="namebx">
+											<strong class="name">홍길동</strong>
+										</div>
+										<p class="tx">서울 강남구 역삼동 123 1033동 1231호</p>
+										<p class="tx">010-1234-5678</p>
+										<span class="btn_s">선택</span>
+									</a>
+								</li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					<div class="step_artbx step3">
+						<div class="titbx">
+							<h3 class="tit"><span>STEP 3</span>결제수단 및 정보</h3>
+						</div>
+						<div class="cntbx">
+							<ul class="pay_lst">
+							<li class="select"><button type="button">신용카드 결제</button></li><!-- [D]버튼 클릭시 클래스명 select 추가 -->
+							<li><button type="button">무통장입금</button></li>
+							<li><button type="button">휴대폰 결제</button></li>
+							<li><button type="button">카카오 페이</button></li>
+							<li><button type="button">페이나우</button></li>
+							<li><button type="button">PAYCO</button></li>
+							</ul>
+							<div class="infobx">
+								<div class="cellbx">
+									<span class="cell">
+										<span class="inp_selt2">
+											<select title="카드사 선택">
+											<option>카드사 선택</option>
+											</select>
+										</span>
+									</span>
+									<span class="cell">
+										<span class="inp_selt2">
+											<select title="할부기간 선택">
+											<option>할부기간 선택</option>
+											</select>
+										</span>
+									</span>
+								</div>
+								<p class="chk_lst"><span class="inp_chk3"><input type="checkbox" id="pay_dft" checked><label for="pay_dft">지금 선택한 결제 수단을 다음에도 사용</label></span></p>
+								<div class="termsbx">
+									<strong class="all_chk"><span class="inp_chk3"><input type="checkbox" name="ordlst" id="pay_term"><label for="pay_term">결제대행서비스 약관에 모두 동의합니다.</label></span></strong>
+									<ul class="terms_lst">
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="term_agree" id="terms1">
+											<label for="terms1">서비스 이용약관 동의</label>
+										</span>
+										<!-- [D]버튼 클릭시 클래스면 on 추가 -->
+										<button type="button" class="btn_more"><span class="sp">약관 더보기</span></button>
+										<!-- [D]더보기 버튼 클릭시 display:block -->
+										<div class="terms_ly" style="display:none">
+											신규회원 서비스 이용 약관동의 신규회원 서비스 이용 약관동의 의 신규회원 서비스 이용 약관동의 신규회원 서비스 이용 약관동의 신규회원 서비스 이용 약관동의신규회원 서비스 이용 약관동의 신규회원 서비스 이용 약관동의신규회원 서비스 이용 약관동의 신규회원 서비스 이용 약관동의신규회원 서비스 이용 약관동의
+										</div>
+									</li>
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="term_agree" id="terms2">
+											<label for="terms2">개인정보 수집 및 이용동의</label>
+										</span>
+										<button type="button" class="btn_more"><span class="sp">약관 더보기</span></button>
+									</li>
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="term_agree" id="terms3">
+											<label for="terms3">개인정보 제공 및 위탁동의</label>
+										</span>
+										<button type="button" class="btn_more"><span class="sp">약관 더보기</span></button>
+									</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="fm_btn_area">
+						<button type="button" class="btn btn_bg">결제하기</button>
+					</div>
+					<ul class="noti_lst">
+					<li>4월 신규 회원 20% 쿠폰+20% 페이백 <span>(7만원 이상 구매시)</span></li>
+					</ul>
+				</div>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<div class="bottom_nav">
+		<a href="#" class="ico_home"><span class="sp">메인 페이지로 이동</span></a>
+		<a href="#" class="ico_menu"><span class="sp">메뉴 열기</span></a>
+		<a href="#" class="ico_brand"><span class="sp">브랜드 페이지로 이동</span></a>
+		<a href="#" class="ico_mypage"><span class="sp">마이 페이지로 이동</span></a>
+	</div>
+
+	<div id="footer" role="contentinfo">
+	<div class="ft_nav">
+		<a href="#">로그인</a><a href="#">고객센터</a><a href="#">공지사항</a><a href="#">PC버전</a>
+	</div>
+	<address class="address">
+		<p><span>서울 강남구 언주로 870</span>LF 대표이사 오규식</p>
+		<p><span>연락처 : 1544-5114</span>사업자등록번호 : 211-87-87724</p>
+		<p>통신판매업신고 : 제 2010-서울강남-00066호</p>
+	</address>
+	<div class="terms">
+		<ul>
+		<li><a href="#">소비자피해보상 보험확인</a></li>
+		<li><a href="#">이용약관</a></li>
+		<li><a href="#">사업자 정보확인</a></li>
+		<li><a href="#">개인정보 취급방침</a></li>
+		</ul>
+	</div>
+</div>
+</div>
+</body>
+</html>

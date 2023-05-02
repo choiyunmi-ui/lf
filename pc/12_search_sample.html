@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>매장검색 : LF</title>
+<link rel="stylesheet" type="text/css" href="css/lf.css" />
+</head>
+<body>
+<!-- skip nav -->
+<ul id="skip">
+<li><a href="#gnb">주메뉴 바로가기</a></li>
+<li><a href="#content">본문 바로가기</a></li>
+</ul>
+<!-- //skip nav -->
+<div id="wrap">
+	<div id="header">
+		<!-- 전체메뉴 -->
+		<div class="header_top" style="display:none">
+			<div class="inner">
+				<ul class="lst_menu">
+				<li class="menu">
+					<a href="#" class="t_menu"><span class="sp">Home</span></a>
+				</li>
+				<li class="menu2">
+					<a href="#" class="t_menu"><span class="sp">Brand</span></a>
+					<ul class="smenu">
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Sports &amp; Outdoor</a></li>
+					<li><a href="#">Accessory</a></li>
+					<li><a href="#">Lifestyle</a></li>
+					</ul>
+				</li>
+				<li class="menu3">
+					<a href="#" class="t_menu"><span class="sp">PR Channel</span></a>
+					<ul class="smenu">
+					<li><a href="#">뉴스</a></li>
+					<li><a href="#">소셜</a></li>
+					<li><a href="#">광고</a></li>
+					</ul>
+				</li>
+				<li class="menu4">
+					<a href="#" class="t_menu"><span class="sp">Recruit</span></a>
+					<ul class="smenu">
+					<li><a href="#">인재상</a></li>
+					<li><a href="#">직무소개</a></li>
+					<li><a href="#">인사제도 &amp; 복리후생</a></li>
+					<li><a href="#">인재육성</a></li>
+					<li><a href="#">채용공고 &amp; 지원</a></li>
+					<li><a href="#">지원내역조회 &amp; 수정</a></li>
+					</ul>
+				</li>
+				<li class="menu5">
+					<a href="#" class="t_menu"><span class="sp">Company</span></a>
+					<ul class="smenu">
+					<li><a href="#">LF 소개</a></li>
+					<li><a href="#">CEO 인사말</a></li>
+					<li><a href="#">회사연혁</a></li>
+					<li><a href="#">CI 소개</a></li>
+					<li><a href="#">사회공헌</a></li>
+					<li><a href="#">IR</a></li>
+					</ul>
+				</li>
+				</ul>
+				<button class="btn_clse"><span class="sp">닫기</span></button>
+			</div>
+		</div>
+		<!-- 검색 영역 -->
+		<div class="header_top" style="display:">
+			<div class="inner">
+				<div class="srch_tit">
+					<h2 class="sp">STORE SEARCH</h2>
+					<p>LF 브랜드 매장을 쉽고 편리하게<br> 찾아보세요.</p>
+				</div>
+				<div class="srch_area">
+					<!-- [D] 선택됬을 경우 srch_selected 추가 -->
+					<div class="srch">
+						<div class="inner">
+							<form action="">
+							<fieldset>
+							<legend>검색</legend>
+								<input type="text" value="검색어를 입력해주세요." class="input_txt">
+								<button class="btn_srch"><span class="sp">검색</span></button>
+							</fieldset>
+							</form>
+						</div>
+					</div>
+					<div class="srch2">
+						<!-- [D] 딤드 : dimmed, 선택 : selected -->
+						<ul class="lst_srch">
+						<li class="type selected">
+							<a href="#" class="btn selected">브랜드 <span class="sp"></span></a>
+							<div class="ly_srch" style="display:block">
+								<div class="sc">
+									<ul class="srch_group">
+									<li>
+										<strong>WOMEN</strong>
+										<ul>
+										<li><a href="#">DAKS LADIES</a></li>
+										<li><a href="#">HAZZYS</a></li>
+										<li><a href="#">TNGT</a></li>
+										<li><a href="#">MOGG</a></li>
+										<li><a href="#">JILLSTUART</a></li>
+										<li><a href="#">JILL by JILLSTUART</a></li>
+										<li><a href="#">LEONARD</a></li>
+										<li><a href="#">ISABEL MARANT</a></li>
+										<li><a href="#">VANESSABRUNO</a></li>
+										<li><a href="#">VANESSABRUNO ATHE</a></li>
+										<li><a href="#">NEIL BARRETT</a></li>
+										<li><a href="#">VINCE</a></li>
+										<li><a href="#">JOSEPH</a></li>
+										<li><a href="#">CARVEN</a></li>
+										<li><a href="#">MAWMARA</a></li>
+										</ul>
+										<strong>WOMEN</strong>
+										<ul>
+										<li><a href="#">DAKS LADIES</a></li>
+										<li><a href="#">HAZZYS</a></li>
+										<li><a href="#">TNGT</a></li>
+										<li><a href="#">MOGG</a></li>
+										<li><a href="#">JILLSTUART</a></li>
+										<li><a href="#">JILL by JILLSTUART</a></li>
+										<li><a href="#">LEONARD</a></li>
+										<li><a href="#">ISABEL MARANT</a></li>
+										<li><a href="#">VANESSABRUNO</a></li>
+										<li><a href="#">VANESSABRUNO ATHE</a></li>
+										<li><a href="#">NEIL BARRETT</a></li>
+										<li><a href="#">VINCE</a></li>
+										<li><a href="#">JOSEPH</a></li>
+										<li><a href="#">CARVEN</a></li>
+										<li><a href="#">MAWMARA</a></li>
+										</ul>
+									</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="type2">
+							<a href="#" class="btn">시/도 <span class="sp"></span></a>
+							<div class="ly_srch" style="display:none">
+								<div class="sc">
+									<ul class="srch_group">
+									<li><a href="#">강원도</a></li>
+									<li><a href="#">경기도</a></li>
+									<li><a href="#">경상남도</a></li>
+									<li><a href="#">경상북도</a></li>
+									<li><a href="#">광주광역시</a></li>
+									<li><a href="#">대구광역시</a></li>
+									<li><a href="#">대전광역시</a></li>
+									<li><a href="#">부산광역시</a></li>
+									<li><a href="#">서울특별시</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="type3">
+							<a href="#" class="btn dimmed">시/군/구 <span class="sp"></span></a>
+							<div class="ly_srch" style="display:none">
+								<div class="sc">
+									<ul class="srch_group">
+									<li><a href="#">강남구</a></li>
+									<li><a href="#">강동구</a></li>
+									<li><a href="#">강북구</a></li>
+									<li><a href="#">강서구</a></li>
+									<li><a href="#">관악구</a></li>
+									<li><a href="#">광진구</a></li>
+									<li><a href="#">구로구</a></li>
+									<li><a href="#">금천구</a></li>
+									<li><a href="#">노원구</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="type4">
+							<a href="#" class="btn">매장형태 <span class="sp"></span></a>
+							<div class="ly_srch" style="display:none">
+								<div class="sc">
+									<ul class="srch_group">
+									<li><a href="#">백화점</a></li>
+									<li><a href="#">일반가두매장</a></li>
+									<li><a href="#">상설할인매장</a></li>
+									<li><a href="#">할인점입점</a></li>
+									<li><a href="#">종합가두매장</a></li>
+									<li><a href="#">가두매장</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						</ul>
+						<button class="btn_srch"><span class="sp">검색</span></button>
+					</div>
+				</div>
+				<button class="btn_clse"><span class="sp">닫기</span></button>
+			</div>
+		</div>
+		
+		<div class="gnb_area_wrap">
+			<div class="gnb_area">
+				<div class="h_area">
+					<h1><a href="#"><span class="sp">LF</span></a></h1>
+				</div>
+				<div id="gnb" class="all_menu">
+					<!-- [D] 전체 메뉴 선택 될 경우 btn_menu_on 추가 -->
+					<a href="#" class="btn_menu"><span class="sp">전체메뉴</span></a>
+				</div>
+				<div class="etc">
+					<div class="inner">
+						<a href="#" class="btn_etc"><span class="sp">LF Mall</span></a>
+						<a href="#" class="btn_etc2"><span class="sp">LF Members</span></a>
+						<a href="#" class="btn_etc3"><span class="sp">페이스북</span></a>
+						<a href="#" class="btn_etc4"><span class="sp">블로그</span></a>
+						<!-- 
+						<div class="lang_area">
+							<a href="#" class="btn_lang"><span class="sp kor">KOR</span><span class="sp ico_arr"></span></a>
+							<ul class="ly_lang" style="display:none">
+							<li><a href="#"><span class="sp eng">ENG</span></a></li>
+							</ul>
+						</div>
+						-->
+					</div>
+				</div>
+				<div class="srch_area">
+					<a href="#" class="btn_srch"><span class="sp">매장검색</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content" style="margin-top:500px">
+			<div class="brand_area sh_area">
+				<div class="detail_info">
+					<h3 class="sp h3_search">매장검색</h3>
+					<p class="tit_ad">LF 브랜드 매장을 쉽고 편리하게 찾아보세요.</p>
+					<div class="detail_inner">
+						<strong class="sp tit_flesh">직접 검색</strong>
+						<!-- [D] 선택됬을 경우 srch_selected 추가 -->
+						<div class="srch">
+							<div class="inner">
+								<form action="">
+								<fieldset>
+								<legend>검색</legend>
+									<input type="text" value="지역, 매장을 입력하세요." class="input_txt">
+									<button class="btn_srch"><span class="sp">검색</span></button>
+								</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="detail_inner">
+						<strong class="sp tit_terms">조건 검색</strong>
+						<div class="srch2">
+							<!-- [D] 딤드 : li class="dimmed", 선택 : li class="selected"  추가 -->
+							<ul class="lst_srch">
+							<li class="type selected">
+								<a href="#" class="btn">브랜드 <span class="sp"></span></a>
+								<div class="ly_srch">
+									<div class="sc">
+										<ul class="srch_group">
+										<li>
+											<strong>WOMEN</strong>
+											<ul>
+											<li><a href="#">DAKS LADIES</a></li>
+											<li><a href="#">HAZZYS</a></li>
+											<li><a href="#">TNGT</a></li>
+											<li><a href="#">MOGG</a></li>
+											<li><a href="#">JILLSTUART</a></li>
+											<li><a href="#">JII by JILLSTUART</a></li>
+											<li><a href="#">LEONARD</a></li>
+											<li><a href="#">ISABEL MARANT</a></li>
+											<li><a href="#">VANESSABRUNO</a></li>
+											<li><a href="#">VANESSABRUNO ATHE</a></li>
+											<li><a href="#">NEIL BARRETT</a></li>
+											<li><a href="#">VINCE</a></li>
+											<li><a href="#">JOSEPH</a></li>
+											<li><a href="#">CARVEN</a></li>
+											<li><a href="#">MAWMARA</a></li>
+											</ul>
+											<strong>WOMEN</strong>
+											<ul>
+											<li><a href="#">DAKS LADIES</a></li>
+											<li><a href="#">HAZZYS</a></li>
+											<li><a href="#">TNGT</a></li>
+											<li><a href="#">MOGG</a></li>
+											<li><a href="#">JILLSTUART</a></li>
+											<li><a href="#">JII by JILLSTUART</a></li>
+											<li><a href="#">LEONARD</a></li>
+											<li><a href="#">ISABEL MARANT</a></li>
+											<li><a href="#">VANESSABRUNO</a></li>
+											<li><a href="#">VANESSABRUNO ATHE</a></li>
+											<li><a href="#">NEIL BARRETT</a></li>
+											<li><a href="#">VINCE</a></li>
+											<li><a href="#">JOSEPH</a></li>
+											<li><a href="#">CARVEN</a></li>
+											<li><a href="#">MAWMARA</a></li>
+											</ul>
+										</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="type2 dimmed">
+								<a href="#" class="btn">시/도 <span class="sp"></span></a>
+								<div class="ly_srch">
+									<div class="sc">
+										<ul class="srch_group">
+										<li><a href="#">강원도</a></li>
+										<li><a href="#">경기도</a></li>
+										<li><a href="#">경상남도</a></li>
+										<li><a href="#">경상북도</a></li>
+										<li><a href="#">광주광역시</a></li>
+										<li><a href="#">대구광역시</a></li>
+										<li><a href="#">대전광역시</a></li>
+										<li><a href="#">부산광역시</a></li>
+										<li><a href="#">서울특별시</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="type3">
+								<a href="#" class="btn">시/군/구 <span class="sp"></span></a>
+								<div class="ly_srch">
+									<div class="sc">
+										<ul class="srch_group">
+										<li><a href="#">강남구</a></li>
+										<li><a href="#">강동구</a></li>
+										<li><a href="#">강북구</a></li>
+										<li><a href="#">강서구</a></li>
+										<li><a href="#">관악구</a></li>
+										<li><a href="#">광진구</a></li>
+										<li><a href="#">구로구</a></li>
+										<li><a href="#">금천구</a></li>
+										<li><a href="#">노원구</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="type4">
+								<a href="#" class="btn">매장형태 <span class="sp"></span></a>
+								<div class="ly_srch">
+									<div class="sc">
+										<ul class="srch_group">
+										<li><a href="#">백화점</a></li>
+										<li><a href="#">일반가두매장</a></li>
+										<li><a href="#">상설할인매장</a></li>
+										<li><a href="#">할인점입점</a></li>
+										<li><a href="#">종합가두매장</a></li>
+										<li><a href="#">가두매장</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							</ul>
+							<button class="btn_srch"><span class="sp">검색</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="content_area">
+					<!-- [D] 준비중 
+					<div class="info_soon info_soon_v2">
+						<div class="img_soon"><span class="blind">컨텐츠 오픈 준비중입니다. 4월 25일에 찾아뵙겠습니다.</span></div>
+						<div class="btn_area"><a href="#" class="btn_back">이전페이지 보기</a><a href="#" class="btn_main">메인페이지 보기</a></div>
+					</div>
+					-->
+					<!-- [D] 검색결과 -->
+					<div class="sch_cont">
+						<div class="txt_rst"><span>'헤지스'</span><span>'가두매장'</span><span>'강남구'</span> 검색결과 <strong>총 6건</strong></div>
+						<ul class="lst_rst">
+						<!-- [D] 펼쳤을 때 'on' 추가 -->
+						<li class="on">
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_unfd"><em class="sp">닫기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성서울 영등포그 영등포동3가 6번지 헤지스여성서울 영등포그 영등포동3가 6번지 헤지스여성서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가종합상가종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성서울 영등포그 영등포동3가 6번지 헤지스여성서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<dl class="store">
+								<dt><strong>영등포 종합상가</strong><span>일반가두매장</span></dt>
+								<dd>서울 영등포그 영등포동3가 6번지 헤지스여성<span>02.3467.8394</span></dd>
+								</dl>
+								<span class="btn_fd"><em class="sp">보기</em></span>
+							</a>
+							<div class="rst_detail">
+								<!-- [D] 지도 -->
+								<div class="mp"><img src="img/@img_map2.jpg" width="870" height="550" alt=""></div>
+								<dl>
+								<dt>함께 입점해 있는 브랜드</dt>
+								<dd>
+									<ul>
+									<li><strong>IL CORSO</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>마에스트로</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질스튜어트악세사리</strong><i>|</i><span>02.531.2543</span></li>
+									<li><strong>질바이질스튜어트</strong><i>|</i><span>02.531.2543</span></li>
+									</ul>
+								</dd>
+								</dl>
+							</div>
+						</li>
+						</ul>
+					</div>
+					<button class="btn_more sh_btn"><span class="sp">더보기</span></button>
+				</div>
+			</div>
+			
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<hr>
+	
+	<!-- footer -->
+	<?php include 'footer_incl.html'; ?>
+	<!-- //footer -->
+</div>
+</body>
+</html>

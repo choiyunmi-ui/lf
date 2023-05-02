@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>배송지추가 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap">
+	<div class="ly_basic delv_addr_area">
+		<div class="top_area">
+			<h1 class="tit">배송지추가</h1>
+			<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+		</div>
+		<div class="ly_cnt">
+			<form>
+			<fieldset>
+				<legend><span>배송지추가 입력</span></legend>
+				<div class="form_wrap">
+					<div class="inp_wrap">
+						<label for="receiver" class="inp_lb">받는분</label>
+						<span class="inp_txt"><input type="text" id="receiver" placeholder="받는분을 입력해 주세요"></span>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_address" class="inp_lb">주소</label>
+						<div class="inpbx adrs">
+							<button type="button" id="user_address" class="btn_m btn_bg_gr">주소찾기</button>
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_txt"><input type="number" title="첫번째 우편번호" readonly></span>
+								</span>
+								<span class="cell dash"></span>
+								<span class="cell">
+									<span class="inp_txt"><input type="number" title="마지막 우편번호" readonly></span>
+								</span>
+							</div>
+						</div>
+						<span class="inp_txt"><input type="text" placeholder="주소를 입력해 주세요" title="주소 입력" readonly></span>
+						<span class="inp_txt"><input type="text" placeholder="상세주소를 입력해 주세요" title="나머지 주소 입력"></span>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_ph" class="inp_lb">휴대폰번호</label>
+						<div class="inpbx">
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_selt2">
+										<select id="user_ph">
+										<option>010</option>
+										</select>
+									</span>
+								</span>
+								<span class="cell">
+									<span class="inp_txt"><input type="number" title="가운데 번호"></span>
+								</span>
+								<span class="cell">
+									<span class="inp_txt"><input type="number" title="마지막 번호"></span>
+								</span>
+							</div>
+						</div>
+						<ul class="chk_lst">
+						<li>
+							<span class="inp_chk3">
+								<input type="checkbox" name="agree" id="default_addr">
+								<label for="default_addr">기본 배송지로 지정</label>
+							</span>
+						</li>
+						<li>
+							<span class="inp_chk3">
+								<input type="checkbox" name="agree" id="update_my_addr">
+								<label for="update_my_addr">회원정보 주소 업데이트</label>
+							</span>
+						</li>
+						</ul>
+					</div>
+					<div class="fm_btn_area">
+						<button type="submit" class="btn btn_bg">확인</button>
+					</div>
+				</div>
+			</fieldset>
+			</form>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

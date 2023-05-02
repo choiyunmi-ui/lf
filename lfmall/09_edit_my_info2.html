@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>회원정보 확인/수정 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="sub mypage_area">
+	<div class="top_fix">
+		<div class="location">
+			<h1 class="mtt">회원정보 확인/수정</h1>
+			<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		</div>
+	</div>
+	<div id="container">
+		<div id="content" role="main">
+			<div class="top_msg type2 bx_mg_bd">
+				<strong>홍길동님은 일반회원 입니다.</strong> <em>abcd123</em>
+				<button type="button" class="btn_s btn_bg_wh">비밀번호 변경</button>
+			</div>
+			<form>
+			<fieldset>
+				<legend><span>회원정보 확인/수정</span></legend>
+				<div class="form_wrap pd_none">
+					<div class="artbx2 mgt0">
+						<div class="inp_wrap">
+							<label for="user_ph" class="inp_lb">휴대폰번호</label>
+							<div class="inpbx cert_ph">
+								<div class="cellbx">
+									<span class="cell">
+										<span class="inp_selt2">
+											<select id="user_ph">
+											<option>010</option>
+											</select>
+										</span>
+									</span>
+									<span class="cell">
+										<span class="inp_txt"><input type="number" title="가운데 번호"></span>
+									</span>
+									<span class="cell">
+										<span class="inp_txt"><input type="number" title="마지막 번호"></span>
+									</span>
+								</div>
+								<button type="button" class="btn_m btn_bg_gr">휴대폰본인인증</button>
+							</div>
+							<ul class="chk_lst">
+							<li>
+								<span class="inp_chk3">
+									<input type="checkbox" name="agree" id="sms">
+									<label for="sms">이벤트/세일/쿠폰/상품정보 문자(SMS) 수신 동의</label>
+								</span>
+								<div class="basic_artbx agree">
+									<strong>앱 푸시 마케팅정보 수신동의</strong>
+									<p>등록하신 기기, 회원정보 기준의 알림 받기 설정으로 각종 이벤트, 할인, 혜택 정보 등을 받으실 수 있습니다</p>
+									<ul>
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="agree2" id="lfmall">
+											<label for="lfmall">LF mall</label>
+										</span>
+									</li>
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="agree2" id="hazzys">
+											<label for="hazzys">HAZZYS</label>
+										</span>
+									</li>
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="agree2" id="arud_corn">
+											<label for="arud_corn">around the corner</label>
+										</span>
+									</li>
+									<li>
+										<span class="inp_chk3">
+											<input type="checkbox" name="agree2" id="raum">
+											<label for="raum">RAUM EDITION</label>
+										</span>
+									</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<span class="inp_chk3">
+									<input type="checkbox" name="agree" id="tm">
+									<label for="tm">TM 수신 동의</label>
+								</span>
+							</li>
+							<li>
+								<span class="inp_chk3">
+									<input type="checkbox" name="agree" id="dm">
+									<label for="dm">DM 수신 동의</label>
+								</span>
+							</li>
+							</ul>
+							<p class="inp_alert type2">주문 관련 정보는 수신동의 여부와 관계없이 발송됩니다.</p>
+						</div>
+						<div class="inp_wrap">
+							<label for="user_email" class="inp_lb">이메일</label>
+							<span class="inp_txt"><input type="text" id="user_email"></span>
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_txt">
+										<input type="text" value="@" title="도메인 직접 입력하기">
+									</span>
+								</span>
+								<span class="cell">
+									<span class="inp_selt2">
+										<select title="도메인 선택하기">
+										<option>선택</option>
+										</select>
+									</span>
+								</span>
+							</div>
+							<ul class="chk_lst">
+							<li>
+								<span class="inp_chk3">
+									<input type="checkbox" name="agree" id="email">
+									<label for="email">이벤트/세일/쿠폰 이메일 수신 동의</label>
+								</span>
+							</li>
+							</ul>
+							<p class="inp_alert type2">주문 관련 정보는 수신동의 여부와 관계없이 발송됩니다.</p>
+						</div>
+						<div class="inp_wrap">
+							<label for="user_address" class="inp_lb">주소</label>
+							<div class="inpbx adrs">
+								<button type="button" class="btn_m btn_bg_gr">주소찾기</button>
+								<div class="cellbx">
+									<span class="cell">
+										<span class="inp_txt"><input type="text" title="첫번째 우편번호" readonly=""></span>
+									</span>
+									<span class="cell dash"></span>
+									<span class="cell">
+										<span class="inp_txt"><input type="text" title="마지막 우편번호" readonly=""></span>
+									</span>
+								</div>
+							</div>
+							<span class="inp_txt"><input type="text" title="검색한 주소 자동 입력" readonly=""></span>
+							<span class="inp_txt"><input type="text" title="나머지 주소 입력"></span>
+						</div>
+					</div>
+				</div>
+				<div class="fm_btn_area">
+					<button type="submit" class="btn btn_bg">확인</button>
+				</div>
+				<div class="bx_msg">
+					<strong>회원탈퇴</strong>
+					<p>LF몰 PC사이트에서 신청해주시기 바랍니다.</p>
+				</div>
+				<div class="grbx">
+					<ul class="lst_v1">
+					<li>LFmall에서는 제휴 카드 회원에게 우대 서비스를 제공하고 있습니다.</li>
+					<li>제휴카드 회원분께서는 카드 발급 후 최초 1회 인증이 필요합니다.<br> (신한, BC, 우리, 하나SK 패밀리카드)
+					<ul>
+					<li>모바일 사이트에서는 인증이 불가하오니 PC 마이페이지 > 회원정보 수정 메뉴를 통해 인증해주시기 바랍니다.</li>
+					<li>인증을 받으신 후에는 모바일 사이트에서도 동일한 혜택을 받으실 수 있습니다.</li>
+					</ul>
+					</li>
+					<li>제휴사 및 제휴서비스의 범위는 당사 및 제휴사의 정책에 의하여 통보없이 추가되거나 변경될 수 있습니다.</li>
+					<li>자세한 우대서비스의 범위는 고객센터(1544-5144)로 문의하여 주십시오.</li>
+					</ul>
+				</div>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+	<div class="bottom_nav">
+		<a href="#" class="ico_home"><span class="sp">메인 페이지로 이동</span></a>
+		<a href="#" class="ico_menu"><span class="sp">메뉴 열기</span></a>
+		<a href="#" class="ico_brand"><span class="sp">브랜드 페이지로 이동</span></a>
+		<a href="#" class="ico_mypage"><span class="sp">마이 페이지로 이동</span></a>
+	</div>
+	<div id="footer" role="contentinfo">
+		<div class="ft_nav">
+			<a href="#">로그인</a><a href="#">고객센터</a><a href="#">공지사항</a><a href="#">PC버전</a>
+		</div>
+		<address class="address">
+			<p><span>서울 강남구 언주로 870</span>LF 대표이사 오규식</p>
+			<p><span>연락처 : 1544-5114</span>사업자등록번호 : 211-87-87724</p>
+			<p>통신판매업신고 : 제 2010-서울강남-00066호</p>
+		</address>
+		<div class="terms">
+			<ul>
+			<li><a href="#">소비자피해보상 보험확인</a></li>
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">사업자 정보확인</a></li>
+			<li><a href="#">개인정보 취급방침</a></li>
+			</ul>
+		</div>
+		<button type="button" class="btn_top">TOP</button>
+	</div>
+</div>
+</body>
+</html>

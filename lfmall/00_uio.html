@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+<style>
+h1{margin:20px 0 10px;font-size:15px}
+#wrap{overflow:visible;background:#eee}
+.mtt,h1.tit{margin:0}
+.location{position:relative;margin-top:10px}
+.inp_selt .selt_lst{position:static}
+.inp_selt2,.inp_txt,.rdo_wrap,.chk_wrap,.top_area{margin-top:10px}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<h1>인풋 공통</h1>
+	<div class="inp_selt">
+		<!-- [D]버튼 선택시 클래스명 open 추가 -->
+		<button type="button" class="selt"><p class="elp">상품옵션을 선택하세요상품옵션을 선택하세요상품옵션을 선택하세요상품옵션을 선택하세요</p><span class="arr"></span></button>
+		<!-- [D]selt 버튼 눌렀을 경우 display:block -->
+		<ul class="selt_lst" style="display:block">
+		<li><button type="button">(VSLK-103GREY) 그레이/s</button></li>
+		<li><button type="button" class="select">(VSLK-103GREY) 그레이/s</button></li>
+		<li><button type="button">(VSLK-103GREY) 그레이/s</button></li>
+		<li><button type="button">(VSLK-103GREY) 그레이/s</button></li>
+		<li><button type="button">(VSLK-103GREY) 그레이/s</button></li>
+		<li><button type="button">(VSLK-103GREY) 그레이/s</button></li>
+		<li><button type="button">(VSLK-103GREY) 그레이/s</button></li>
+		</ul>
+	</div>
+	<span class="inp_selt2">
+		<select id="year" title="생년">
+		<option>생년</option>
+		</select>
+	</span>
+	<span class="inp_selt2 disabled">
+		<select title="갯수 선택" disabled>
+		<option>1개</option>
+		<option>2개</option>
+		<option>3개</option>
+		</select>
+	</span>
+	<span class="inp_txt">
+		<input type="text" title="아이디" placeholder="아이디">
+	</span>
+	<span class="inp_txt readonly">
+		<input type="text" id="id" readonly value="abcd1234">
+	</span>
+	<span class="inp_txt del">
+		<input type="text" title="타이틀명">
+		<button type="button" class="btn_inp_cls"><span class="sp">삭제하기</span></button>
+	</span>
+	<div class="rdo_wrap">
+		<span class="inp_rdo">
+			<input type="radio" name="rdo" id="rdo01" checked>
+			<label for="rdo01">라디오버튼</label>
+		</span>
+		<span class="inp_rdo">
+			<input type="radio" name="rdo" id="rdo02">
+			<label for="rdo02">라디오버튼</label>
+		</span>
+	</div>
+	<div class="chk_wrap">
+		<span class="inp_chk3">
+			<input type="checkbox" id="agree" checked>
+			<label for="agree">수신 동의</label>
+		</span>
+		<span class="inp_chk3">
+			<input type="checkbox" id="agree02">
+			<label for="agree02">수신 동의</label>
+		</span>
+		<span class="inp_chk4"><input type="checkbox"></span>
+		<span class="inp_chk4"><input type="checkbox" checked></span>
+	</div>
+
+	<h1>버튼 공통</h1>
+	<div style="margin-top:10px">
+		<button type="button" class="btn">확인</button>
+		<button type="button" class="btn btn_bg_wh">확인</button>
+		<button type="button" class="btn btn_bg_gr">확인</button>
+		<button type="button" class="btn btn_bd_gr">확인</button>
+		<button type="button" class="btn btn_bd_gr2">확인</button>
+	</div>
+	<div style="margin-top:10px">
+		<button type="button" class="btn_m">확인</button>
+		<button type="button" class="btn_m btn_bg_wh">확인</button>
+		<button type="button" class="btn_m btn_bg_gr">확인</button>
+		<button type="button" class="btn_m btn_bd_gr">확인</button>
+		<button type="button" class="btn_m btn_bd_gr2">확인</button>
+	</div>
+	<div style="margin-top:10px">
+		<button type="button" class="btn_s">확인</button>
+		<button type="button" class="btn_s btn_bg_wh">확인</button>
+		<button type="button" class="btn_s btn_bg_gr">확인</button>
+		<button type="button" class="btn_s btn_bd_gr">확인</button>
+		<button type="button" class="btn_s btn_bd_gr2">확인</button>
+	</div>
+
+	<h1>리스트 더보기 버튼</h1>
+	<button type="button" class="btn_view_more">더 보기 <span>(<em>10</em>/<em>112</em>)</span></button>
+
+	<h1>레이어 상단 공통</h1>
+	<div class="top_area">
+		<h1 class="tit">레이어 상단 공통</h1>
+		<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+	</div>
+	<div class="top_area type2">
+		<h1 class="tit">레이어 상단 공통</h1>
+		<button type="button" class="btn_close"><span class="sp">팝업 닫기</span></button>
+	</div>
+
+	<h1>Tab</h1>
+	<ul class="rv_tab tmpl_406">
+	<li class="selected"><a href="#">상세정보</a></li><!--[D] 선택된 항목 li에 .selected 추가 -->
+	<li><a href="#">상품평 <span class="num">(16)</span></a></li>
+	</ul>
+	<!-- [D]선택된 탭 이름 넣어주세요 -->
+	<h2 class="blind">상세정보</h2>
+
+	<h1>조건배너</h1>
+	<a href="#" class="banner_artbx tmpl_51">
+		<img src="img/@thumb/@notice.jpg" alt="3월 신규회원에 30% 할인쿠폰을 드립니다.">
+	</a>
+
+	<h1>리스트 추천상품</h1>
+	<div class="location recomm_prdt">
+		<h1 class="mtt">추천</h1>
+		<div class="sub_menu">
+			<button type="button" class="btn_gender"><span class="sp">여성 상품 보기</span></button>
+		</div>
+	</div>
+	<div class="location recomm_prdt">
+		<h1 class="mtt">추천</h1>
+		<div class="sub_menu">
+			<button type="button" class="btn_gender man"><span class="sp">남성 상품 보기</span></button>
+		</div>
+	</div>
+
+	<h1>location</h1>
+	<div class="location">
+		<!-- [D]브랜드일 경우 클래스명 brand 추가 -->
+		<h1 class="mtt brand">CATHERINE MALANDRINO</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<button type="button" class="btn_srch"><span class="sp">페이지 검색</span></button>
+			<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+			<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt">항공점퍼 Select Shop</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<button type="button" class="btn_srch"><span class="sp">페이지 검색</span></button>
+			<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+			<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt"><span class="category">여성의류</span><a href="#">원피스원피스원피스</a></h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<button type="button" class="btn_srch"><span class="sp">페이지 검색</span></button>
+			<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+			<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt logo"><a href="#" class="sp">LFmall</a></h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<button type="button" class="btn_srch"><span class="sp">페이지 검색</span></button>
+			<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+			<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+			<a href="#" class="btn_mypage"><span class="sp">마이 페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt">상품상세</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<button type="button" class="btn_srch"><span class="sp">페이지 검색</span></button>
+			<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+			<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt">주문서</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+	</div>
+	<div class="location">
+		<h1 class="mtt">마이페이지</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<a href="#" class="btn_alarm"><span class="sp">알림페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt">알림</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<a href="#" class="btn_notice"><span class="sp">공지사항페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt">쇼핑백</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<a href="#" class="btn_view"><span class="sp">최근본페이지로 이동</span></a>
+			<a href="#" class="btn_wish highlighting"><span class="sp">위시리스트 페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt">위시리스트</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<a href="#" class="btn_view"><span class="sp">최근본페이지로 이동</span></a>
+			<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+		</div>
+	</div>
+	<div class="location">
+		<h1 class="mtt">최근본상품</h1>
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<div class="sub_menu">
+			<a href="#" class="btn_home"><span class="sp">메인페이지로 이동</span></a>
+			<a href="#" class="btn_wish highlighting"><span class="sp">위시리스트 페이지로 이동</span></a>
+			<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+		</div>
+	</div>
+
+	<h1>브랜드 로고</h1>
+	<div class="brand_logo tmpl_401">
+		<ul class="lst">
+		<li><a href="#" title="DAKS 브랜드 페이지로 이동"><img src="img/logo_daks.jpg" alt="DAKS 로고"></a></li>
+		<li><a href="#" title="HAZZYS 브랜드 페이지로 이동"><img src="img/logo_hazzys.jpg" alt="HAZZYS 로고"></a></li>
+		<li><a href="#" title="JILLSTUART 브랜드 페이지로 이동"><img src="img/logo_jill.jpg" alt="JILLSTUART 로고"></a></li>
+		</ul>
+		<a href="#" class="btn_more"></a>
+	</div>
+
+	<h1>오늘만 특가</h1>
+	<div class="day_sale">
+		<h2 class="day">2016. Apr.<br><span>36</span></h2>
+		<dl class="timebx">
+		<dt class="ico_time sp">남은 시간</dt>
+		<dd class="dday">D<span class="cnt">1</span></dd>
+		<dd class="time">
+			<span>23</span><span class="dot">시</span>
+			<span>08</span><span class="dot">분</span>
+			<span>55</span><span class="blind">초</span>
+		</dd>
+		</dl>
+	</div>
+	<div class="day_sale">
+		<h2 class="day">2016. Apr.<br><span>36</span></h2>
+		<dl class="timebx">
+		<dt class="ico_time sp">남은 시간</dt>
+		<dd class="time">
+			<span>23</span><span class="dot">시</span>
+			<span>08</span><span class="dot">분</span>
+			<span>55</span><span class="blind">초</span>
+		</dd>
+		</dl>
+	</div>
+
+	<h1>아울렛 탭 - 할인율 버튼</h1>
+	<div class="discount_artbx tmpl_405">
+		<ul class="amount_btn">
+		<li><button type="button">~<em>5</em>만원</button></li>
+		<li><button type="button">~<em>10</em>만원</button></li>
+		<li><button type="button">~<em>30</em>만원</button></li>
+		<li><button type="button">~<em>50</em>만원</button></li>
+		</ul>
+		<ul class="per_btn">
+		<li><button type="button"><em>30</em>%</button></li>
+		<li><button type="button"><em>50</em>%</button></li>
+		<li><button type="button"><em>60</em>%</button></li>
+		<li><button type="button" class="on"><em>70</em>%</button></li><!-- [D] 버튼 선택시 클래스명 on 추가 -->
+		</ul>
+	</div>
+
+	<h1>필터</h1>
+	<div class="list_sort">
+		<!-- [D] 각 타입마다 아래 클래스명 넣어주세요
+		         풀형 : 디폴트(클래스 추가 없음)
+					카드형 : card_type 
+					리스트형 : list_type -->
+		<button type="button" class="btn_lst_sort card_type" title="상품 리스트 정렬">
+			<!-- [D] 해당 타입 텍스트 넣어주세요 -->
+			<span class="sp">카드형</span>
+		</button>
+		<ul class="sort_lst">
+		<li class="step1">
+			<button type="button" class="selt"><span class="highlighting">할인율높은순</span></button>
+			<!-- [D] .selt 선택시 display:block -->
+			<div class="selt_ly" style="display:none">
+				<ul class="lst">
+				<li class="select"><button type="button">판매인기순</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+				<li><button type="button">신상품순</button></li>
+				<li><button type="button">낮은가격순</button></li>
+				<li><button type="button">높은가격순</button></li>
+				<li><button type="button">할인율높은순</button></li>
+				<li><button type="button">고객추천순</button></li>
+				<li><button type="button">MD 추천순</button></li>
+				</ul>
+			</div>
+		</li>
+		<li class="step2"><button type="button" class="selt"><span>브랜드</span></button></li>
+		<li class="step3"><button type="button" class="selt"><span>카테고리</span></button></li>
+		</ul>
+		<button type="button" class="btn_filter highlighting"><span class="sp">상품조건 팝업 열기</span></button>
+	</div>
+
+	<div class="list_sort type2 tmpl_407">
+		<div class="sort_lst">
+			<button type="button" class="selt"><span class="highlighting">테마를 선택하세요.</span></button>
+			<!-- [D] .selt 선택시 display:block -->
+			<div class="selt_ly" style="display:none">
+				<ul class="lst">
+				<li class="select"><button type="button">스펜서 블루종</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+				<li><button type="button">후드 블루종</button></li>
+				<li><button type="button">블루종 자켓</button></li>
+				<li><button type="button">블루종 코트</button></li>
+				</ul>
+			</div>
+		</div>
+		<ul class="sort_lst type2">
+		<li>
+			<button type="button" class="selt"><span class="highlighting">카테고리 전체</span></button>
+			<!-- [D] .selt 선택시 display:block -->
+			<div class="selt_ly" style="display:none">
+				<ul class="lst">
+				<li class="select"><button type="button">전체</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+				<li><button type="button">여성의류</button></li>
+				<li><button type="button">남성의류</button></li>
+				<li><button type="button">유니섹스/키즈</button></li>
+				<li><button type="button">신발</button></li>
+				<li><button type="button">가방</button></li>
+				<li><button type="button">액세서리</button></li>
+				<li><button type="button">아웃도어</button></li>
+				<li><button type="button">골프</button></li>
+				<li><button type="button">용품<span>(스포츠)</span></button></li>
+				<li><button type="button">스킨케어</button></li>
+				<li><button type="button">메이크업</button></li>
+				<li><button type="button">향수</button></li>
+				<li><button type="button">의류<span>(수입명품)</span></button></li>
+				<li><button type="button">가방<span>(수입명품)</span></button></li>
+				<li><button type="button">액세서리<span>(수입명품)</span></button></li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<button type="button" class="selt"><span class="highlighting">온라인 판매인기순</span></button>
+			<!-- [D] .selt 선택시 display:block -->
+			<div class="selt_ly" style="display:none">
+				<ul class="lst">
+				<li class="select"><button type="button">스펜서 블루종</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+				<li><button type="button">후드 블루종</button></li>
+				<li><button type="button">블루종 자켓</button></li>
+				<li><button type="button">블루종 코트</button></li>
+				</ul>
+			</div>
+		</li>
+		</ul>
+	</div>
+
+	<h1>수량조절</h1>
+	<div class="qnty_bx">
+		<em class="num"><span class="blind">현재수량</span>1</em>
+		<button type="button" class="btn_minus"><span class="sp">수량줄임</span></button>
+		<button type="button" class="btn_plus"><span class="sp">수량추가</span></button>
+	</div>
+</div>
+</body>
+</html>

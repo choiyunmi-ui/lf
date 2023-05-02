@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF</title>
+<link rel="stylesheet" type="text/css" href="css/m_lf.css" />
+</head>
+<body>
+<!-- [D] 메인,브랜드 class="mb", 브랜드 상세 class="b_d" 추가 -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<div class="header_top header_t2">
+			<h1><a href="#" class="sp_com">LF</a></h1>
+			<div class="btn_category"><a href="#" class="sp_com">전체 메뉴 보기</a></div>
+			<div class="btn_search"><a href="#" class="sp_com">검색레이어 열기</a></div>
+		</div>
+        <div class="cp_lnb">
+            <ul>
+			<li><a href="#">LF소개</a></li>
+			<li><a href="#">CEO인사말</a></li>
+			<li><a href="#">회사연혁</a></li>
+			<li class="on"><a href="#">CI소개</a></li>
+			<li><a href="#">사회공헌</a></li>
+			</ul>
+        </div>
+	</div>
+	<!-- //header -->
+
+	<hr>
+
+	<!-- container -->
+	<div id="container">
+		<div class="cp_cnts cp_ci">
+			<h2><span class="blind">미래를 만드는 손</span></h2>
+			<img src="img/img_c_ci.png" width="173" height="184" alt="CI">
+			<div class="ci_detail">
+				<ul>
+				<li>LF의 심벌마크를 L과 F를 사람의 손 형태로 형상화해 안정적인 균형과 완벽함을 의미하는 정육면체로 표현함으로써 고객의 미래를 만들어 나가는 생활문화 기업 이미지를 나타내고 있습니다.</li>
+				<li>심벌마크의 색상인 LF Red는 고객 개개인에게 알맞은 라이프스타일을 만들기 위해 노력하는 LF 구성원들의 열정과 도전의지를 상징합니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+	<hr>
+
+	<!-- footer -->
+	<div id="footer">
+		<ul class="ft_link">
+		<li><a href="#">이용약관</a></li>
+		<li><a href="#">PC VER.</a></li>
+		</ul>
+		<a href="#" class="ft_top"><span class="blind">상단이동</span></a>
+		<p class="ft_copy">Copyright 2015 LF. All rights reserved.</p>
+	</div>
+	<!-- //footer -->
+</div>
+<!-- [D] 개발의 이해를 돕기위한 테스트 JS 코드입니다.^^ 개발시 삭제해주세요. -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+$('.visual_list').css('width',$(window).width()*4);
+$('.visual_box, .pic').css('width',$(window).width()).css('height',$(window).height());
+$(window).resize(function(){
+	$('.visual_list').css('width',$(window).width()*4);
+	$('.visual_box, .pic').css('width',$(window).width()).css('height',$(window).height());
+}),resize();
+</script>
+</body>
+</html>

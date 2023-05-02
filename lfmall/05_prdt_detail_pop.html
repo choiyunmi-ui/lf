@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+<style>
+.ly_pop_wrap{position:static}
+.ly_pop{position:static;margin:20px auto;transform:none;-webkit-transform:none}
+.ly_pop2{position:static;margin:20px 16px;transform:none;-webkit-transform:none}
+.ly_graybx{position:relative;margin:20px auto;transform:none;-webkit-transform:none}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<!-- [D] 레이어 팝업 dim 있을경우 클래스명 dim 추가 -->
+	<div class="ly_pop_wrap">
+		<div class="ly_pop2">
+			<div class="ly_tit"><p class="tit"><span class="tx shoping"><em>쇼핑백</em>에 담았습니다!</span></p></div>
+			<a href="#" class="btn_link"><span><em>쇼핑백</em> 바로가기</span></a>
+		</div>
+		<div class="ly_pop2">
+			<div class="ly_tit"><p class="tit"><span class="tx wishlist"><em>위시리스트</em>에 담았습니다!</span></p></div>
+			<a href="#" class="btn_link"><span><em>위시리스트</em> 바로가기</span></a>	
+		</div>
+		<div class="ly_pop">
+			<div class="ly_tit"><strong class="mtt">옵션 선택</strong></div>
+			<div class="ly_content">				
+				<ul class="option_lst2">
+				<li>
+					<em class="opt_tit">색상</em>
+					<div class="opt_cont">
+						<div class="circ_rdo_group">
+							<div class="inp_wrap">
+								<!-- [D] 해당 색상의 색상코드를 background에 지정 -->
+								<input type="radio" name="acolor" id="acolor01" style="background:#5cc4ef">
+								<!-- [D] 해당 색상명을 label에 지정 -->
+								<label for="acolor01">하늘색</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="acolor" id="acolor02" style="background:#fff" checked>
+								<label for="acolor02">흰색</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="acolor" id="acolor03" style="background:#7c5297">
+								<label for="acolor03">보라색</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="acolor" id="acolor04" style="background:#975258">
+								<label for="acolor04">색상명</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="acolor" id="acolor05" style="background:#6c9d4c">
+								<label for="acolor05">색상명</label>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<em class="opt_tit">사이즈</em>
+					<div class="opt_cont">
+						<div class="rect_rdo_group">
+							<div class="inp_wrap">
+								<input type="radio" name="asize" id="asize01" class="inp_rect_rdo" disabled>
+								<label for="asize01">036</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="asize" id="asize02" class="inp_rect_rdo">
+								<label for="asize02">037</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="asize" id="asize03" class="inp_rect_rdo">
+								<label for="asize03">038</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="asize" id="asize04" class="inp_rect_rdo">
+								<label for="asize04">039</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="asize" id="asize05" class="inp_rect_rdo" disabled>
+								<label for="asize05">040</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="asize" id="asize06" class="inp_rect_rdo" checked>
+								<label for="asize06">041</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="asize" id="asize07" class="inp_rect_rdo">
+								<label for="asize07">042</label>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<em class="opt_tit">수량</em>
+					<div class="opt_cont">
+						<div class="qnty_bx">
+							<em class="num"><span class="blind">현재수량</span>1</em>
+							<button type="button" class="btn_minus"><span class="sp">수량줄임</span></button>
+							<button type="button" class="btn_plus"><span class="sp">수량추가</span></button>
+						</div>
+					</div>
+				</li>
+				</ul>				
+			</div>
+			<div class="ly_btn_area type2">
+				<button type="button" class="btn btn_bg_wh">취소</button>
+				<button type="button" class="btn">쇼핑백 담기</button>
+			</div>
+		</div>
+		<div class="ly_pop">
+			<div class="ly_tit"><strong class="mtt">옵션 선택</strong></div>
+			<div class="ly_content">				
+				<ul class="option_lst2">
+				<li>
+					<em class="opt_tit">색상</em>
+					<div class="opt_cont">
+						<div class="circ_rdo_group">
+							<div class="inp_wrap">
+								<!-- [D] 해당 색상의 색상코드를 background에 지정 -->
+								<input type="radio" name="bcolor" id="bcolor01" style="background:#5cc4ef">
+								<!-- [D] 해당 색상명을 label에 지정 -->
+								<label for="bcolor01">하늘색</label>
+							</div>
+							<div class="inp_wrap">
+								<!-- [D] 해당 색상의 색상코드를 background에 지정 -->
+								<input type="radio" name="bcolor" id="bcolor02" style="background:#fff">
+								<!-- [D] 해당 색상명을 label에 지정 -->
+								<label for="bcolor02">흰색</label>
+							</div>
+							<div class="inp_wrap">
+								<!-- [D] 해당 색상의 색상코드를 background에 지정 -->
+								<input type="radio" name="bcolor" id="bcolor03" style="background:#7c5297">
+								<!-- [D] 해당 색상명을 label에 지정 -->
+								<label for="bcolor03">보라색</label>
+							</div>
+							<div class="inp_wrap">
+								<!-- [D] 해당 색상의 색상코드를 background에 지정 -->
+								<input type="radio" name="bcolor" id="bcolor04" style="background:#975258">
+								<!-- [D] 해당 색상명을 label에 지정 -->
+								<label for="bcolor04">색상명</label>
+							</div>
+							<div class="inp_wrap">
+								<!-- [D] 해당 색상의 색상코드를 background에 지정 -->
+								<input type="radio" name="bcolor" id="bcolor05" style="background:#6c9d4c" checked>
+								<!-- [D] 해당 색상명을 label에 지정 -->
+								<label for="bcolor05">색상명</label>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<em class="opt_tit">사이즈</em>
+					<div class="opt_cont">
+						<p class="opt_subtit">[자켓]</p>
+						<div class="rect_rdo_group">
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize01" class="inp_rect_rdo" disabled>
+								<label for="bsize01">S66</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize02" class="inp_rect_rdo">
+								<label for="bsize02">S77</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize03" class="inp_rect_rdo">
+								<label for="bsize03">S88</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize04" class="inp_rect_rdo">
+								<label for="bsize04">R66</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize05" class="inp_rect_rdo" disabled>
+								<label for="bsize05">R88</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize06" class="inp_rect_rdo">
+								<label for="bsize06">R99</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize07" class="inp_rect_rdo" checked>
+								<label for="bsize07">RAA</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize08" class="inp_rect_rdo">
+								<label for="bsize08">L77</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize09" class="inp_rect_rdo" disabled>
+								<label for="bsize09">L99</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize10" class="inp_rect_rdo">
+								<label for="bsize10">LAA</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize11" class="inp_rect_rdo">
+								<label for="bsize11">LBB</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="bsize" id="bsize12" class="inp_rect_rdo">
+								<label for="bsize12">042</label>
+							</div>
+						</div>
+						<p class="opt_subtit">[팬츠]</p>
+						<div class="rect_rdo_group">
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize01" class="inp_rect_rdo" disabled>
+								<label for="csize01">073</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize02" class="inp_rect_rdo">
+								<label for="csize02">076</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize03" class="inp_rect_rdo">
+								<label for="csize03">079</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize04" class="inp_rect_rdo">
+								<label for="csize04">082</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize05" class="inp_rect_rdo">
+								<label for="csize05">088</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize06" class="inp_rect_rdo" checked>
+								<label for="csize06">091</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize07" class="inp_rect_rdo">
+								<label for="csize07">094</label>
+							</div>
+							<div class="inp_wrap">
+								<input type="radio" name="csize" id="csize08" class="inp_rect_rdo">
+								<label for="csize08">097</label>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<em class="opt_tit">수량</em>
+					<div class="opt_cont">
+						<div class="qnty_bx">
+							<em class="num"><span class="blind">현재수량</span>1</em>
+							<button type="button" class="btn_minus"><span class="sp">수량줄임</span></button>
+							<button type="button" class="btn_plus"><span class="sp">수량추가</span></button>
+						</div>
+					</div>
+				</li>
+				</ul>				
+			</div>
+			<div class="ly_btn_area type2">
+				<button type="button" class="btn btn_bg_wh">취소</button>
+				<button type="button" class="btn">쇼핑백 담기</button>
+			</div>
+		</div>
+		<div class="ly_graybx">
+			<strong class="ly_gtit">혜택 적용내역</strong>
+			<button type="button" class="btn_ly_cls"><span class="sp">레이어 닫기</span></button>
+			<div class="ly_gcont">
+				<div class="scrlbx">
+					<dl class="ly_info_lst">
+					<dt>상품쿠폰 5%</dt>
+					<dd>- 19,920 원</dd>
+					<dt>PLUS쿠폰 5%</dt>
+					<dd>- 11,350 원</dd>
+					<dt>
+						즉시사용 마일리지
+						<!-- [D] 버튼 누르면 fold_area와 btn_tip에 on 클래스 추가(toggle) -->
+						<button type="button" class="btn_tip">설명보기</button>
+					</dt>
+					<dd>- 4,280 M</dd>
+					<!-- [D] 버튼 누르면 fold_area와 btn_tip에 on 클래스 추가(toggle) -->
+					</dl>
+					<div class="fold_area">
+						<div class="info_bx">
+							<strong class="mtt">즉시사용 마일리지</strong>
+							<p>실결제 금액에 따라 적립되는 마일리지를 먼저<br>사용하실 수 있습니다.</p>
+							<p>앱에서 구매하시는 경우 <span class="f_ssrf">2%</span>를 추가로<br>사용/적립 하실 수 있습니다.</p>
+						</div>
+						<dl class="ly_info_lst">
+						<dt>상품구매 마일리지</dt>
+						<dd><span class="f_ssrf">- 4,280</span> M</dd>
+						<dt>앱 구매 추가 마일리지</dt>
+						<dd><span class="f_ssrf">- 4,280</span> M</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ly_graybx">
+			<strong class="ly_gtit">혜택 적용내역</strong>
+			<button type="button" class="btn_ly_cls"><span class="sp">레이어 닫기</span></button>
+			<!-- [D] 펼치는 영역이 있는 레이어에 type_fold 추가-->
+			<div class="ly_gcont type_fold">
+				<div class="scrlbx">
+					<dl class="ly_info_lst">
+					<dt>상품쿠폰 <span class="f_ssrf">5%</span></dt>
+					<dd><span class="f_ssrf">- 19,920</span> 원</dd>
+					<dt>PLUS쿠폰 <span class="f_ssrf">5%</span></dt>
+					<dd><span class="f_ssrf">- 11,350</span> 원</dd>
+					<dt>
+						즉시사용 마일리지
+						<!-- [D] 버튼 누르면 fold_area와 btn_tip에 on 클래스 추가(toggle) -->
+						<button type="button" class="btn_tip on"><span class="sp">설명보기</span></button>
+					</dt>
+					<dd><span class="f_ssrf">- 4,280</span> M</dd>
+					</dl>
+					<!-- [D] 버튼 누르면 fold_area와 btn_tip에 on 클래스 추가(toggle) -->
+					<div class="fold_area on">
+						<div class="info_bx">
+							<strong class="mtt">즉시사용 마일리지</strong>
+							<p>실결제 금액에 따라 적립되는 마일리지를 먼저<br>사용하실 수 있습니다.</p>
+							<p>앱에서 구매하시는 경우 <span class="f_ssrf">2%</span>를 추가로<br>사용/적립 하실 수 있습니다.</p>
+						</div>
+						<dl class="ly_info_lst">
+						<dt>상품구매 마일리지</dt>
+						<dd><span class="f_ssrf">- 4,280</span> M</dd>
+						<dt>앱 구매 추가 마일리지</dt>
+						<dd><span class="f_ssrf">- 4,280</span> M</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ly_graybx">
+			<strong class="ly_gtit">지급예정 마일리지</strong>
+			<button type="button" class="btn_ly_cls"><span class="sp">레이어 닫기</span></button>
+			<div class="ly_gcont">
+				<div class="scrlbx">
+					<p class="ly_txt">실결제금액에 따라 적립되는 마일리지 입니다.<br>앱에서 구매하시는 경우 <span class="f_ssrf">3%</span>를 추가로<br>사용/적립 하실 수 있습니다.</p>
+					<dl class="ly_info_lst">
+					<dt>상품구매 마일리지</dt>
+					<dd><span class="f_ssrf">- 10,750</span> M</dd>
+					<dt>앱 구매 추가 마일리지</dt>
+					<dd><span class="f_ssrf">- 10,750</span> M</dd>
+					</dl>
+				</div>
+			</div>			
+		</div>
+		<div class="ly_graybx">
+			<strong class="ly_gtit">카드 무이자할부</strong>
+			<button type="button" class="btn_ly_cls"><span class="sp">레이어 닫기</span></button>
+			<div class="ly_gcont">
+				<div class="scrlbx">
+					<strong class="card_tit card01">신한카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>5만원 이상 결제시</li>
+					<li>신한BC, 법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+					<strong class="card_tit card02">삼성카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>6개월 / 1회차 수수료부담</li>
+					<li>10개월 / 1~2회차 수수료부담</li>
+					<li>12개월 / 1~3회차 수수료부담</li>
+					<li>5만원 이상 결제시</li>
+					<li>올앳, 법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+					<strong class="card_tit card03">현대카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>5만원 이상 결제시</li>
+					<li>하이브리드, 법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+					<strong class="card_tit card04">BC카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>5만원 이상 결제시</li>
+					<li>법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+					<strong class="card_tit card05">KB국민카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>6개월 / 1회차 수수료부담</li>
+					<li>10개월 / 1~2회차 수수료부담</li>
+					<li>5만원 이상 결제시</li>
+					<li>KB국민BC, 법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+					<strong class="card_tit card06">롯데카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>6개월 / 1회차 수수료부담</li>
+					<li>10개월 / 1~2회차 수수료부담</li>
+					<li>5만원 이상 결제시</li>
+					<li>법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+					<strong class="card_tit card07">하나카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>6개월 / 1회차 수수료부담</li>
+					<li>10개월 / 1~2회차 수수료부담</li>
+					<li>5만원 이상 결제시</li>
+					<li>하나BC, 법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+					<strong class="card_tit card08">시티카드 무이자할부 안내</strong>
+					<ul class="bu_lst">
+					<li>2~5개월</li>
+					<li>5만원 이상 결제시</li>
+					<li>시티BC, 법인, 체크, 기프트<br>(※카카오페이, 페이나우, 페이코 제외)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

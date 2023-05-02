@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>상품상세 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="main">
+	<div id="container">
+		<div id="content" role="main" class="review_content">
+			<ul class="rv_tab tmpl_406">
+			<li><a href="#">상세정보</a></li>
+			<li class="selected"><a href="#">상품평 <span class="num">(16)</span></a></li> <!--[D] 선택된 항목 li에 .selected 추가 -->
+			</ul>
+			<!-- [D]선택된 탭 이름 넣어주세요 -->
+			<h3 class="blind">상품평</h3>
+			<div class="graph_bx">
+				<dl class="rv_type">
+				<dt>SIZE</dt>
+				<dd>
+					<strong class="tit">맞다</strong>
+					<div class="graph grp_top">
+						<span class="bar" style="width:70%"></span> <!--[D] 가장 높은값을 가진 요소한테 .grp_top 추가 -->
+						<span class="per">70%</span>
+					</div>
+				</dd>
+				<dd>
+					<strong class="tit">크다</strong>
+					<div class="graph">
+						<span class="bar" style="width:50%"></span>
+						<span class="per">50%</span>
+					</div>
+				</dd>
+				<dd>
+					<strong class="tit">작다</strong>
+					<div class="graph">
+						<span class="bar" style="width:30%"></span>
+						<span class="per">30%</span>
+					</div>
+				</dd>
+				</dl>
+				<dl class="rv_type">
+				<dt>COLOR</dt>
+				<dd>
+					<strong class="tit">같다</strong>
+					<div class="graph">
+						<span class="bar" style="width:0"></span>
+						<span class="per">0%</span>
+					</div>
+				</dd>
+				<dd>
+					<strong class="tit">밝다</strong>
+					<div class="graph grp_top">
+						<span class="bar" style="width:100%"></span>
+						<span class="per">100%</span>
+					</div>
+				</dd>
+				<dd>
+					<strong class="tit">어둡다</strong>
+					<div class="graph">
+						<span class="bar" style="width:80%"></span>
+						<span class="per">80%</span>
+					</div>
+				</dd>
+				</dl>
+			</div>
+			<ul class="sort_tab">
+			<li class="selected"><a href="#">최신순</a></li> <!--[D] 선택된 항목 li에 .selected 추가 -->
+			<li><a href="#">추천순</a></li>
+			<li><a href="#">포토상품평</a></li>
+			</ul>
+			<!--[D] 상품평 있을 경우 -->
+			<div class="rv_cntbx">
+				<ul class="review_lst">
+				<li>
+					<div class="rv_infobx">
+						<dl class="user">
+						<dt><span class="blind">구매자 아이디</span></dt>
+						<dd class="user_id">dlg****</dd>
+						<dt><span class="blind">구매자 정보</span></dt>
+						<dd>
+							<span class="blind">성별 </span> <span class="sex"><span class="blind">여성</span></span>
+							<span class="blind">나이 </span> <span class="txt">40대</span>
+							<span class="blind">키</span> <span class="txt">160cm</span>
+							<span class="blind">사이즈</span> <span class="txt">55</span>
+						</dd>
+						</dl>
+						<!--[D] 별점 백분율 계산하여 style width값 지정
+								별 .5 개 : width:10% / 별 1개 : width:20% / 별 1.5개 : width:30% / 별 2개 : width:40% / 별 2.5개 : width:50% / 
+								별 3개 : width:60% / 별 3.5개 : width:70% / 별 4개 : width:80% / 별 4.5개 : width:90% / 별 5개 : width:100% -->
+						<div class="sp graph_star">
+							<strong class="sp ico_star" style="width:60%">별점 3개</strong>
+						</div>
+						<button type="button" class="btn_recomm">23</button>
+					</div>
+					<div class="rv_cnt">
+						<strong class="type">구매 사이즈 : <span class="in">092</span></strong>
+						<div class="value_bx">
+							<!-- <p class="green">사이즈 맞다</p> -->
+							<p class="green">화면 컬러와 같다</p>
+							<p class="gray">사이즈 작다</p>
+							<!-- <p class="gray">화면보다 밝다</p>
+							<p class="black">사이즈 크다</p>
+							<p class="black">화면보다 어둡다</p> -->
+						</div>
+						<p class="review">아버지 선물용으로 구입했습니다. 스크레치에 강하고 실용적이라 무척 마음에 드신다고 합니다. 좋은상품 감사합니다^^</p>
+						<span class="date_txt">2016.04.12</span>
+					</div>
+				</li>
+				<li>
+					<div class="rv_infobx">
+						<dl class="user">
+						<dt><span class="blind">구매자 아이디</span></dt>
+						<dd class="user_id">dlw****</dd>
+						<dt><span class="blind">구매자 정보</span></dt>
+						<dd>
+							<span class="blind">성별 </span> <span class="sex male"><span class="blind">남성</span></span> <!--[D] 남성일 경우 .male 추가 -->
+							<span class="blind">나이 </span> <span class="txt">40대</span>
+							<span class="blind">키</span> <span class="txt">160cm</span>
+							<span class="blind">사이즈</span> <span class="txt">55</span>
+						</dd>
+						</dl>
+						<!--[D] 별점 백분율 계산하여 style width값 지정
+								별 .5 개 : width:10% / 별 1개 : width:20% / 별 1.5개 : width:30% / 별 2개 : width:40% / 별 2.5개 : width:50% / 
+								별 3개 : width:60% / 별 3.5개 : width:70% / 별 4개 : width:80% / 별 4.5개 : width:90% / 별 5개 : width:100% -->
+						<div class="sp graph_star">
+							<strong class="sp ico_star" style="width:100%">별점 5개</strong>
+						</div>
+						<button type="button" class="btn_recomm rec_on">23</button> <!--[D] 추천하였을 경우 .rec_on 추가 -->
+					</div>
+					<div class="rv_cnt">
+						<strong class="type">구매 사이즈 : <span class="in">092 / XXL</span></strong>
+						<div class="value_bx">
+							<p class="green">사이즈 맞다</p>
+							<!-- <p class="green">화면 컬러와 같다</p>
+							<p class="gray">사이즈 작다</p>
+							<p class="gray">화면보다 밝다</p>
+							<p class="black">사이즈 크다</p> -->
+							<p class="black">화면보다 어둡다</p>
+						</div>
+						<span class="img_wrap"><img src="img/@thumb/@thumb_686x541.jpg" alt="구매자 등록 이미지"></span>
+						<p class="review">아버지 선물용으로 구입했습니다. 스크레치에 강하고 실용적이라 무척 마음에 드신다고 합니다. 좋은상품 감사합니다^^</p>
+						<span class="date_txt">2016.04.12</span>
+					</div>
+				</li>
+				</ul>
+				<button type="button" class="btn_more">더 보기 <strong class="num">(<span class="blind">현재 페이지</span>10/<span class="blind">총 페이지</span>1121)</strong></button>
+			</div>
+			<!-- //상품평 있을 경우 -->
+
+			<!--[D] 상품평 없을 경우 -->
+			<div class="rv_cntbx">
+				<p class="rv_none"><strong class="in">첫 상품평의 주인공이 되어보세요.<br>1~3번째 상품평 등록하시면 200M 추가적립!</strong></p>
+			</div>
+			<p class="rvinfo_txt">상품평과 관계없는 내용은 사전 고지 없이 삭제될 수 있습니다.</p>
+			<!-- //상품평 없을 경우 -->
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

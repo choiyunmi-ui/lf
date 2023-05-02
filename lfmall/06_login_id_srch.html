@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>아이디 찾기 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="sub join_area">
+	<div class="top_fix">
+		<div class="location">
+			<h1 class="mtt">아이디 찾기</h1>
+			<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		</div>
+	</div>
+	<div id="container">
+		<div id="content" role="main">
+			<p class="top_info">가입 시 입력한 <em>이름/생년월일/휴대전화</em>를 입력하시면 아이디를 알려 드립니다.</p>
+			<form>
+			<fieldset>
+				<legend><span>아이디찾기 정보입력</span></legend>
+				<div class="form_wrap">
+					<div class="rdo_wrap">
+						<div class="cellbx">
+							<span class="cell">
+								<span class="inp_rdo">
+									<input type="radio" name="srch_ch" id="ph_srch" checked="">
+									<label for="ph_srch">휴대전화로 찾기</label>
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_rdo">
+									<input type="radio" name="srch_ch" id="em_srch">
+									<label for="em_srch">이메일로 찾기</label>
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_name" class="inp_lb">이름</label>
+						<span class="inp_txt"><input type="text" id="user_name"></span>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_birth" class="inp_lb">생년월일</label>
+						<div class="cellbx">
+							<span class="cell">
+								<span class="inp_selt2">
+									<select id="user_birth" title="생년">
+									<option>생년</option>
+									</select>
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_selt2">
+									<select title="월">
+									<option>월</option>
+									</select>
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_selt2">
+									<select title="일">
+									<option>일</option>
+									</select>
+								</span>
+							</span>
+						</div>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_ph" class="inp_lb">휴대전화</label>
+						<div class="inpbx">
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_selt2">
+										<select id="user_ph">
+										<option>010</option>
+										</select>
+									</span>
+								</span>
+								<span class="cell">
+									<span class="inp_txt"><input type="tel" title="가운데 번호"></span>
+								</span>
+								<span class="cell">
+									<span class="inp_txt"><input type="tel" title="마지막 번호"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button type="submit" class="btn btn_bg">확인</button>
+					</div>
+				</div>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

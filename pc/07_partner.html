@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>SITEMAP : LF</title>
+<link rel="stylesheet" type="text/css" href="css/lf.css" />
+</head>
+<body>
+<!-- skip nav -->
+<ul id="skip">
+<li><a href="#gnb">주메뉴 바로가기</a></li>
+<li><a href="#content">본문 바로가기</a></li>
+</ul>
+<!-- //skip nav -->
+<div id="wrap">
+	<!-- header -->
+	<?php include 'header_incl.html'; ?>
+	<!-- //header -->
+	
+	<hr>
+	
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+			<div class="brand_area ut_area">
+				<div class="detail_info">
+					<h3 class="sp h3_partner">협력업체등록</h3>
+					<p class="mg_td">LF는 신규 협력업체 Pool 제도를 <br>운영하고 있습니다.<br>상세한 업체정보를 등록해 주시면 <br>관련 부서를 통해 연락 드리도록 <br>하겟습니다. 감사합니다.</p>
+				</div>
+				<div class="content_area">
+					<div class="sub_area util_sub partner_sub">
+						<fieldset>
+							<legend>협력업체등록 정보입력</legend>
+							<h4 class="tbl_tt">업체 기본 정보 작성</h4>
+							<div class="tbl_area">
+								<table class="tbl_report2">
+								<caption>업체 기본 정보 입력 표입니다.</caption>
+								<colgroup><col style="width:18%"><col style="width:82%"></colgroup>
+								<thead class="blind">
+								<tr>
+								<th scope="col">구분</th>
+								<th scope="col">정보 입력</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+								<th scope="row"><label for="company">업체명</label></th>
+								<td><input type="text" id="company" class="ipt_txt m0" style="width:600px"></td>
+								</tr>
+								<tr>
+								<th scope="row"><label for="ceo">대표자 성명</label></th>
+								<td><input type="text" id="ceo" class="ipt_txt m0" style="width:600px"></td>
+								</tr>
+								<tr>
+								<th scope="row"><label for="category">업종</label></th>
+								<td><input type="text" id="category" class="ipt_txt m0" style="width:600px"></td>
+								</tr>
+								<tr>
+								<th scope="row"><label for="number">사업자 번호</label></th>
+								<td><input type="text" id="number" class="ipt_txt m0" style="width:600px"></td>
+								</tr>
+								<tr>
+								<th scope="row">사업자 형태</th>
+								<td class="chk">
+									<label><input type="radio" name="rdo" class="ipt_chk" checked="checked"> 개인</label>
+									<label><input type="radio" name="rdo" class="ipt_chk"> 법인</label>
+								</td>
+								</tr>
+								<tr>
+								<th scope="row"><label for="tel">전화번호</label></th>
+								<td><input type="text" id="tel" class="ipt_txt m0" style="width:600px"></td>
+								</tr>
+								<tr>
+								<th scope="row"><label for="fax">팩스</label></th>
+								<td><input type="text" id="fax" class="ipt_txt m0" style="width:600px"></td>
+								</tr>
+								<tr class="hr">
+								<th>업체상세정보</th>
+								<td>업체 기본 정보를 작성하시고, &lsquo;상세 등록 폼&rsquo;을 다운로드 받으신 후, 작성하시고 파일을 첨부 해 주시기 바랍니다.</td>
+								</tr>
+								<tr>
+								<th scope="row">상세등록</th>
+								<td>
+									<p class="file"><a href="#">파일선택 +</a><span>file_2.doc</span></p>
+									<a href="#" class="sp download"><span class="blind">상세 등록 폼 다운로드</span></a>
+								</td>
+								</tr>
+								</tbody>
+								</table>
+								<div class="btn_area">
+									<a href="#" class="btn_cancel">취소</a>
+									<button type="submit" class="btn_send">등록</button>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //content -->
+	</div>
+	<!-- //container -->
+	<hr>
+	
+	<!-- footer -->
+	<?php include 'footer_incl.html'; ?>
+	<!-- //footer -->
+</div>
+</body>
+</html>

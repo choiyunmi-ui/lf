@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF members 통합회원가입 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+</head>
+<body>
+<div id="wrap" class="sub join_area">
+	<div class="top_fix">
+		<div class="location">
+			<h1 class="mtt">LF members 통합회원가입</h1>
+			<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		</div>
+	</div>
+	<div id="container">
+		<div id="content" role="main">
+			<ul class="step_nav join">
+			<li><div class="in"><span>1</span>약관동의/본인인증</div></li>
+			<li class="selected"><div class="in"><span>2</span>정보입력</div></li><!--[D] 선택된 항목 li에 .selected 추가 -->
+			<li><div class="in"><span>3</span>회원가입 완료</div></li>
+			</ul>
+			<h2 class="blind">정보입력</h2>
+			<form>
+			<fieldset>
+				<legend><span>회원가입 정보입력</span></legend>
+				<div class="form_wrap">
+					<div class="inp_wrap">
+						<label for="user_name" class="inp_lb">이름<em class="esntl">필수 입력</em></label>
+						<span class="inp_txt"><input type="text" id="user_name"></span>
+					</div>
+					<div class="inp_wrap">
+						<label for="year" class="inp_lb">생년월일<em class="esntl">필수 입력</em></label>
+						<div class="inpbx birthday">
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_selt2">
+										<select id="year">
+										<option>생년</option>
+										</select>
+									</span>
+								</span>
+								<span class="cell">
+									<span class="inp_selt2">
+										<select title="월">
+										<option>월</option>
+										</select>
+									</span>
+								</span>
+								<span class="cell">
+									<span class="inp_selt2">
+										<select title="일">
+										<option>일</option>
+										</select>
+									</span>
+								</span>
+							</div>
+							<div class="rdo_wrap">
+								<span class="inp_rdo">
+									<input type="radio" name="rdo" id="rdo01" checked="">
+									<label for="rdo01">양력</label>
+								</span>
+								<span class="inp_rdo">
+									<input type="radio" name="rdo" id="rdo02">
+									<label for="rdo02">음력</label>
+								</span>
+							</div>
+						</div>
+						<div class="rdo_wrap">
+							<span class="inp_rdo">
+								<input type="radio" name="gender" id="man" checked="">
+								<label for="man">남</label>
+							</span>
+							<span class="inp_rdo">
+								<input type="radio" name="gender" id="woman">
+								<label for="woman">여</label>
+							</span>
+						</div>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_id" class="inp_lb">아이디<em class="esntl">필수 입력</em></label>
+						<div class="inpbx userid">
+							<span class="inp_txt">
+								<input type="text" id="user_id">
+							</span>
+							<button type="button" class="btn_m btn_bg_gr">중복확인</button>
+						</div>
+						<p class="inp_alert">6~20자의 영문/숫자만 사용</p>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_pw" class="inp_lb">비밀번호<em class="esntl">필수 입력</em></label>
+						<span class="inp_txt"><input type="password" id="user_pw"></span>
+						<p class="inp_alert">영문, 숫자 조합으로 6자 이상 입력해 주세요.</p>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_pw2" class="inp_lb">비밀번호 확인<em class="esntl">필수 입력</em></label>
+						<span class="inp_txt"><input type="password" id="user_pw2"></span>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_ph" class="inp_lb">휴대전화</label>
+						<div class="inpbx">
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_selt2">
+										<select id="user_ph">
+										<option>010</option>
+										</select>
+									</span>
+								</span>
+								<span class="cell">
+									<span class="inp_txt"><input type="text" title="가운데 번호"></span>
+								</span>
+								<span class="cell">
+									<span class="inp_txt"><input type="text" title="마지막 번호"></span>
+								</span>
+							</div>
+						</div>
+						<ul class="chk_lst">
+						<li>
+							<span class="inp_chk3">
+								<input type="checkbox" name="agree" id="sms" checked>
+								<label for="sms">이벤트/세일/쿠폰/상품정보 문자(SMS) 수신 동의</label>
+							</span>
+						</li>
+						<li>
+							<span class="inp_chk3">
+								<input type="checkbox" name="agree" id="tm">
+								<label for="tm">TM 수신 동의</label>
+							</span>
+						</li>
+						<li>
+							<span class="inp_chk3">
+								<input type="checkbox" name="agree" id="dm">
+								<label for="dm">DM 수신 동의</label>
+							</span>
+						</li>
+						</ul>
+						<p class="inp_alert type2">주문 관련 정보는 수신동의 여부와 관계없이 발송됩니다.</p>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_email" class="inp_lb">이메일</label>
+						<span class="inp_txt"><input type="text" id="user_email"></span>
+						<div class="cellbx">
+							<span class="cell">
+								<span class="inp_txt">
+									<input type="text" value="@" title="도메인 직접 입력하기">
+								</span>
+							</span>
+							<span class="cell">
+								<span class="inp_selt2">
+									<select title="도메인 선택하기">
+									<option>선택</option>
+									</select>
+								</span>
+							</span>
+						</div>
+						<ul class="chk_lst">
+						<li>
+							<span class="inp_chk3">
+								<input type="checkbox" name="agree" id="sms2" checked>
+								<label for="sms2">세일/이벤트/쿠폰 이메일 수신 동의</label>
+							</span>
+						</li>
+						</ul>
+						<p class="inp_alert type2">주문 관련 정보는 수신동의 여부와 관계없이 발송됩니다.</p>
+					</div>
+					<div class="inp_wrap">
+						<label for="user_address" class="inp_lb">주소</label>
+						<div class="inpbx adrs">
+							<button type="button" id="user_address" class="btn_m btn_bg_gr">주소찾기</button>
+							<div class="cellbx">
+								<span class="cell">
+									<span class="inp_txt"><input type="text" title="첫번째 우편번호" readonly></span>
+								</span>
+								<span class="cell dash"></span>
+								<span class="cell">
+									<span class="inp_txt"><input type="text" title="마지막 우편번호" readonly></span>
+								</span>
+							</div>
+						</div>
+						<span class="inp_txt"><input type="text" title="검색한 주소 자동 입력" readonly></span>
+						<span class="inp_txt"><input type="text" title="나머지 주소 입력"></span>
+					</div>
+					<ul class="btn_area">
+					<li><button type="reset" class="btn btn_bd">취소</button></li>
+					<li><button type="submit" class="btn btn_bg">확인</button></li>
+					</ul>
+				</div>
+			</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+<style>
+h1{margin:20px 0 10px;font-size:15px}
+#wrap{overflow:visible}
+.guide{padding:20px;background:#fff}
+.guide strong{font-size:18px}
+.guide em{font-weight:bold}
+.guide li{margin-top:15px;font-size:15px}
+.guide li:first-child{margin-top:10px}
+.guide li p{margin:5px 0 0 20px;white-space:pre-wrap}
+.guide dl{margin:5px 0 0 20px}
+.guide dt{font-weight:bold}
+.guide dd{margin-left:15px}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div class="guide">
+		<strong>UIO 가이드</strong>
+		<ul>
+		<li>1. card_template_wrap은 card_header,card_template,card_footer를 감쌀때만 사용한다.</li>
+		<li>2. 카드사이의 여백이 필요없을 경우 클래스명 margin_none 추가</li>
+		<li>3. 서브페이지(기본구조)
+			<p>&lt;div id="wrap"&gt;
+	<em>&lt;div class="top_fix"&gt;&lt;/div&gt; -> 상단에 location이나 filter가 고정되야할때 사용한다.(header는 제외)</em>
+	&lt;div id="container" role="main"&gt;
+		&lt;div id="content"&gt;
+			컨텐츠
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div id="footer" role="contentinfo"&gt;푸터&lt;/div&gt;
+	&lt;div class="bottom_nav"&gt;하단 메뉴&lt;/div&gt;
+&lt;/div&gt;</p>
+			<dl>
+			<dt>* 서브페이지 상단에 고정되는 UIO에 따라 wrap에 각 클래스명 선언</dt>
+			<dd>- location 고정 : sub</dd>
+			<dd>- header 고정 : sub2</dd>
+			<dd>- location + filter 고정 : sub3</dd>
+			<dd>- 그 이외의 경우 wrap에 style값으로 padding-top 적용</dd>
+			<dt>* header와 다른 UIO가 고정으로 적용되어야 할 경우</dt>
+			<dd>- header를 top_fix 내에 넣어준다. / 해당 경우 이외에는 header 단독 사용</dd>
+			</dl>
+		</li>
+		</ul>
+	</div>
+	<h1>카드 조합</h1>
+	<div class="card_template_wrap">
+		<a href="#" class="card_header">
+			<h2 class="mtt">정사각형_가격2</h2>
+			<span class="btn_more">상품 더보기</span>
+		</a>
+		<div class="card_template type3 tmpl_302">
+			<ul class="template type8">
+			<li class="big"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_l3.jpg" alt=""></span></a></li>
+			<li class="b2"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s2.jpg" alt=""></span></a></li>
+			<li class="b3"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s.jpg" alt=""></span></a></li>
+			<li class="b4"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s2.jpg" alt=""></span></a></li>
+			</ul>
+		</div>
+		<div class="card_footer">
+			<p class="txt">박보검처럼 입자 <a href="#" class="tag">#티엔지티 퍼펙트블루종</a> 화이트 데이엔 나도 박보검 처럼? <a href="#" class="tag">#박보검스타일</a><a href="#" class="more">더보기</a></p>
+		</div>
+	</div>
+	<!-- [D]카드사이 여백 없을 경우 클래스명 margin_none 추가 -->
+	<div class="card_template_wrap margin_none">
+		<a href="#" class="card_header">
+			<h2 class="mtt">정사각형_가격2</h2>
+			<span class="btn_more">상품 더보기</span>
+		</a>
+		<div class="card_template type3 tmpl_302">
+			<ul class="template type8">
+			<li class="big"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_l3.jpg" alt=""></span></a></li>
+			<li class="b2"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s2.jpg" alt=""></span></a></li>
+			<li class="b3"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s.jpg" alt=""></span></a></li>
+			<li class="b4"><a href="#"><span class="img_wrap"><img src="img/@thumb/@thumb_s2.jpg" alt=""></span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h1>브랜드 로고 + 카테고리</h1>
+	<div class="brand_logo tmpl_401">
+		<ul class="lst">
+		<li><a href="#" title="DAKS 브랜드 페이지로 이동"><img src="img/logo_daks.jpg" alt="DAKS 로고"></a></li>
+		<li><a href="#" title="HAZZYS 브랜드 페이지로 이동"><img src="img/logo_hazzys.jpg" alt="HAZZYS 로고"></a></li>
+		<li><a href="#" title="JILLSTUART 브랜드 페이지로 이동"><img src="img/logo_jill.jpg" alt="JILLSTUART 로고"></a></li>
+		</ul>
+		<a href="#" class="btn_more"></a>
+	</div>
+	<div class="category_artbx type2 margin_none tmpl_402">
+		<ul>
+		<li><a href="#">여성의류</a></li>
+		<li><a href="#">남성의류</a></li>
+		<li><a href="#">영캐주얼</a></li>
+		<li><a href="#">아동의류</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

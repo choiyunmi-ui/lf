@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+<title>학력사항 작성</title>
+<link href="css/rec_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/recruit.js"></script>
+</head>
+
+<body>
+<div class="secRec">
+	<h1 class="hide">학력사항 작성</h1>
+	<div class="steps step02">
+		<ol class="hide">
+			<li>01. 기본인적사항 작성</li>
+			<li>02. 학력사항 작성(현재 단계)</li>
+			<li>03. 외국어 및 자격사항</li>
+			<li>04. 자기소개서 작성</li>
+		</ol>
+	</div>
+	<form method="post" action="">
+		<div class="recApply">
+			<fieldset class="fieldBox">
+				<legend>고등학교</legend>
+				<dl>
+					<dt><img src="image/txt_school.png" alt="고등학교" /></dt>
+					<dd>
+						<table class="tbFormRow" summary="고등학교의 기간, 학교, 소재지(시/도) 입력표">
+							<caption>고등학교</caption>
+							<colgroup>
+								<col width="20%" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">기간</th>
+									<td>
+										<select title="입학년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="입학월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+										<span class="bar">~</span>
+										<select title="졸업년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="졸업월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">학교명</th>
+									<td>
+										<input type="text" name="#" class="text" size="18" title="학교명" /> 고등학교&nbsp;&nbsp;&nbsp;
+										<select title="졸업여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">입학~졸업</option>
+										</select> 
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">소재지(시/도)</th>
+									<td><input type="text" name="#" class="text" size="18" title="소재지(시/도)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</fieldset>
+
+			<fieldset class="fieldBox">
+				<legend>대학교(2년/3년제)</legend>
+				<dl>
+					<dt><img src="image/txt_university.png" alt="대학교(2년/3년제)" /></dt>
+					<dd>
+						<table class="tbFormRow" summary="대학교(2년/3년제)의 기간, 소재지 및 학교명, 학과명(주전공), 학과명(부/복수)전공, 학점 입력표">
+							<caption>대학교(2/3년제)</caption>
+							<colgroup>
+								<col width="20%" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">기간</th>
+									<td>
+										<select title="입학년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="입학월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+										<span class="bar">~</span>
+										<select title="졸업년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="졸업월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">소재지 및 학교명</th>
+									<td>
+										<input type="text" name="#" class="text" size="12" title="소재지" />
+										<input type="text" name="#" class="text" size="18" title="학교명" /> 대학교&nbsp;&nbsp;&nbsp;<a href="#" class="inButton">검색</a>&nbsp;&nbsp;&nbsp;
+										<select title="졸업여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">입학~졸업</option>
+										</select> 
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(주전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(주전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(부/복수 전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(부/복수 전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학점(4.5 환산점수)</th>
+									<td><input type="text" name="#" class="text" size="5" title="학점" /> / 4.5</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</fieldset>
+			
+			<fieldset class="fieldBox">
+				<legend>대학교(4년제)</legend>
+				<dl>
+					<dt><img src="image/txt_university2.png" alt="대학교(4년제)" /></dt>
+					<dd>
+						<table class="tbFormRow" summary="대학교(4년제)의 기간, 소재지 및 학교명, 학과명(주전공), 학과명(부/복수)전공, 학점 입력표">
+							<caption>대학교(2/3년제)</caption>
+							<colgroup>
+								<col width="20%" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">기간</th>
+									<td>
+										<select title="입학년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="입학월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+										<span class="bar">~</span>
+										<select title="졸업년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="졸업월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">소재지 및 학교명</th>
+									<td>
+										<input type="text" name="#" class="text" size="12" title="소재지" />
+										<input type="text" name="#" class="text" size="18" title="학교명" /> 대학교&nbsp;&nbsp;&nbsp;<a href="#" class="inButton">검색</a>&nbsp;&nbsp;&nbsp;
+										<select title="졸업여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">입학~졸업</option>
+										</select> 
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(주전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(주전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(부/복수 전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(부/복수 전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학점(4.5 환산점수)</th>
+									<td><input type="text" name="#" class="text" size="5" title="학점" /> / 4.5</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</fieldset>
+
+			<fieldset class="fieldBox">
+				<legend>대학교(석사)</legend>
+				<dl>
+					<dt><img src="image/txt_university3.png" alt="대학교(석사)" /></dt>
+					<dd>
+						<table class="tbFormRow" summary="대학교(석사)의 기간, 소재지 및 학교명, 학과명(주전공), 학과명(부/복수)전공, 학점 입력표">
+							<caption>대학교(석사)</caption>
+							<colgroup>
+								<col width="20%" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">기간</th>
+									<td>
+										<select title="입학년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="입학월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+										<span class="bar">~</span>
+										<select title="졸업년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="졸업월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">소재지 및 학교명</th>
+									<td>
+										<input type="text" name="#" class="text" size="12" title="소재지" />
+										<input type="text" name="#" class="text" size="18" title="학교명" /> 대학교&nbsp;&nbsp;&nbsp;<a href="#" class="inButton">검색</a>&nbsp;&nbsp;&nbsp;
+										<select title="졸업여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">입학~졸업</option>
+										</select> 
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(주전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(주전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(부/복수 전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(부/복수 전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학점(4.5 환산점수)</th>
+									<td><input type="text" name="#" class="text" size="5" title="학점" /> / 4.5</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</fieldset>
+
+			<fieldset class="fieldBox">
+				<legend>대학교(박사)</legend>
+				<dl>
+					<dt><img src="image/txt_university4.png" alt="대학교(박사)" /></dt>
+					<dd>
+						<table class="tbFormRow" summary="대학교(박사)의 기간, 소재지 및 학교명, 학과명(주전공), 학과명(부/복수)전공, 학점 입력표">
+							<caption>대학교(박사)</caption>
+							<colgroup>
+								<col width="20%" />
+								<col />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th scope="row">기간</th>
+									<td>
+										<select title="입학년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="입학월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+										<span class="bar">~</span>
+										<select title="졸업년" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">2013</option>
+										</select> 년 &nbsp;
+										<select title="졸업월" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">12</option>
+										</select> 월
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">소재지 및 학교명</th>
+									<td>
+										<input type="text" name="#" class="text" size="12" title="소재지" />
+										<input type="text" name="#" class="text" size="18" title="학교명" /> 대학교&nbsp;&nbsp;&nbsp;<a href="#" class="inButton">검색</a>&nbsp;&nbsp;&nbsp;
+										<select title="졸업여부" class="select">
+											<option value="" selected="selected">선택</option>
+											<option value="">입학~졸업</option>
+										</select> 
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(주전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(주전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학과명(부/복수 전공)</th>
+									<td><input type="text" name="#" class="text" size="18" title="학과명(부/복수 전공)" /> <a href="#" class="inButton">검색</a></td>
+								</tr>
+								<tr>
+									<th scope="row">학점(4.5 환산점수)</th>
+									<td><input type="text" name="#" class="text" size="5" title="학점" /> / 4.5</td>
+								</tr>
+							</tbody>
+						</table>
+					</dd>
+				</dl>
+			</fieldset>
+
+			<fieldset class="fieldBox">
+				<legend>복수전공/부전공(학점) 및 편입 전 학력기술</legend>
+				<dl>
+					<dt><img src="image/txt_university5.png" alt="복수전공/부전공(학점) 및 편입 전 학력기술" /></dt>
+					<dd><textarea rows="4" cols="104" class="textarea" title="복수전공/부전공(학점) 및 편입 전 학력기술"></textarea></dd>
+				</dl>
+			</fieldset>
+
+			<div class="memoBox">
+				<ul class="cmtList">
+					<li>학력사항의 학교명, 학과명, 평균학점, 소재지, 비고는 필히 입력하셔야 합니다.</li>
+					<li>학교선택 시 해외 대학 또는 코드에는 없는 학교일 경우에는 해외/기타를 선택하시고 직접 입력하시면 됩니다.</li>
+					<li>전 학년 평균학점을 비례공식을 사용하여 필히 4.5만점으로 환산 후 반영하셔야 합니다. (환산점수 계산기 이용)</li>
+					<li>졸업예정일 경우 졸업으로 간주하여 반영하시면 됩니다.</li>
+					<li>공백기간/사유 및 복수전공/부전공, 편입 전 학력 작성안내
+						<ul>
+							<li>- 편입하여 졸업 또는 수료, 중퇴, 휴학 시 필히 편입 전 학교, 전공, 기간을 직접 입력 바랍니다.<br />
+								<em class="fc01">&nbsp;&nbsp;&nbsp;ex) 편입 전 학력 - 갑을대, 경영학, 1999.3월 - 1999. 12월</em>
+							</li>
+							<li>- 부전공, 복수전공이 있을 경우 전공명과 학점(4.5만점)을 직접 입력 바랍니다.<br />
+								<em class="fc01">&nbsp;&nbsp;&nbsp;ex) 복수전공 - 심리학, 학점 4.2점</em>
+							</li>
+							<li>- 입학 전, 졸업 후 또는 진학 전 사회활동/해외경험외 공백기간이 있을 경우 구체적으로 직접 입력 바랍니다.<br />
+								<em class="fc01">&nbsp;&nbsp;&nbsp;ex) 입학 전 재수2년(1996.2월 - 1998.12월), 졸업 후 CPA준비 1년(20000.1월 - 2000.12월)</em>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="btns">
+				<div class="fLeft"><a href="#" class="button">미리보기/인쇄</a> <a href="#" class="button">현 단계 저장</a></div>
+				<div class="fRight"><a href="#" class="button">이전 단계</a> <a href="#" class="button point">다음 단계</a></div>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>검색 :: LF mall</title>
+<link rel="stylesheet" type="text/css" href="css/w.css">
+<style>
+h1{font-size:15px}
+#wrap{overflow:visible}
+.mtt{margin:0}
+.location{margin-top:10px}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<!-- [D] 헤더 배경 opacity 100%일 경우 클래스명 fix 추가-->
+	<div id="header" class="fix" role="banner">
+		<strong class="logo"><a href="#" class="sp" title="메인으로 이동">LFmall</a></strong>
+		<div id="gnb" role="navigation">
+			<ul>
+			<li><a href="#">홈</a></li>
+			<li><a href="#">패션</a></li>
+			<li><a href="#">잡화</a></li>
+			<li><a href="#">스포츠</a></li>
+			<li><a href="#">뷰티</a></li>
+			<li><a href="#">명품</a></li>
+			<li><a href="#" class="highlighting">아울렛</a></li><!-- [D] 강조되는 메뉴에 클래스명 highlighting 추가 -->
+			<li class="on"><a href="#" class="ico"><span class="ico_raum sp">RAUM EDITION</span></a></li><!-- [D] 선택된 메뉴에 클래스명 on 추가 -->
+			<li><a href="#" class="ico"><span class="ico_around sp">around the corner</span></a></li>
+			<li><a href="#">스타일</a></li>
+			</ul>
+			<!-- [D] GNB에서 선택된 메뉴명 넣어주세요 -->
+			<h1 class="blind">홈</h1>
+		</div>
+
+		<button type="button" class="menu"><span class="sp">메뉴 열기</span></button>
+		<!-- LNB -->
+
+		<!-- //LNB -->
+		<div class="search_area" role="search">
+			<!-- [D] 버튼 클릭시 .search_artbx display:block 적용 및 팝업 내 input창에 포커싱 적용 -->
+			<button type="button" title="검색 팝업창으로 이동" class="btn_srch_pop">
+				<span class="blind">추천검색</span>봄 꽃 축제, 스타일 지침서
+			</button>
+			<a href="#" class="btn_srch"><span class="sp">추천검색 페이지로 이동</span></a>
+			<!-- [D]검색 팝업 -->
+			<div class="search_artbx" style="display:block">
+				<div class="srch_top">
+					<button type="button" class="btn_close"><span class="sp">검색창 닫기</span></button>
+					<div class="inp_srch_wrap">
+						<div class="inp_srch"><input type="search" value="라푸마" placeholder="검색어를 입력하세요_"></div>
+						<div class="btn_wrap">
+							<button type="button" class="btn_srch_inp"><span class="sp">검색어 검색하기</span></button>
+							<!-- [D]인풋창에 검색어 입력 할 경우 display:none -->
+							<button type="button" class="btn_srch_bcd" style="display:none"><span class="sp">바코드로 검색하기</span></button>
+							<!-- [D]인풋창에 검색어 입력 할 경우 display:block -->
+							<button type="button" class="btn_inp_del" style="display:block"><span class="sp">검색어 지우기</span></button>
+						</div>
+					</div>
+				</div>
+				<div class="srch_cont">
+					<div class="result_wrap">
+						<p class="srch_result"><strong>총 <span>863</span>개</strong>의 상품이 검색되었습니다.</p>
+						<ul class="rv_tab tmpl_406">
+						<li class="selected"><a href="#">LF몰</a></li><!--[D] 선택된 항목 li에 .selected 추가 -->
+						<li><a href="#">아울렛</a></li>
+						<li><a href="#">입점</a></li>
+						</ul>
+						<!-- [D]선택된 탭 이름 넣어주세요 -->
+						<h2 class="blind">LF몰</h2>
+						<!-- [D] 컨텐츠 위치가 브라우저 상단 53px에 위치할때 클래스명 fix 넣어주세요  -->
+						<div class="list_sort">
+							<!-- [D] 각 타입마다 아래 클래스명 넣어주세요
+							         풀형 : 디폴트(클래스 추가 없음)
+										카드형 : card_type 
+										리스트형 : list_type -->
+							<button type="button" class="btn_lst_sort card_type" title="상품 리스트 정렬">
+								<!-- [D] 해당 타입 텍스트 넣어주세요 -->
+								<span class="sp">카드형</span>
+							</button>
+							<ul class="sort_lst">
+							<li class="step1">
+								<button type="button" class="selt"><span class="highlighting">할인율높은순</span></button>
+								<!-- [D] .selt 선택시 display:block -->
+								<div class="selt_ly" style="display:none">
+									<ul class="lst">
+									<li class="select"><button type="button">판매인기순</button></li><!-- [D] 선택된 경우 클래스명 select 추가 -->
+									<li><button type="button">신상품순</button></li>
+									<li><button type="button">낮은가격순</button></li>
+									<li><button type="button">높은가격순</button></li>
+									<li><button type="button">할인율높은순</button></li>
+									<li><button type="button">고객추천순</button></li>
+									<li><button type="button">MD 추천순</button></li>
+									</ul>
+								</div>
+							</li>
+							<li class="step2"><button type="button" class="selt"><span>브랜드</span></button></li>
+							<li class="step3"><button type="button" class="selt"><span>카테고리</span></button></li>
+							</ul>
+							<button type="button" class="btn_filter highlighting"><span class="sp">상품조건 팝업 열기</span></button>
+						</div>
+						<div class="card_template4">
+							<ul class="template">
+							<li>
+								<div class="in">
+									<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></a>
+									<div class="img_caption basic">
+										<a href="#">
+											<strong class="name"><span class="label">16SS</span><span class="brand">ATHEAVANESSABRUNO</span></strong>
+											<p class="prdt_tit"><span class="category">Regular</span>화이트 펀칭 셔링 디테일 원피스</p>
+											<dl class="price">
+											<dt class="blind">할인가</dt>
+											<dd><ins>33,599,000</ins></dd>
+											<dt class="blind">가격</dt>
+											<dd><del>33,539,100</del></dd>
+											<dt class="blind">할인율</dt>
+											<dd class="discount">15%</dd>
+											</dl>
+										</a>
+										<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+										<button type="button" class="btn_wishlist"><span class="sp">위시리스트에 담기</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="in">
+									<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></a>
+									<div class="img_caption basic">
+										<a href="#">
+											<strong class="name"><span class="label">16SS</span><span class="brand">ATHEAVANESSABRUNO</span></strong>
+											<p class="prdt_tit"><span class="category">Regular</span>화이트 펀칭 셔링 디테일 원피스</p>
+											<dl class="price">
+											<dt class="blind">할인가</dt>
+											<dd><ins>3,539,100</ins></dd>
+											<dt class="blind">가격</dt>
+											<dd><del>3,599,000</del></dd>
+											<dt class="blind">할인율</dt>
+											<dd class="discount">75%</dd>
+											</dl>
+										</a>
+										<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+										<button type="button" class="btn_wishlist on"><span class="sp">위시리스트에 담기</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="in">
+									<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></a>
+									<div class="img_caption basic">
+										<a href="#">
+											<strong class="name"><span class="label">16SS</span><span class="brand">ATHEAVANESSABRUNO</span></strong>
+											<p class="prdt_tit"><span class="category">Regular</span>화이트 펀칭 셔링 디테일 원피스</p>
+											<dl class="price">
+											<dt class="blind">할인가</dt>
+											<dd><ins>33,599,000</ins></dd>
+											<dt class="blind">가격</dt>
+											<dd><del>33,539,100</del></dd>
+											<dt class="blind">할인율</dt>
+											<dd class="discount">15%</dd>
+											</dl>
+										</a>
+										<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+										<button type="button" class="btn_wishlist"><span class="sp">위시리스트에 담기</span></button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="in">
+									<a href="#" class="img_wrap"><img src="img/@thumb/@thumb_s4.jpg" alt=""></a>
+									<div class="img_caption basic">
+										<a href="#">
+											<strong class="name"><span class="label">16SS</span><span class="brand">ATHEAVANESSABRUNO</span></strong>
+											<p class="prdt_tit"><span class="category">Regular</span>화이트 펀칭 셔링 디테일 원피스</p>
+											<dl class="price">
+											<dt class="blind">할인가</dt>
+											<dd><ins>3,539,100</ins></dd>
+											<dt class="blind">가격</dt>
+											<dd><del>3,599,000</del></dd>
+											<dt class="blind">할인율</dt>
+											<dd class="discount">75%</dd>
+											</dl>
+										</a>
+										<!-- [D]버튼 활성화시 클래스명 on 추가 -->
+										<button type="button" class="btn_wishlist on"><span class="sp">위시리스트에 담기</span></button>
+									</div>
+								</div>
+							</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //검색 팝업 -->
+		</div>
+
+		<!-- [D]활성화 된 경우 클래스명 on 추가 -->
+		<a href="#" class="btn_shopbag on"><span class="sp">장바구니 페이지로 이동</span></a>
+	</div>
+
+	<div id="container">
+		<div id="content" role="main">
+			<div class="main_visual">
+				<ul class="visual">
+				<li><a href="#"><img src="img/@thumb/@main_visual.jpg" alt="16 S/S HOT items 16SS LF TREND REPORT"></a></li>
+				</ul>
+				<div class="pagenation">
+					<!-- [D] 활성화된 경우 클래스명 active 추가 -->
+					<a href="#" class="active">첫번째배너 활성화</a>
+					<a href="#">두번째배너</a>
+					<a href="#">세번째배너</a>
+					<a href="#">네번째배너</a>
+					<a href="#">다섯번째배너</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- [D] 하단메뉴 -->
+	<div class="bottom_nav">
+		<a href="#" class="ico_home"><span class="sp">메인 페이지로 이동</span></a>
+		<a href="#" class="ico_menu"><span class="sp">메뉴 열기</span></a>
+		<a href="#" class="ico_brand"><span class="sp">브랜드 페이지로 이동</span></a>
+		<a href="#" class="ico_mypage"><span class="sp">마이 페이지로 이동</span></a>
+	</div>
+	<!-- // 하단메뉴 -->
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@charset "euc-kr";
+
+/* reset */
+html,body{width:100%;height:100%;background-color:#eceef2}
+html,body,div,form,input,select,button,textarea,legend,fieldset,h1,h2,h3,h4,h5,h6,ul,ol,dl,li,dt,dd,blockquote,address,p,th,td,caption{margin:0;padding:0}
+body,input,select,button,textarea,h1,h2,h, h4,h5,h6,table{font-family:Dotum,"돋움",Arial,AppleGothic,Sans-serif;font-size:12px;color:#5d676e}
+ol,ul,li{ list-style:none}
+img,fieldset{border:0 none}
+input,select,textarea{vertical-align:middle;resize:none}
+button{border:0 none;background:transparent;cursor:pointer}
+legend,caption{width:0;height:0;visibility:hidden;font-size:0;line-height:0;text-indent:-9999px}
+table{border-collapse:collapse;border-spacing:0}
+a{color:#5d676e;text-decoration:none}
+em{font-style:normal}
+
+/* 공통 */
+.secRec{width:860px;font-family:Dotum, "돋움",Arial,AppleGothic,Sans-serif;font-size:12px;color:#5d676e;line-height:1;background:#fff}
+.secRec .titCont{padding:45px}
+.secRec .hide{width:0;height:0;font-size:0;overflow:hidden;text-indent:-9999px}
+.secRec .fc01{color:#3d619f}
+
+.secRec .button{display:inline-block;padding:0 15px;text-decoration:none;vertical-align:middle;background-color:#7f8a90;color:#fff;line-height:42px;font-weight:bold}
+.secRec .point{background-color:#ea3139}
+.secRec .btns{padding:20px}
+.secRec .btns:after{clear:both;content:"";display:block}
+.secRec .inButton{display:inline-block;padding:0 10px;text-decoration:none;vertical-align:middle;background-color:#fff;border:1px solid #e8e8e6;color:#666762;line-height:25px}
+
+.secRec .mt10{margin-top:10px}
+.secRec .mt15{margin-top:15px}
+
+.secRec .aLeft{text-align:left}
+.secRec .aRight{text-align:right}
+.secRec .fLeft{float:left}
+.secRec .fRight{float:right}
+
+.secRec .radio{margin-right:5px}
+.secRec .text{background-color:#f8f9fa;border:1px solid #eceef2;height:25px;line-height:25px;text-indent:3px}
+.secRec .disabled{background-color:#eceef2;border:1px solid #e3e5e8}
+.secRec .select{height:27px;line-height:21px;border:1px solid #eceef2;background-color:#f8f9fa}
+.secRec .textarea{border:1px solid #eceef2;background-color:#f8f9fa;overflow:auto;padding:5px}
+.secRec .checkbox{vertical-align:middle}
+
+/*.secRec .tbForm{width:100%;background-color:#fff;border-right:1px solid #dee0e4}
+.secRec .tbForm th, .secRec .tbForm td{border:1px solid #eceef2;height:37px;padding-left:10px}
+.secRec .tbForm th{background-color:#eceef2;text-align:left;border:1px solid #dee0e4}
+.secRec .tbForm td .bar{display:inline-block;color:#c2c4c8}*/
+
+.secRec .tbFormCol{width:100%;background-color:#fff}
+.secRec .tbFormCol th{border:1px solid #dee0e4;background-color:#eceef2;font-size:11px;text-align:center;height:24px;line-height:24px;padding-top:5px}
+.secRec .tbFormCol td{border:1px solid #dee0e4;min-height:37px;text-align:center;padding:0 10px}
+
+.secRec .tbFormRow{width:100%;background-color:#fff;border-right:1px solid #dee0e4}
+.secRec .tbFormRow th{border:1px solid #dee0e4;background-color:#eceef2;text-align:left;min-height:37px;line-height:37px;padding:0 10px;vertical-align:top}
+.secRec .tbFormRow td{border-bottom:1px solid #dee0e4;border-top:1px solid #dee0e4;min-height:27px;padding:5px 10px}
+.secRec .tbFormRow td .radio{margin-left:10px}
+.secRec .tbFormRow td .label{position:relative;top:1px}
+
+.secRec .cmtList li{background:url(../image/bul_list.gif) no-repeat 0 6px;line-height:18px;padding-left:8px}
+.secRec .cmtList li li{background-image:none}
+.secRec .cmtList2 li{line-height:18px}
+
+/* 채용공고 */
+.secRec .recSch{text-align:right;padding:10px}
+.secRec .recSch .text{display:inline-block;background:#f8f9fa;border:1px solid #eceef2;height:25px;line-height:25px;padding:0;text-indent:5px;vertical-align:middle}
+.secRec .recSch .select{height:27px;line-height:21px;border:1px solid #eceef2;background-color:#f8f9fa}
+.secRec .recSch .button{background-color:#7f8a90;color:#fff;font-weight:bold;line-height:27px}
+
+.secRec .recList .tbCols{width:100%;text-align:center}
+.secRec .recList .tbCols thead th{background:#aaa39b url(../image/th_line.png) no-repeat 0 0}
+.secRec .recList .tbCols thead th:first-child{background-image:none}
+.secRec .recList .tbCols th, .secRec .recList .tbCols td{height:52px}
+.secRec .recList .tbCols td{border-bottom:1px solid #eceef2;padding:0 15px}
+.secRec .recList .tbCols td a{line-height:18px}
+.secRec .recList .tbCols td a:hover{text-decoration:underline}
+.secRec .recList .tbCols td em{color:#f04953}
+
+.secRec .recPage{padding:20px;text-align:center}
+.secRec .recPage a{display:inline-block;width:27px;height:25px;border:1px solid #d8d8d8;font-family:Tahoma;font-weight:bold;color:#2f2f2f;line-height:25px;vertical-align:middle}
+.secRec .recPage a.on{background-color:#f04953;border:1px solid #f04953;color:#fff}
+.secRec .recPage .btn{background:url(../image/rec_ico.png) no-repeat;font-size:0;line-height:0;overflow:hidden;border:none;width:29px;height:27px}
+.secRec .recPage .first{background-position:-5px -5px}
+.secRec .recPage .prev{background-position:-38px -5px}
+.secRec .recPage .next{background-position:-71px -5px}
+.secRec .recPage .end{background-position:-104px -5px}
+
+/* 채용공고 상세보기 */
+.secRec .recView .tbRows{width:100%;border-collapse:separate}
+.secRec .recView .tbRows td{position:relative;overflow:hidden;border-bottom:1px solid #eceef2;height:36px;line-height:36px;padding-left:20px}
+.secRec .recView .tbRows td.dTitle{background-color:#f8f9fa;font-weight:bold;border-left:1px solid #eceef2;border-right:1px solid #eceef2}
+.secRec .recView .tbRows td.dTitle:first-child{border-left:0 none}
+.secRec .recView .tbRows td .button{position:relative;top:5px;right:20px;background:#7f8a90;font-weight:normal;color:#fff;line-height:27px}
+.secRec .recView .viewBox{padding:40px 45px;border-bottom:1px solid #ededf5}
+.secRec .recView .viewBox p{line-height:18px}
+
+/* 이용약관 */
+.secRec .recAgree{padding:0 45px 30px}
+.secRec .recAgree .agreeBox{margin-bottom:30px}
+.secRec .recAgree .agreeBox .txt{line-height:18px;border:1px solid #eceef2;padding:15px;margin-bottom:15px;overflow-y:auto}
+.secRec .recAgree .agreeBox .txt strong{display:block;margin-bottom:10px}
+.secRec .recAgree .agreeBox .txt p{margin-bottom:10px}
+.secRec .recAgree .agreeBox .txt li{margin-top:10px}
+.secRec .recAgree .agreeBox .txt li li{margin-top:0;padding-left:13px}
+.secRec .recAgree .agreeBox .agreeChk{position:relative;font-weight:bold}
+.secRec .recAgree .agreeBox .agreeChk .chkBox{position:absolute;right:0;top:0}
+.secRec .recAgree .agreeBox .agreeChk .chkBox .radio{margin-left:10px}
+.secRec .recAgree .agreeBox .agreeChk .chkBox .label{position:relative;top:1px}
+.secRec .recAgree .agreeLog{background-color:#f9fafb;border:1px solid #eceef2;padding:20px}
+.secRec .recAgree .agreeLog .confirm{display:inline-block;position:relative;top:0;left:20px}
+.secRec .recAgree .btns{padding:20px 0}
+
+/* 온라인 지원 폼 */
+.secRec .steps{background:url(../image/img_steps.png) no-repeat;height:61px}
+.secRec .step01{background-position:0 0}
+.secRec .step02{background-position:0 -71px}
+.secRec .step03{background-position:0 -142px}
+.secRec .step04{background-position:0 -213px}
+
+.secRec .recApply{position:relative}
+.secRec .recApply .fieldBox{clear:both;background:url(../image/bg_fieldset.png) repeat-y}
+.secRec .recApply .fieldBox dl{display:inline-block;width:100%;border-bottom:1px solid #eceef2;padding:24px 0}
+.secRec .recApply .fieldBox dt, .secRec .recApply .fieldBox dd{float:left;overflow:hidden}
+.secRec .recApply .fieldBox dt{width:13.9%;text-indent:30px;min-height:36px}
+.secRec .recApply .fieldBox dt img{margin-top:11px}
+.secRec .recApply .fieldBox dd{width:78.5%;padding:5px 0 5px 32px;line-height:26px}
+.secRec .recApply .fieldBox dd .bar{display:inline-block;color:#c2c4c8}
+.secRec .recApply .fieldBox dd .inblock{display:block;margin-bottom:10px}
+.secRec .recApply .fieldBox dd .footnote{font-size:11px;line-height:18px;padding-top:15px}
+.secRec .recApply .fieldBox dd .label{position:relative;top:1px;margin-right:10px}
+.secRec .recApply .fieldBox dd .textarea{width:98%}
+.secRec .recApply .fieldBox dd .tbFormRow th{font-size:11px;letter-spacing:-1px}
+.secRec .recApply .fieldBox .case img{margin-bottom:8px}
+.secRec .recApply .memoBox{background-color:#fbfcfc;border-bottom:1px solid #eceef2;padding:20px}
+.secRec .recApply .fieldPhoto{position:absolute;top:35px;right:30px;text-align:center}
+.secRec .recApply .fieldPhoto .photo{width:133px;height:171px;margin-bottom:15px;background:#f8f9fa;border:1px solid #eceef2}
+.secRec .recApply .fieldPhoto .inButton{margin:0 auto;width:113px}
